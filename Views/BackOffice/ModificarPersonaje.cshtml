@@ -1,0 +1,14 @@
+﻿@model Quien_es_Quien.Personaje
+@{
+    ViewBag.Title = "ModificarPersonaje";
+}
+
+<h2>Modificar a @ViewBag.NomPersModificar</h2>
+
+@using (Html.BeginForm("ModificarPersonaje", "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.Label("Nombre: ") @Html.TextBoxFor(x => x.Nombre) @Html.ValidationMessageFor(x => x.Nombre, "", new { @style = "color:red" })
+    @Html.Label("Foto: ") @Html.TextBoxFor(x => x.Img, new { type = "file" }) @Html.ValidationMessageFor(x => x.RutaFoto, "", new { @style = "color:red" })
+    @Html.Label("Categoria: ") @Html.DropDownListFor(x => x.IDCategoria, new SelectList(BD.dicCategorias, "Key", "Value")) @Html.ValidationMessageFor(x => x.IDCategoria, "", new { @style = "color:red" }) <br />
+    <input type="submit" name="Modificar" />
+}

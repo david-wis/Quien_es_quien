@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Quién es Quién</h1>
+    <img src="~/Content/Logo circular.png" alt="Logo del juego" width="400px" height="400px" />
+    <p class="lead">¡Bienvenido a Quién es Quién! </p>
+    <a href="@Url.Action("Registro", "BackOffice")" class="btn btn-primary btn-lg">Registrarse &raquo;</a>
+    <a href="@Url.Action("Login", "BackOffice")" class="btn btn-primary btn-lg">Log in &raquo;</a> <br /> <br />
+    <p>
+        <a href="@Url.Action("Index", "Juego")" class="btn btn-primary btn-lg">Jugar como invitado &raquo;</a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Instrucciones</h2>
+        <p>
+            Quien es Quien es un divertido juego en el que los jugadores tienen que adivinar un personaje entre muchos otros haciendo preguntas que describen a los mismos. Su objetivo es averiguar el personaje que se seleccionó haciendo la menor cantidad de preguntas posibles. Por cada pregunta que hagas o cada vez que intentes adivinar al personaje y falles, perderás puntos. Así que, ¡cuidalos!
+        </p>
+
+    </div>
+    <div class="col-md-4">
+        <h2>¿Querés leer el código del juego?</h2>
+        <p>
+            Nuestro proyecto es de código abierto, es decir que cualquier persona puede consultar el desarrollo
+            interno de este juego. Si estás interesado, hace click en el siguiente botón.
+        </p>
+        <p><a class="btn btn-info" target="_blank" href="https://k60.kn3.net/taringa/3/B/C/5/5/C/WilsonB4/FAC.jpg">Código del juego &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Créditos</h2>
+        <p>
+            Este juego fue desarrollado por Ezequiel Saidman, Tadeo Caputo, David Wischñevsky y Abril Vilamowski,
+            de la división 4IA en la Escuela Técnica ORT (sede Almagro). ¡Esperamos que lo disfruten!
+        </p>
+        <p><a class="btn btn-info" target="_blank" href="http://campus.ort.edu.ar/">Visitá el sitio web de nuestra escuela &raquo;</a></p>
+    </div>
+
+</div>

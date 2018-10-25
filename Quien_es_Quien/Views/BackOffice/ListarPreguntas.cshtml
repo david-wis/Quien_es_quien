@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "ListarPreguntas";
+}
+
+<h2>Listado de preguntas</h2>
+<td>@Html.ActionLink("Agregar pregunta", "AgregarPregunta", "BackOffice", new { @class = "btn btn-info" })</td>
+<h3>@Session["Mensaje"]</h3>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+<form action="@Url.Action("ListarPreguntas", "BackOffice")" method="post">
+
+    <select name="Categoria">
+        @foreach (string sCat in BD.dicCategoriasPreguntas.Values)
+        {
+            <option value="@sCat"> @sCat </option>
+        }
+    </select>
+
+    <input type="submit" name="Enviar" />
+</form>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Texto</th>
+        <th>Valor</th>
+        <th>Categoria</th>
+        <th></th>
+    </tr>
+    @foreach (Pregunta unaPreg in ViewBag.listaPreguntas)
+    {
+        <tr>
+            <td>@unaPreg.TextoPregunta</td>
+            <td>@unaPreg.Valor</td>
+            <td>@BD.dicCategoriasPreguntas[unaPreg.IDCategoria]</td>
+
+            <td>@Html.ActionLink("Borrar Pregunta", "BorrarPregunta", "BackOffice", new { id = unaPreg.IDPregunta, @class = "btn btn-info" }, null)</td>
+        </tr>
+    }
+</table>

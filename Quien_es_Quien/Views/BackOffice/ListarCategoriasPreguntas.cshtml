@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "ListarCategoriasPreguntas";
+}
+
+<h2>Listado de categorias de preguntas</h2>
+
+<td>@Html.ActionLink("Agregar categoria de preguntas", "AgregarCategoriaPregunta", "BackOffice", new { @class = "btn btn-info" })</td>
+<h3>@Session["Mensaje"]</h3>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Categoria</th>
+        <th></th>
+    </tr>
+    @foreach (int idCatPreg in BD.dicCategoriasPreguntas.Keys)
+    {
+        string CatPreg = BD.dicCategoriasPreguntas[idCatPreg];
+        <tr>
+            <td>@CatPreg</td>
+            <td>@Html.ActionLink("Borrar categoria", "BorrarCategoriaPreguntas", "BackOffice", new { nombre = CatPreg, @class = "btn btn-info" }, null)</td>
+        </tr>
+    }
+</table>

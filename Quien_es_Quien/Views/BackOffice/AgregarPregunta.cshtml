@@ -1,0 +1,16 @@
+﻿@model Quien_es_Quien.Pregunta
+@{
+    ViewBag.Title = "AgregarPregunta";
+}
+
+<h2>Agregar una pregunta</h2>
+
+@using (Html.BeginForm("AgregarPregunta", "BackOffice", FormMethod.Post))
+{
+    @Html.Label("Texto: ") @Html.TextAreaFor(x => x.TextoPregunta) @Html.ValidationMessageFor(x => x.TextoPregunta/*, "", new { @style = "color:red" }*/) <br />
+
+    @Html.Label("Valor: ") @Html.TextBoxFor(x => x.Valor, new { type = "number" }) @Html.ValidationMessageFor(x => x.Valor/*, "", new { @style = "color:red" }*/) <br />
+
+    @Html.Label("Categoria: ") @Html.DropDownListFor(x => x.IDCategoria, new SelectList(BD.dicCategoriasPreguntas, "Key", "Value")) @Html.ValidationMessageFor(x => x.IDCategoria/*, "", new { @style = "color:red" }*/)
+    <input type="submit" name="Enviar" />
+}

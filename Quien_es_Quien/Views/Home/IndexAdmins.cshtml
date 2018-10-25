@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    string sNomUsuario = ViewBag.NombreUsuario;
+}
+
+<h2>Index</h2>
+
+<div class="jumbotron">
+    <h1>¡Bienvenido, @sNomUsuario!</h1>
+    <p>
+        <a href="@Url.Action("Index", "Juego")" class="btn btn-primary btn-lg">Comenzar a jugar &raquo;</a>
+    </p>
+    <p>
+        <a href="@Url.Action("Index", "BackOffice")" class="btn btn-primary btn-lg">Ir al BackOffice &raquo;</a>
+    </p>
+
+</div>

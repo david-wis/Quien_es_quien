@@ -1,0 +1,1065 @@
+Z:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+Z:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.pdb
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.exe
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.exe.config
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.rsp
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.exe
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.exe.config
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.rsp
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Console.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.exe
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.exe.config
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.rsp
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+Z:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Antlr3.Runtime.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Newtonsoft.Json.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Helpers.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Mvc.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Optimization.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Razor.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\WebGrease.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Helpers.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Mvc.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Optimization.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Razor.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Newtonsoft.Json.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+Z:\Quien_es_Quien\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+Z:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+Z:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+Z:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+Z:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+F:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojResolveAssemblyReference.cache
+F:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+F:\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+F:\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+F:\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.pdb
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.exe
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.exe.config
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.rsp
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.exe
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.exe.config
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.rsp
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Console.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.exe
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.exe.config
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.rsp
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+F:\Quien_es_Quien\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+F:\Quien_es_Quien\Quien_es_Quien\bin\Antlr3.Runtime.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\Newtonsoft.Json.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Helpers.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Mvc.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Optimization.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Razor.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\WebGrease.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Helpers.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Mvc.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Optimization.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Razor.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\Newtonsoft.Json.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+F:\Quien_es_Quien\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+F:\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Quien_es_Quien.pdb
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.exe
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csc.rsp
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.exe
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\csi.rsp
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Console.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.exe
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\vbc.rsp
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Antlr3.Runtime.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Newtonsoft.Json.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Helpers.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Mvc.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Optimization.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Razor.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\WebGrease.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Helpers.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Mvc.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Optimization.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.Razor.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Newtonsoft.Json.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+C:\Users\43922539\Desktop\Quien_es_Quien\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+D:\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+D:\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+D:\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+D:\Ort\4°\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+C:\Users\43922539\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+D:\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+C:\Users\David\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+C:\Users\43403629\Desktop\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll.config
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Quien_es_Quien.pdb
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.exe.config
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csc.rsp
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.exe.config
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\csi.rsp
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.AppContext.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Collections.Immutable.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Console.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Compression.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.IO.Pipes.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.AccessControl.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Claims.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.ValueTuple.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.exe.config
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\vbc.rsp
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\roslyn\VBCSCompiler.exe.config
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.ApplicationInsights.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.Web.Infrastructure.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\WebGrease.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Helpers.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Mvc.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Optimization.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.Razor.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Deployment.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Web.WebPages.Razor.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Newtonsoft.Json.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Antlr3.Runtime.pdb
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.DependencyCollector.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.WindowsServer.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.AI.Web.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Helpers.resources.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Mvc.resources.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Optimization.resources.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.Razor.resources.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.resources.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csprojAssemblyReference.cache
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CoreCompileInputs.cache
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.csproj.CopyComplete
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.dll
+D:\Quien_es_Quien - NUEVO ULTIMATE\Quien_es_Quien - copia\Quien_es_Quien\obj\Debug\Quien_es_Quien.pdb

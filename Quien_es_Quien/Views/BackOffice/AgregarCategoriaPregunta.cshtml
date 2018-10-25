@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "AgregarCategoriaPregunta";
+}
+
+<h2>AgregarCategoriaPregunta</h2>
+
+<form action="@Url.Action("AgregarCategoriaPregunta", "Backoffice")" method="post">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="nombre">Ingrese una categoria de pregunta: </label>
+        <input required type="text" name="nombre" id="nombre" placeholder="Color de ojos" class="form-control" />
+    </div>
+    <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 405px" />
+    <br /> <b>@ViewBag.Mensaje</b>
+</form>

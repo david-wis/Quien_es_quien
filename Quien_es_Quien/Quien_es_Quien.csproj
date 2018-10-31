@@ -149,6 +149,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BackOfficeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JuegoController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,6 +208,8 @@
     <Content Include="Views\BackOffice\ListarPreguntas.cshtml" />
     <Content Include="Views\BackOffice\ListarCategoriasPreguntas.cshtml" />
     <Content Include="Views\BackOffice\ListarCategoriasPersonajes.cshtml" />
+    <Content Include="Views\Juego\Juego.cshtml" />
+    <Content Include="Views\Juego\ElegirModoJuego.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

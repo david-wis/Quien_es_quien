@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "ElegirModoJuego";
+}
+<h2>ElegirModoJuego</h2>
+
+@{
+    ViewBag.Title = "ElegirTipoPartida";
+}
+
+<h2>ElegirTipoPartida</h2>
+
+<style>
+    .boton {
+        margin-bottom: 10px;
+    }
+</style>
+
+@foreach (string Tipo in ViewBag.ListaTiposPartida)
+{
+    @Html.ActionLink(Tipo, "ElegirTipoPartida", "Juego", new { nombre = Tipo, @class = "btn btn-info boton" }) <br />
+}

@@ -18,6 +18,7 @@ namespace Quien_es_Quien
         public static Dictionary<int, string> dicCategorias = new Dictionary<int, string>();
         public static Dictionary<int, string> dicCategoriasPreguntas = new Dictionary<int, string>();
         public static List<Personaje> listaPersonajes = new List<Personaje>();
+        public static string TipoPartida;
 
         public static SqlConnection Conectar()
         {
@@ -481,6 +482,23 @@ namespace Quien_es_Quien
                 dicCategoriasPreguntas.Add(ID, Nombre);
             }
             Desconectar(conexion);
+        }
+
+        public static List<string> ObtenerTiposPartida()
+        {
+            List<string> listaTiposPartida = new List<string>();
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_ListarTiposDePartida";
+            SqlDataReader lector = query.ExecuteReader();
+            while (lector.Read())
+            {
+                string Nombre = lector["Nombre"].ToString();
+                listaTiposPartida.Add(Nombre);
+            }
+            Desconectar(conexion);
+            return listaTiposPartida;
         }
     }
 }

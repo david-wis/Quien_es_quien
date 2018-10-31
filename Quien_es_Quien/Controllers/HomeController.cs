@@ -12,5 +12,6 @@ namespace Quien_es_Quien.Controllers
         {
             return View();
         }
+
     }
 }

@@ -1,11 +1,6 @@
-﻿
-@{
-    ViewBag.Title = "ElegirModoJuego";
-}
-<h2>ElegirModoJuego</h2>
-
-@{
+﻿@{
     ViewBag.Title = "ElegirTipoPartida";
+    List<string> listaTipos = ViewBag.ListaTipos;
 }
 
 <h2>ElegirTipoPartida</h2>
@@ -16,7 +11,19 @@
     }
 </style>
 
-@foreach (string Tipo in ViewBag.ListaTiposPartida)
-{
-    @Html.ActionLink(Tipo, "ElegirTipoPartida", "Juego", new { nombre = Tipo, @class = "btn btn-info boton" }) <br />
-}
+@Html.ActionLink(listaTipos[0], "Index", "Juego", new { nombre = listaTipos[0], @class = "btn btn-primary boton" }) <br />
+    
+@Html.ActionLink(listaTipos[1], "Index", "Juego", new { nombre = listaTipos[1], @class = "btn btn-primary boton" }) <br />
+
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Jugar contra la IA
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink(listaTipos[2], "Index", "Juego", new { nombre = listaTipos[2] })</li>
+        <li>@Html.ActionLink(listaTipos[3], "Index", "Juego", new { nombre = listaTipos[3] })</li>
+        <li>@Html.ActionLink(listaTipos[4], "Index", "Juego", new { nombre = listaTipos[4] })</li>
+    </ul>
+</div>

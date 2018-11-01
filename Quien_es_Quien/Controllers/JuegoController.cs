@@ -17,12 +17,26 @@ namespace Quien_es_Quien.Controllers
             ViewBag.ListaTipos = listaTipos;
             return View();
         }
-
+        
         [HttpPost]
 
         public ActionResult ElegirModoJuego(string Tipo)
         {
             BD.TipoPartida = Tipo;
+            return RedirectToAction("ElegirCategoria", "Juego");
+        }
+
+        public ActionResult ElegirCategoria()
+        {
+            BD.ObtenerCategoriasPersonajes();
+            return View();
+        }
+
+        [HttpPost]
+
+        public ActionResult ElegirCategoria(string Categoria)
+        {
+            BD.CategoriaJuego = Categoria;
             return RedirectToAction("Index", "Juego");
         }
     }

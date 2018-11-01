@@ -19,6 +19,7 @@ namespace Quien_es_Quien
         public static Dictionary<int, string> dicCategoriasPreguntas = new Dictionary<int, string>();
         public static List<Personaje> listaPersonajes = new List<Personaje>();
         public static string TipoPartida;
+        public static string CategoriaJuego;
 
         public static SqlConnection Conectar()
         {

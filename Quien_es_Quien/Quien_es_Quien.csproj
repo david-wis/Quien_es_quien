@@ -210,6 +210,7 @@
     <Content Include="Views\BackOffice\ListarCategoriasPersonajes.cshtml" />
     <Content Include="Views\Juego\Juego.cshtml" />
     <Content Include="Views\Juego\ElegirModoJuego.cshtml" />
+    <Content Include="Views\Juego\ElegirCategoria.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

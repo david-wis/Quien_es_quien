@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "ElegirCategoria";
+}
+
+<style>
+    .boton {
+        margin-bottom: 10px;
+    }
+</style>
+
+<h2>Elegir categoria</h2>
+@foreach (int idCatPers in BD.dicCategorias.Keys)
+{
+    string CatPers = BD.dicCategorias[idCatPers];
+    @Html.ActionLink(CatPers, "Index", "Juego", new { nombre = CatPers, @class = "btn btn-info boton" }) <br />
+}

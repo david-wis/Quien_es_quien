@@ -252,6 +252,31 @@ namespace Quien_es_Quien
             return listaPreguntas;
         }
 
+        public static List<int> ObtenerPreguntasPersonaje(int id)
+        {
+            List<int> listaPreguntas = new List<int>();
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_ObtenerPregPersonaje";
+            query.Parameters.AddWithValue("@IDPersonaje", id);
+            SqlDataReader lector = query.ExecuteReader();
+            while (lector.Read())
+            {
+                try
+                {
+                    string a = lector["Error"].ToString();//Idem
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    int ID = Convert.ToInt32(lector["IDPregunta"]);
+                    listaPreguntas.Add(ID);
+                }
+            }
+            Desconectar(conexion);
+            return listaPreguntas;
+        }
+
         public static string CambiarContrasenia(string Nombre, int DNI, string Contrasenia)
         {
             string sRespuesta = null;

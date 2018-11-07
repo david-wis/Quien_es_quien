@@ -4,20 +4,30 @@
 }
 
 <script>
+
+    var IDPreg = null;
+    function CambiarID(ID) {
+        IDPreg = ID;
+        alert(ID);
+    }
+
     function Preguntar() {
         alert("hola");
-        var vecRadios = document.getElementsByName("pregunta");
-        var i = 0;
-        var iPos = -1;
-        var idPregunta;
-        while (i < vecRadios.length && iPos == -1) {
-            if (vecRadios[i].checked) {
-                iPos = i;
-                idPregunta = vecRadios[i].id;
+        $('#myModal').modal('hide');//tuve que usar jquery
+        divsPers = document.getElementsByClassName("personaje");
+        for (i = 0; i < divsPers.length; i++) {
+            vecResp = divsPers[i].getElementsByClassName("respuesta");
+            encontrado = false;
+            for (j = 0; j < vecResp.length; j++) {
+                if (vecResp[j].innerHtml == ID) {
+                    encontrado = true;
+                }
             }
-            i++;
+            if (encontrado) {
+                divsPers[i].style.visibility = "hidden";
+            }
         }
-        if 
+
     }
 </script>
 
@@ -49,15 +59,17 @@
 
 <h2>Juego</h2>
 <div id="containerfotos">
-    <!--foreach (Personaje p in BD.listaPersonajes)
+    @foreach (Personaje p in BD.listaPersonajes)
     {
-
-    }-->
-    @for (int i = 0; i < 10; i++)
-    {
-        <div class="personaje">
-            <img src="~/Content/Fotos/Etlis.jpg" />
-            <span class="txtFoto">Etlis</span>
+        string nombreFile = p.IDPersonaje + ".jpg";
+        <div id="@p.IDPersonaje" class="personaje">
+            <img src="~/Content/Fotos/@nombreFile" />
+            <span class="txtFoto">@p.Nombre</span>
+            @foreach (int preg in p.ListaPregs)
+            {
+                string id = p.IDPersonaje + "_pregs";
+                <span class="respuesta" style="visibility:hidden">@preg</span>
+            }
         </div>
     }
 </div>
@@ -80,18 +92,15 @@
                     @foreach (Pregunta p in ViewBag.listaPreguntas)
                     {
                         <label for="@p.IDPregunta">@p.TextoPregunta</label>
-                        <input type="radio" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
+                        <input type="radio" onclick="CambiarID(@p.IDPregunta)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
                         <br />
                     }
                 </div>
                 <div class="modal-footer">
-                    <button onclick="Preguntar" id="botonPreguntar" type="button" class="btn btn-default" data-dismiss="modal">Pregunta</button>
+                    <button id="botonPreguntar" type="button" onclick="Preguntar()" class="btn btn-default">Pregunta</button>
                 </div>
             </div>
 
         </div>
     </div>
 </div>
-
-
-

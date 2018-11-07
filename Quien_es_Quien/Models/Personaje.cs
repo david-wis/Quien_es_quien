@@ -3,6 +3,7 @@ using System.Web.DynamicData;
 using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 using System.Web;
+using System.Collections.Generic;
 
 namespace Quien_es_Quien
 {
@@ -16,6 +17,7 @@ namespace Quien_es_Quien
         private string _Categoria;
         private Image _ImagenPosta;
         private HttpPostedFileBase _Img;
+        private List<int> listaPregs;
 
         public int IDPersonaje { get => _IDPersonaje; set => _IDPersonaje = value; }
         [Required(ErrorMessage = "Es necesario ingresar el nombre del personaje")]
@@ -30,6 +32,8 @@ namespace Quien_es_Quien
 
         [Required(ErrorMessage = "Es necesario elegir una foto para el personaje")]
         public HttpPostedFileBase Img { get => _Img; set => _Img = value; }
+
+        public List<int> ListaPregs { get => listaPregs; set => listaPregs = value; }
 
         /*public int IDPersonaje
         {
@@ -154,15 +158,13 @@ namespace Quien_es_Quien
             _Categoria = Categoria;
         }
 
-        /*
-        Supuestamente este se usaba para agregar un personaje, pero estamos usando el de abajo, porque le asignamos a Img
-
+        //Este se va a usar unicamente para agregar un personaje
         public Personaje(string Nombre, string RutaFoto, int IDCategoria)
         {
             _Nombre = Nombre;
             _RutaFoto = RutaFoto;
             _IDCategoria = IDCategoria;
-        }*/
+        }
 
         public Personaje(string Nombre, HttpPostedFileBase Foto, int IDCategoria)
         {

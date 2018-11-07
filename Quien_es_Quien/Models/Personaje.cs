@@ -154,13 +154,15 @@ namespace Quien_es_Quien
             _Categoria = Categoria;
         }
 
-        //Este se va a usar unicamente para agregar un personaje
+        /*
+        Supuestamente este se usaba para agregar un personaje, pero estamos usando el de abajo, porque le asignamos a Img
+
         public Personaje(string Nombre, string RutaFoto, int IDCategoria)
         {
             _Nombre = Nombre;
             _RutaFoto = RutaFoto;
             _IDCategoria = IDCategoria;
-        }
+        }*/
 
         public Personaje(string Nombre, HttpPostedFileBase Foto, int IDCategoria)
         {

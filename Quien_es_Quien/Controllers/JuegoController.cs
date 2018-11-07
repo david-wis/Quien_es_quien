@@ -9,13 +9,13 @@ namespace Quien_es_Quien.Controllers
     public class JuegoController : Controller
     {
         // GET: Juego
-        public ActionResult Juego()
+        /*public ActionResult Juego()
         {
             BD.ListarPersonajes(null);//Agregar para traer por categoria
             ViewBag.listaPreguntas = BD.ObtenerPreguntas(null);
             ViewBag.listaIDPreguntas = BD.ObtenerPreguntasPersonaje();
             return View();
-        }
+        }*/
 
         [HttpPost]
         public ActionResult Juego(int idPregunta)

@@ -4,27 +4,37 @@
     ViewBag.Title = "Caracteristicas del personaje";
 }
 
+<div class="jumbotron text-center">
+    <h1>Características de @ViewBag.Personaje</h1>
+</div>
+
 <form action="@Url.Action("CaracteristicasPersonaje", "BackOffice")" , method="post">
     @foreach (Pregunta unaPregunta in ViewBag.listaPreguntas)
     {
-        <div id="@unaPregunta.IDPregunta" class="@unaPregunta.IDCategoria">
-            @unaPregunta.TextoPregunta <input onchange="DesactivarResto(@unaPregunta.IDPregunta, @unaPregunta.IDCategoria)" type="checkbox" name="vecPregs" value="@unaPregunta.IDPregunta"/> <br />
+        <div class="form-group">
+            <div class="col-sm-offset-1 col-sm-10">
+                <div class="checkbox">
+                    <div id="@unaPregunta.IDPregunta" class="@unaPregunta.IDCategoria">
+                        <input onchange="DesactivarResto(@unaPregunta.IDPregunta, @unaPregunta.IDCategoria)" type="checkbox" name="vecPregs" value="@unaPregunta.IDPregunta" />@unaPregunta.TextoPregunta <br />
+                    </div>
+                </div>
+            </div>
         </div>
     }
-    <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 600px" />
+    <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 500px" />
 </form>
 
 <script>
     function DesactivarResto(idPreg, idCat) {//Recibe el id de la pregunta que fue seleccionada y la categoria de las preguntas que se deben desactivar
         var estado;
-        //A continuacion, se fija si el input esta checkeado 
+        //A continuacion, se fija si el input esta checkeado
         //Lo podria haber hecho de otras 15 maneras pero bueno, aguante tirar indices
         if (document.getElementById(idPreg).children[0].checked) {
             estado = "hidden";
         } else {
             estado = "visible";
         }
-        
+
         var vecCheckBoxes = document.getElementsByClassName(idCat);
         for (i = 0; i < vecCheckBoxes.length; i++) {
             if (vecCheckBoxes[i].id != idPreg) {

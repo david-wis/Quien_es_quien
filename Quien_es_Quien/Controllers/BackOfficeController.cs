@@ -308,22 +308,39 @@ namespace Quien_es_Quien.Controllers
 
         public ActionResult CaracteristicasPersonaje(int id)
         {
+            int iCantPersonajes = BD.listaPersonajes.Count();
+            int i = 0;
+            string nombre;
+            bool encontrado = false;
             List<Pregunta> listaPreguntas = BD.ObtenerPreguntas(null);
             ViewBag.listaPreguntas = listaPreguntas;
             Session["IDPersonaje"] = id;
+            while (encontrado == false && i < iCantPersonajes)
+            {
+                if (BD.listaPersonajes[i].IDPersonaje == id)
+                {
+                    encontrado = true;
+                    nombre = BD.listaPersonajes[i].Nombre;
+                    ViewBag.Personaje = nombre;
+                }
+                else
+                {
+                    i++;
+                }
+            }
             return View();
         }
 
         [HttpPost]
 
-        public ActionResult CaracteristicasPersonaje(int id, int [] vecPregs)
+        public ActionResult CaracteristicasPersonaje(int id, int[] vecPregs)
         {
             int ID = (int)Session["IDPersonaje"];
             if (BD.AsociarPregPers(id, vecPregs))
             {
                 return RedirectToAction("ListarPersonajes", "BackOffice");
             }
-            return RedirectToAction("CaracteristicasPersonaje", "BackOffice"); 
+            return RedirectToAction("CaracteristicasPersonaje", "BackOffice");
         }
 
         public ActionResult LogOut()

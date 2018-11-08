@@ -1,9 +1,12 @@
 ﻿
 @{
-    ViewBag.Title = "Cambiar contraseñ";
+    ViewBag.Title = "Cambiar contraseña";
 }
 
-<h2>Cambiar contraseña</h2>
+<div class="jumbotron text-center">
+    <h1>Cambiar contraseña</h1>
+</div>
+
 <form name="input" action="@Url.Action("CambiarContrasenia", "BackOffice")" method="post" class="form-horizontal">
     <div class="form-group">
         <label class="control-label col-sm-2" for="nombre">Nombre de usuario:</label>
@@ -21,6 +24,6 @@
     </div>
     <br />
     <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 392px" />
-    <br/>
+    <br />
     <b>@ViewBag.Mensaje</b>
 </form>

@@ -2,8 +2,24 @@
     ViewBag.Title = "ListarPreguntas";
 }
 
-<h2>Listado de preguntas</h2>
-<td>@Html.ActionLink("Agregar pregunta", "AgregarPregunta", "BackOffice", new { @class = "btn btn-info" })</td>
+<style>
+    #categorias {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    .agrpreg {
+        margin-top: -10px;
+    }
+</style>
+
+<div class="jumbotron text-center">
+    <h1>Listado de preguntas</h1>
+</div>
+
+<td>@Html.ActionLink("Agregar pregunta", "AgregarPregunta", "BackOffice", new { @class = "btn btn-info agrpreg" })</td>
+<td>@Html.ActionLink("Agregar categoria de pregunta", "AgregarCategoriaPregunta", "BackOffice", new { @class = "btn btn-info agrpreg" })</td>
+
 <h3>@Session["Mensaje"]</h3>
 <style>
     table, th, td {
@@ -11,16 +27,15 @@
     }
 </style>
 
-<form action="@Url.Action("ListarPreguntas", "BackOffice")" method="post">
-
+<form action="@Url.Action("ListarPreguntas", "BackOffice")" method="post" id="categorias">
+    Ordenar por:
     <select name="Categoria">
         @foreach (string sCat in BD.dicCategoriasPreguntas.Values)
         {
             <option value="@sCat"> @sCat </option>
         }
     </select>
-
-    <input type="submit" name="Enviar" />
+    <input type="submit" name="Submit" value="Enviar" class="btn btn-success" />
 </form>
 
 <table class="table table-bordered">

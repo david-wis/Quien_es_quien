@@ -221,18 +221,6 @@ namespace Quien_es_Quien.Controllers
 
         public ActionResult ListarPersonajes(string Categoria)
         {
-            /*List<Personaje> listaTemp = BD.listaPersonajes;
-            int iCantLista = listaTemp.Count();
-            int iPosLista = 0;
-
-            while (iPosLista < iCantLista)
-            {
-                if (listaTemp[iPosLista].Categoria != Categoria)
-                {
-                    listaTemp.RemoveAt(iPosLista);
-                }
-                iPosLista++;
-            }*/
             BD.listaPersonajes = BD.ListarPersonajes(Categoria);
             ViewBag.ListaCategorias = BD.dicCategorias;
             ViewBag.listaPersonajes = BD.listaPersonajes;

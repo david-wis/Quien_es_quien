@@ -2,18 +2,18 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h1>Index</h1>
 
 <div class="jumbotron">
     <h1>¡Bienvenido, @Session["nombre"]!</h1>
     <p>
-        <a href="@Url.Action("Index", "Juego")" class="btn btn-primary btn-lg">Comenzar a jugar &raquo;</a>
+        <a href="@Url.Action("Juego", "Juego")" class="btn btn-primary btn-lg">Comenzar a jugar &raquo;</a>
     </p>
     <p>
-        <a href="@Url.Action("ListarPersonajes", "BackOffice")" class="btn btn-primary btn-danger">Ver la lista de los personajes &raquo;</a>
+        <a href="@Url.Action("ListarPersonajes", "BackOffice")" class="btn btn-primary btn-danger">Ver la lista de personajes &raquo;</a>
     </p>
     <p>
-        <a href="@Url.Action("ListarPreguntas", "BackOffice")" class="btn btn-primary btn-danger" ">Ver la lista de preguntas &raquo;</a>
+        <a href="@Url.Action("ListarPreguntas", "BackOffice")" class="btn btn-primary btn-danger">Ver la lista de preguntas &raquo;</a>
     </p>
 
 </div>

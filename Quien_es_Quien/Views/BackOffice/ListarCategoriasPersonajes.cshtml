@@ -2,7 +2,9 @@
     ViewBag.Title = "ListarCategoriasPersonajes";
 }
 
-<h2>Listado de categorias de personajes</h2>
+<div class="jumbotron text-center">
+    <h1>Listado de categorias de personajes</h1>
+</div>
 
 <td>@Html.ActionLink("Agregar categoria de personajes", "AgregarCategoriaPersonajes", "BackOffice", new { @class = "btn btn-info" })</td>
 <h3>@Session["Mensaje"]</h3>

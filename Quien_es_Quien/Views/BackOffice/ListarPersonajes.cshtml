@@ -4,6 +4,7 @@
 
 <h2>Listado de personajes</h2>
 <td>@Html.ActionLink("Agregar personaje", "AgregarPersonaje", "BackOffice", new { @class = "btn btn-info" })</td>
+<td>@Html.ActionLink("Agregar categoria de personaje", "AgregarCategoriaPersonaje", "BackOffice", new { @class = "btn btn-info" })</td>
 <h3>@Session["Mensaje"]</h3>
 <style>
     table, th, td {
@@ -17,29 +18,35 @@
         {
             <script>alert("El personaje no pudo ingresarse ya que no se metio ninguna foto")</script>
         }
-    } catch(NullReferenceException)
+    }
+    catch (NullReferenceException)
     {
         //Nada que ver aqui
     }
 
 }
-<form action="@Url.Action("ListarPersonajes", "BackOffice")" method="post">
-
+<style>
+    #categorias {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+</style>
+<form action="@Url.Action("ListarPersonajes", "BackOffice")" method="post" id="categorias">
+    Ordenar por:
     <select name="Categoria">
         @foreach (string sCat in BD.dicCategorias.Values)
         {
             <option value="@sCat"> @sCat </option>
         }
     </select>
-
-    <input type="submit" name="Enviar" />
+    <input type="submit" name="Submit" value="Enviar" class="btn btn-success" />
 </form>
 
 <table class="table table-bordered">
     <tr>
-        <th>Nombre</th>
-        <th>Foto</th>
-        <th>Categoria</th>
+        <th><b>Nombre</b></th>
+        <th><b>Foto</b></th>
+        <th><b>Categoria</b></th>
         <th></th>
         <th></th>
         <th></th>
@@ -49,9 +56,8 @@
         string nombreFile = unPers.IDPersonaje + ".jpg";
         <tr>
             <td>@unPers.Nombre</td>
-            <td><img src="~/Content/Fotos/@nombreFile" alt="SuperPic que no cargo" width="300px"></td>
+            <td><img src="~/Content/Fotos/@nombreFile" alt="SuperPic que no cargo" width="300"></td>
             <td>@unPers.Categoria</td>
-
             <td>@Html.ActionLink("Modificar personaje", "ModificarPersonaje", "BackOffice", new { id = unPers.IDPersonaje, @class = "btn btn-info" }, null)</td> <!--Mandas como parametro el ID del personaje a modificar-->
             <td>@Html.ActionLink("Borrar Personaje", "BorrarPersonaje", "BackOffice", new { id = unPers.IDPersonaje, @class = "btn btn-info" }, null)</td>
             <td>@Html.ActionLink("Cambiar caracterisitcas del personaje", "CaracteristicasPersonaje", "BackOffice", new { id = unPers.IDPersonaje, @class = "btn btn-info" }, null)</td>

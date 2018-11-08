@@ -3,7 +3,10 @@
     ViewBag.Title = "AgregarPregunta";
 }
 
-<h2>Agregar una pregunta</h2>
+<div class="jumbotron text-center">
+    <h1>Agregar una pregunta</h1>
+</div>
+
 
 @using (Html.BeginForm("AgregarPregunta", "BackOffice", FormMethod.Post))
 {
@@ -24,7 +27,7 @@
         @Html.Label("Categoria: ", new { @for = "Categoria" })
         @Html.DropDownListFor(x => x.IDCategoria, new SelectList(BD.dicCategoriasPreguntas, "Key", "Value"), new { @class = "form-control", @id = "Categoria" })
         @Html.ValidationMessageFor(x => x.IDCategoria, "", new { @style = "color:red" })
-    </div>    
-    
-    <input type="submit" name="Enviar" class="btn btn-info"/>
+    </div>
+
+    <input type="submit" name="Enviar" class="btn btn-info" />
 }

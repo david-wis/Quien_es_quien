@@ -4,7 +4,10 @@
     ViewBag.Title = "AgregarPersonaje";
 }
 
-<h2>Agregar un personaje</h2>
+<div class="jumbotron text-center">
+    <h1>Agregar un personaje</h1>
+</div>
+
 
 @using (Html.BeginForm("AgregarPersonaje", "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
@@ -13,18 +16,18 @@
         @Html.TextBoxFor(x => x.Nombre, new { @class = "form-control", @id = "nombre" })
         @Html.ValidationMessageFor(x => x.Nombre, "", new { @style = "color:red" })
     </div>
-    
+
     <div class="form-group">
         @Html.Label("Foto: ", new { @for = "foto" })
         @Html.TextBoxFor(x => x.Img, new { type = "file", @id = "foto" })
         @Html.ValidationMessageFor(x => x.Img, "", new { @style = "color:red" })
     </div>
-    
+
     <div class="form-group">
         @Html.Label("Categoria: ", new { @for = "Categoria" })
         @Html.DropDownListFor(x => x.Categoria, new SelectList(BD.dicCategorias, "Value", "Value"), new { @class = "form-control", @id = "Categoria" })
-        @Html.ValidationMessageFor(x => x.Categoria, "", new { @style = "color:red" }) <br />        
-    </div>    
+        @Html.ValidationMessageFor(x => x.Categoria, "", new { @style = "color:red" }) <br />
+    </div>
 
     <input type="submit" name="Enviar" class="btn btn-info" />
 }

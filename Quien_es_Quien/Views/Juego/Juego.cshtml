@@ -1,41 +1,44 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Juego";
 }
 
 <script>
 
+    var puntaje = 1000000;
+    var puntajeRestar;
     var IDPreg = null;
-    function CambiarID(ID) {
+    function CambiarID(ID, puntaje) {
         IDPreg = ID;
-        alert(ID);
+        puntajeRestar = puntaje;
     }
 
     function Preguntar() {
-        alert("hola");
-        $('#myModal').modal('hide');//tuve que usar jquery
-        divsPers = document.getElementsByClassName("personaje");
-        for (i = 0; i < divsPers.length; i++) {
-            vecResp = divsPers[i].getElementsByClassName("respuesta");
-            encontrado = false;
-            for (j = 0; j < vecResp.length; j++) {
-                if (vecResp[j].innerHtml == ID) {
-                    encontrado = true;
-                }
-            }
-            if (encontrado) {
-                divsPers[i].style.visibility = "hidden";
+        $('#myModal').modal('hide');
+        //divsPers = $('.personaje');
+        vecResp = $('.personaje .respuesta');
+        for (i = 0; i < vecResp.length; i++) {
+            if (vecResp[i].innerHTML == IDPreg) {
+                vecResp[i].parentNode.style.display = 'none';
             }
         }
-
+        puntaje -= puntajeRestar;
+        $("#puntajeGlobal").text(puntaje);
     }
 </script>
 
 <style>
-    #containerfotos {
-        width: 720px;
-        height: 400px;
+    #containertodo {
+        width: 800px;
         margin: auto auto;
+    }
+
+    #containerfotos {
+        height: 720px;
+        margin: auto auto;
+    }
+
+    #containerpreguntas {
+        float: right;
     }
 
     img {
@@ -46,6 +49,7 @@
     .personaje {
         display: block;
         width: 100px;
+        height: 130px;
         float: left;
         margin: 10px;
     }
@@ -55,52 +59,59 @@
         text-align: center;
         font-weight: bold;
     }
+
+    .puntaje {
+        display: none;
+    }
 </style>
 
-<h2>Juego</h2>
-<div id="containerfotos">
-    @foreach (Personaje p in BD.listaPersonajes)
-    {
-        string nombreFile = p.IDPersonaje + ".jpg";
-        <div id="@p.IDPersonaje" class="personaje">
-            <img src="~/Content/Fotos/@nombreFile" />
-            <span class="txtFoto">@p.Nombre</span>
-            @foreach (int preg in p.ListaPregs)
-            {
-                string id = p.IDPersonaje + "_pregs";
-                <span class="respuesta" style="visibility:hidden">@preg</span>
-            }
-        </div>
-    }
-</div>
-
-<div id="containerpreguntas">
-    <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Elegir pregunta</button>
-
-    <!-- Modal -->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Preguntas</h4>
-                </div>
-                <div class="modal-body">
-                    @foreach (Pregunta p in ViewBag.listaPreguntas)
-                    {
-                        <label for="@p.IDPregunta">@p.TextoPregunta</label>
-                        <input type="radio" onclick="CambiarID(@p.IDPregunta)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
-                        <br />
-                    }
-                </div>
-                <div class="modal-footer">
-                    <button id="botonPreguntar" type="button" onclick="Preguntar()" class="btn btn-default">Pregunta</button>
-                </div>
+<h2>Puntaje: <span id="puntajeGlobal">1000000</span></h2>
+<div id="containertodo">
+    <div id="containerfotos">
+        @foreach (Personaje p in BD.listaPersonajes)
+        {
+            string nombreFile = p.IDPersonaje + ".jpg";
+            <div id="@p.IDPersonaje" class="personaje">
+                <img src="~/Content/Fotos/@nombreFile" />
+                <span class="txtFoto">@p.Nombre</span>
+                @foreach (int preg in p.ListaPregs)
+                {
+                    string id = p.IDPersonaje + "_pregs";
+                    <span class="respuesta" style="display:none">@preg</span>
+                }
             </div>
+        }
+    </div>
 
+    <div id="containerpreguntas">
+        <!-- Trigger the modal with a button -->
+        <button id="btnTrigger" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Elegir pregunta</button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Preguntas</h4>
+                    </div>
+                    <div class="modal-body">
+                        @foreach (Pregunta p in ViewBag.listaPreguntas)
+                        {
+                            <label for="@p.IDPregunta">@p.TextoPregunta</label>
+                            <input type="radio" onclick="CambiarID(@p.IDPregunta, @p.Valor)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
+                            <span class="@p.IDPregunta puntaje">@p.Valor</span>
+                            <br />
+                        }
+                    </div>
+                    <div class="modal-footer">
+                        <button id="botonPreguntar" type="button" onclick="Preguntar()" class="btn btn-default">Pregunta</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

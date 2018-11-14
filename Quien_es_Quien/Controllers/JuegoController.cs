@@ -66,5 +66,20 @@ namespace Quien_es_Quien.Controllers
             BD.CategoriaJuego = Categoria;
             return RedirectToAction("Index", "Juego");
         }
+
+        [HttpPost]
+
+        public ActionResult AgregarPartida(string Ganador, string Perdedor, int PuntosGanador, string TipoPartida)
+        {
+            BD.AgregarPartida(Ganador, Perdedor, PuntosGanador, TipoPartida);
+            return RedirectToAction("holis"); //aca hay que cambiarlo porque no tengo idea a donde carajo va
+        }
+
+        [HttpPost]
+        public ActionResult FinDelJuego(string Tipo)
+        {
+            ViewBag.Tipo = Tipo;
+            return View();
+        }
     }
 }

@@ -526,5 +526,35 @@ namespace Quien_es_Quien
             Desconectar(conexion);
             return listaTiposPartida;
         }
+
+        public static string AgregarPartida(string Ganador, string Perdedor, int PuntosGanador, string Tipo)
+        {
+            string sRespuesta = null;
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_AgregarPartida";
+            query.Parameters.AddWithValue("@Ganador", Ganador);
+            query.Parameters.AddWithValue("@Perdedor", Perdedor);
+            query.Parameters.AddWithValue("@PuntosGanador", PuntosGanador);
+            query.Parameters.AddWithValue("@Tipo", Tipo);
+            SqlDataReader lector = query.ExecuteReader();
+            if (lector.Read())
+            {
+                try
+                {
+                    sRespuesta = lector["Error"].ToString();
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    if (lector["Success"] != null)
+                    {
+                        sRespuesta = "1";
+                    }
+                }
+            }
+            Desconectar(conexion);
+            return sRespuesta;
+        }
     }
 }

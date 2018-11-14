@@ -20,6 +20,10 @@ namespace Quien_es_Quien.Controllers
                 img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
             }
 
+            Random rnd = new Random();
+            int persElegido = BD.listaPersonajes[rnd.Next(BD.listaPersonajes.Count)].IDPersonaje;
+            ViewBag.persElegido = persElegido;
+
             ViewBag.listaPreguntas = BD.ObtenerPreguntas(null);
 
             foreach (Personaje p in BD.listaPersonajes)
@@ -32,7 +36,7 @@ namespace Quien_es_Quien.Controllers
 
 
         [HttpPost]
-        public ActionResult Juego(int idPregunta)
+        public ActionResult Juego(bool Victoria)
         {
             return View();
         }
@@ -75,10 +79,16 @@ namespace Quien_es_Quien.Controllers
             return RedirectToAction("holis"); //aca hay que cambiarlo porque no tengo idea a donde carajo va
         }
 
-        [HttpPost]
-        public ActionResult FinDelJuego(string Tipo)
+        public ActionResult FinDeJuego()
         {
-            ViewBag.Tipo = Tipo;
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult FinDeJuego(string Tipo)
+        {
+            
             return View();
         }
     }

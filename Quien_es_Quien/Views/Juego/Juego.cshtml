@@ -12,29 +12,82 @@
         puntajeRestar = puntaje;
     }
 
-    function Preguntar() {
+    function Arriesgar(IDPers, CorrectIDPers) {
+        alert(CorrectIDPers);
+        if (IDPers == CorrectIDPers) {
+            //Ir a victoria
+            window.location.href = '@Url.Action("FinDeJuego", "Juego")';
+        } else {
+            if (puntaje > 100) {
+                puntaje = Math.round(puntaje / 2);//Rendondeo
+                $('#' + IDPers).fadeOut(1000, function () {
+                    $(this).remove();
+                });
+            } else {
+                window.location.href = '@Url.Action("FinDeJuego", "Juego")';
+            }
+            $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+        }
+    }
+
+    function Preguntar(PersElegido) {
         if (IDPreg != null) {
-            $('#p' + IDPreg).remove();
-            $('#myModal').modal('hide');
+            $('#p' + IDPreg).remove();//Elimina la pregunta elegida de la lista
+            $('#myModal').modal('hide');//Oculta el modal (la ventanita esa que sale)
 
-            //Por las dudas dejo la version vieja
-            //
-            //vecResp = $('.personaje .respuesta');
-            /*for (i = 0; i < vecResp.length; i++) {
-                if (vecResp[i].innerHTML == IDPreg) {
-                    vecResp[i].parentNode.style.display = 'none';
-                }
-            }*/
-
-            //Esta belleza de jquery hace lo mismo que el de arriba solo que en vez de borrar un elemento lo fadeoutea
-            $.each($('.personaje .respuesta'), function () {
-                if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
-                    $(this).parent().fadeOut(1000);//Desvanece el div entero
+            //Primero nos fijamos si la pregunta esta adentro de las de nuestro personaje
+            preguntaCorresponde = false;
+            $.each($('#' + PersElegido + ' .respuesta'), function () {
+                if ($(this).html() == IDPreg) {
+                    preguntaCorresponde = true;
                 }
             });
 
-            puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
-            $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+
+            if (preguntaCorresponde) {//Si la pregunta va a dejar al personaje como opcion sacamos el resto
+                //Por las dudas dejo la version vieja
+                //
+                //vecResp = $('.personaje .respuesta');
+                /*for (i = 0; i < vecResp.length; i++) {
+                    if (vecResp[i].innerHTML == IDPreg) {
+                        vecResp[i].parentNode.style.display = 'none';
+                    }
+                }*/
+                alert("Sip");
+                $.each($('.personaje'), function () {
+                    $(this).addClass('purga');
+                });
+
+                //Esta belleza de jquery hace lo mismo que el de arriba solo que en vez de borrar un elemento lo fadeoutea
+                $.each($('.personaje .respuesta'), function () {
+                    if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
+                        $(this).parent().removeClass('purga');
+                    }
+                });
+
+                $('.purga').fadeOut(1000, function () {//Desvanece el div entero en un segundo (1000 milisec), y luego lo borra
+                    $(this).remove();//purgamos a todos los inferiores
+                });
+                //$('.personaje').fadeIn(1000);
+            } else {//Si la pregunta no va a dejar al personaje, purgamos a los superiores :vvv (purga para todes)
+                alert("Nope");
+                $.each($('.personaje .respuesta'), function () {
+                    if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
+                        $(this).parent().fadeOut(1000, function () {
+                            $(this).remove();
+                        });
+                    }
+                });
+            }
+
+            if (puntaje - puntajeRestar > 0) {
+                puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
+                $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+                IDPreg = null;//Asi no queda ninguna pregunta seleccionada
+            } else {
+                //Ir a la action de game over
+                window.location.href = '@Url.Action("FinDeJuego", "Juego")'; 
+            }
         }
     }
 </script>
@@ -88,11 +141,10 @@
         {
             string nombreFile = p.IDPersonaje + ".jpg";
             <div id="@p.IDPersonaje" class="personaje">
-                <img src="~/Content/Fotos/@nombreFile" />
+                <img src="~/Content/Fotos/@nombreFile" alt=":'v" onclick="Arriesgar(@p.IDPersonaje, @ViewBag.persElegido)"/>
                 <span class="txtFoto">@p.Nombre</span>
                 @foreach (int preg in p.ListaPregs)
                 {
-                    string id = p.IDPersonaje + "_pregs";
                     <span class="respuesta" style="display:none">@preg</span>
                 }
             </div>
@@ -125,7 +177,7 @@
                         }
                     </div>
                     <div class="modal-footer">
-                        <button id="botonPreguntar" type="button" onclick="Preguntar()" class="btn btn-default">Pregunta</button>
+                        <button id="botonPreguntar" type="button" onclick="Preguntar(@ViewBag.persElegido)" class="btn btn-default">Pregunta</button>
                     </div>
                 </div>
 

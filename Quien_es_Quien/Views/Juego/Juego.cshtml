@@ -45,20 +45,10 @@
 
 
             if (preguntaCorresponde) {//Si la pregunta va a dejar al personaje como opcion sacamos el resto
-                //Por las dudas dejo la version vieja
-                //
-                //vecResp = $('.personaje .respuesta');
-                /*for (i = 0; i < vecResp.length; i++) {
-                    if (vecResp[i].innerHTML == IDPreg) {
-                        vecResp[i].parentNode.style.display = 'none';
-                    }
-                }*/
-                alert("Sip");
                 $.each($('.personaje'), function () {
                     $(this).addClass('purga');
                 });
 
-                //Esta belleza de jquery hace lo mismo que el de arriba solo que en vez de borrar un elemento lo fadeoutea
                 $.each($('.personaje .respuesta'), function () {
                     if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
                         $(this).parent().removeClass('purga');
@@ -70,7 +60,6 @@
                 });
                 //$('.personaje').fadeIn(1000);
             } else {//Si la pregunta no va a dejar al personaje, purgamos a los superiores :vvv (purga para todes)
-                alert("Nope");
                 $.each($('.personaje .respuesta'), function () {
                     if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
                         $(this).parent().fadeOut(1000, function () {

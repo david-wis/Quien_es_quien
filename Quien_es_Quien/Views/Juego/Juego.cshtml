@@ -13,31 +13,47 @@
     }
 
     function Preguntar() {
-        $('#myModal').modal('hide');
-        //divsPers = $('.personaje');
-        vecResp = $('.personaje .respuesta');
-        for (i = 0; i < vecResp.length; i++) {
-            if (vecResp[i].innerHTML == IDPreg) {
-                vecResp[i].parentNode.style.display = 'none';
-            }
+        if (IDPreg != null) {
+            $('#p' + IDPreg).remove();
+            $('#myModal').modal('hide');
+
+            //Por las dudas dejo la version vieja
+            //
+            //vecResp = $('.personaje .respuesta');
+            /*for (i = 0; i < vecResp.length; i++) {
+                if (vecResp[i].innerHTML == IDPreg) {
+                    vecResp[i].parentNode.style.display = 'none';
+                }
+            }*/
+
+            //Esta belleza de jquery hace lo mismo que el de arriba solo que en vez de borrar un elemento lo fadeoutea
+            $.each($('.personaje .respuesta'), function () {
+                if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
+                    $(this).parent().fadeOut(1000);//Desvanece el div entero
+                }
+            });
+
+            puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
+            $("#puntajeGlobal").text(puntaje);//Actualiza el texto
         }
-        puntaje -= puntajeRestar;
-        $("#puntajeGlobal").text(puntaje);
     }
 </script>
 
 <style>
     #containertodo {
-        width: 800px;
+        height: 700px;
         margin: auto auto;
     }
 
     #containerfotos {
-        height: 720px;
+        height: 600px;
         margin: auto auto;
+        overflow-y: scroll;
     }
 
     #containerpreguntas {
+        position: relative;
+        top: 10px;
         float: right;
     }
 
@@ -100,10 +116,12 @@
                     <div class="modal-body">
                         @foreach (Pregunta p in ViewBag.listaPreguntas)
                         {
-                            <label for="@p.IDPregunta">@p.TextoPregunta</label>
-                            <input type="radio" onclick="CambiarID(@p.IDPregunta, @p.Valor)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
-                            <span class="@p.IDPregunta puntaje">@p.Valor</span>
-                            <br />
+                            string txtID = "p" + p.IDPregunta;
+                            <span id="@txtID">
+                                <label for="@p.IDPregunta">@p.TextoPregunta</label>
+                                <input type="radio" onclick="CambiarID(@p.IDPregunta, @p.Valor)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
+                                <br />
+                            </span>
                         }
                     </div>
                     <div class="modal-footer">

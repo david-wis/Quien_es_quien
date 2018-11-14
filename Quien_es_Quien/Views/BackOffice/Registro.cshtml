@@ -20,6 +20,12 @@
         <label class="control-label col-sm-2" for="dni">DNI: </label>
         <input type="text" name="dni" placeholder="48613259" class="form-control" />
     </div>
+    <div class="form-group">
+        <input type="checkbox" value="true" name="admin" />
+        <label class="control-label col-sm-2"> Administrador </label> <br />
+        <input type="text" name="pin" placeholder="PIN de administradores" class="form-control" />
+        <!--Modificar para que el textbox aparezca solo cuando selecciono el checkbox de admin-->
+    </div>
     <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 405px" />
     <br /> <b>@ViewBag.Mensaje</b>
 </form>

@@ -76,7 +76,7 @@ namespace Quien_es_Quien
             return sRespuesta;
         }
 
-        public static string Registrar(string Nombre, string Contra, int Dni)
+        public static string Registrar(string Nombre, string Contra, int Dni, int Pin)
         {
             string sRespuesta = null;
             SqlConnection conexion = Conectar();
@@ -84,8 +84,8 @@ namespace Quien_es_Quien
             query.CommandType = System.Data.CommandType.StoredProcedure;
             query.CommandText = "sp_AgregarUsuario";
             query.Parameters.AddWithValue("@Nombre", Nombre);
-            query.Parameters.AddWithValue("@Contrasenia", Contra);
-            query.Parameters.AddWithValue("@Administrador", 0);
+            query.Parameters.AddWithValue("@Contrasenia", Contra);            
+            query.Parameters.AddWithValue("@Pin", Pin);
             query.Parameters.AddWithValue("@DNI", Dni);
             SqlDataReader lector = query.ExecuteReader();
             if (lector.Read())

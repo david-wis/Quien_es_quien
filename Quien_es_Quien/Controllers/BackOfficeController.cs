@@ -95,20 +95,33 @@ namespace Quien_es_Quien.Controllers
 
         [HttpPost]
 
-        public ActionResult Registro(string nombre, string contrasenia, string dni)
+        public ActionResult Registro(string nombre, string contrasenia, string dni, string pin, bool admin = false)
         {
             int DNIPosta;
-            bool exito = int.TryParse(dni, out DNIPosta);
-            if (exito && DNIPosta >= 10000000 && DNIPosta <= 99999999)
+            bool exitoDNI = int.TryParse(dni, out DNIPosta);
+            int PinPosta = 0; //Si no quiere ser admin, se manda cero
+            bool exitoPin = false;
+            if (admin)
             {
-                string retorno = BD.Registrar(nombre, contrasenia, DNIPosta);
-                if (retorno == "1")
+                exitoPin = int.TryParse(pin, out PinPosta);
+            }
+            if (exitoDNI && DNIPosta >= 10000000 && DNIPosta <= 99999999)
+            {
+                if ((exitoPin == true) || (admin == false)) //Si selecciono admin pero no se pudo convertir hay ERROR
                 {
-                    return RedirectToAction("Login", "BackOffice");
+                    string retorno = BD.Registrar(nombre, contrasenia, DNIPosta, PinPosta);
+                    if (retorno == "1")
+                    {
+                        return RedirectToAction("Login", "BackOffice");
+                    }
+                    else
+                    {
+                        ViewBag.Mensaje = retorno;
+                    }
                 }
                 else
                 {
-                    ViewBag.Mensaje = retorno;
+                    ViewBag.Mensaje = "El PIN ingresado es inválido";
                 }
             }
             else
@@ -212,6 +225,8 @@ namespace Quien_es_Quien.Controllers
                 Image img = Image.FromStream(imgStream);
                 img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
             }
+            List<Personaje> listaOrdenadaPers = BD.listaPersonajes.OrderBy(x => x.Nombre).ToList(); //Ordena alfabeticamente la lista y la guarda en una temporal
+            BD.listaPersonajes = listaOrdenadaPers; //Asigno a la lista de la BD la lista ordenada alfabeticamente
             ViewBag.ListaCategorias = BD.dicCategorias;
             ViewBag.ListaPersonajes = BD.listaPersonajes;
             return View();
@@ -222,6 +237,8 @@ namespace Quien_es_Quien.Controllers
         public ActionResult ListarPersonajes(string Categoria)
         {
             BD.listaPersonajes = BD.ListarPersonajes(Categoria);
+            List<Personaje> listaOrdenadaPers = BD.listaPersonajes.OrderBy(x => x.Nombre).ToList(); //Ordena alfabeticamente la lista y la guarda en una temporal
+            BD.listaPersonajes = listaOrdenadaPers; //Asigno a la lista de la BD la lista ordenada alfabeticamente
             ViewBag.ListaCategorias = BD.dicCategorias;
             ViewBag.listaPersonajes = BD.listaPersonajes;
             return View();

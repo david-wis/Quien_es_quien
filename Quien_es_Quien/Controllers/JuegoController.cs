@@ -10,9 +10,9 @@ namespace Quien_es_Quien.Controllers
 {
     public class JuegoController : Controller
     {
-        public ActionResult Juego()
+        public ActionResult Juego(string nombre = null)
         {
-            BD.listaPersonajes = BD.ListarPersonajes(null);//Agregar para traer por categoria
+            BD.listaPersonajes = BD.ListarPersonajes(nombre);//Agregar para traer por categoria
             foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
             {
                 MemoryStream imgStream = new MemoryStream(p.Foto);

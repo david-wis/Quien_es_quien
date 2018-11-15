@@ -211,7 +211,8 @@
     <Content Include="Views\Juego\Juego.cshtml" />
     <Content Include="Views\Juego\ElegirModoJuego.cshtml" />
     <Content Include="Views\Juego\ElegirCategoria.cshtml" />
-    <Content Include="Views\Juego\FinDeJuego.cshtml" />
+    <Content Include="Views\Juego\Ganaste.cshtml" />
+    <Content Include="Views\Juego\Perdiste.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

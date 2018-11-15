@@ -16,7 +16,8 @@
         alert(CorrectIDPers);
         if (IDPers == CorrectIDPers) {
             //Ir a victoria
-            window.location.href = '@Url.Action("FinDeJuego", "Juego")';
+            var href = '@Url.Action("Ganaste", "Juego", new { puntaje = puntaje })';
+            window.location.href = href;
         } else {
             if (puntaje > 100) {
                 puntaje = Math.round(puntaje / 2);//Rendondeo
@@ -24,7 +25,7 @@
                     $(this).remove();
                 });
             } else {
-                window.location.href = '@Url.Action("FinDeJuego", "Juego")';
+                window.location.href = '@Url.Action("Perdiste", "Juego")';
             }
             $("#puntajeGlobal").text(puntaje);//Actualiza el texto
         }
@@ -75,7 +76,7 @@
                 IDPreg = null;//Asi no queda ninguna pregunta seleccionada
             } else {
                 //Ir a la action de game over
-                window.location.href = '@Url.Action("FinDeJuego", "Juego")'; 
+                window.location.href = '@Url.Action("Perdiste", "Juego")'; 
             }
         }
     }

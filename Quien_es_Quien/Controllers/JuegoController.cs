@@ -88,5 +88,12 @@ namespace Quien_es_Quien.Controllers
         {
             return View();
         }
+
+        public ActionResult RankingTop10()
+        {
+            Dictionary<string, int> dicTop10 = BD.RankingTop10();
+            ViewBag.dicTop10 = dicTop10;
+            return View();
+        }
     }
 }

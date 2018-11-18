@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "RankingTop10";
+}
+
+<h2>Nuestros mejores jugadores</h2>
+
+<style>
+    #colNombre {
+        width: 62%;
+        text-align: center;
+    }
+
+    #colPuntos {
+        /*width:38%;*/
+        text-align: center;
+    }
+
+    #tabla {
+        width: 300px;
+    }
+</style>
+<table id="tabla" class="table table-bordered">
+    <tr>
+        <th id="colNombre"><b>Nombre del jugador</b></th>
+        <th id="colPuntos"><b>Sus puntos</b></th>
+    </tr>
+    @foreach (string nombreUsu in ViewBag.dicTop10.Keys)
+    {
+        int iPuntos = ViewBag.dicTop10[nombreUsu];
+        <tr>
+            <td>@nombreUsu</td>
+            <td>@iPuntos</td>
+        </tr>
+    }
+</table>

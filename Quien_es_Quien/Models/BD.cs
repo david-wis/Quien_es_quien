@@ -556,5 +556,21 @@ namespace Quien_es_Quien
             Desconectar(conexion);
             return sRespuesta;
         }
+        public static Dictionary<string, int> RankingTop10()
+        {
+            Dictionary<string, int> dicTop10 = new Dictionary<string, int>();
+            SqlConnection conexion = Conectar();
+            SqlCommand comando = conexion.CreateCommand();
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.CommandText = "sp_ObtenerTop10";
+            SqlDataReader lector = comando.ExecuteReader();
+            while (lector.Read())
+            {
+                string nombreUsu = lector["Nombre"].ToString();
+                int puntajeUsu = Convert.ToInt32(lector["PuntajeTotal"]);
+                dicTop10.Add(nombreUsu, puntajeUsu);
+            }
+            return dicTop10;
+        }
     }
 }

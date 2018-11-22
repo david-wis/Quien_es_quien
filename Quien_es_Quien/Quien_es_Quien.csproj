@@ -213,7 +213,7 @@
     <Content Include="Views\Juego\ElegirCategoria.cshtml" />
     <Content Include="Views\Juego\Ganaste.cshtml" />
     <Content Include="Views\Juego\Perdiste.cshtml" />
-    <Content Include="Views\Juego\RankingTop10.cshtml" />
+    <Content Include="Views\Juego\Estadisticas.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,7 +1,9 @@
 ﻿
 @{
-    ViewBag.Title = "RankingTop10";
+    ViewBag.Title = "Estadisticas";
 }
+
+Jugaste @ViewBag.Jugadas partidas en total, de las cuales ganaste @ViewBag.Ganadas
 
 <h2>Nuestros mejores jugadores</h2>
 
@@ -19,6 +21,10 @@
     #tabla {
         width: 300px;
     }
+
+    .boton {
+        margin-bottom: 10px;
+    }
 </style>
 <table id="tabla" class="table table-bordered">
     <tr>
@@ -34,3 +40,10 @@
         </tr>
     }
 </table>
+@if (Convert.ToBoolean(Session["administrador"]))
+{
+    @Html.ActionLink("Volver al BackOffice", "IndexAdmins", "BackOffice", new { @class = "btn btn-primary boton" })
+}
+
+@Html.ActionLink("Volver a jugar", "ElegirModoJuego", "Juego", new { @class = "btn btn-primary boton" })  <br />
+

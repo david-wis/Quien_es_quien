@@ -48,7 +48,7 @@ namespace Quien_es_Quien.Controllers
             {
                 Session["nombre"] = nombre;
                 Session["administrador"] = false;
-                return RedirectToAction("Index", "Juego");
+                return RedirectToAction("ElegirModoJuego", "Juego");
             }
             else
             {

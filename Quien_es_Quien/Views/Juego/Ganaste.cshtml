@@ -7,8 +7,7 @@
     <h1>¡Ganaste!</h1>
 </div>
 <div class="form-group">
-    <h2>¡Felicitaciones, @Session["nombre"]! Ganaste @Session["puntaje"]</h2>
+    <h2>¡Felicitaciones, @Session["nombre"]! Ganaste @Session["puntaje"] puntos</h2>
 </div>
 
-@Html.ActionLink("Volver a jugar", "ElegirModoJuego", "Juego", new { @class = "btn btn-primary boton" })  <br />
-@Html.ActionLink("Volver al principio", "Index", "Juego", new { @class = "btn btn-primary" })
+@Html.ActionLink("Siguiente", "Estadisticas", "Juego", new { @class = "btn btn-primary boton" })  <br />

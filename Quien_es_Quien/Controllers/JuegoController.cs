@@ -96,10 +96,13 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
-        public ActionResult RankingTop10()
+        public ActionResult Estadisticas()
         {
             Dictionary<string, int> dicTop10 = BD.RankingTop10();
             ViewBag.dicTop10 = dicTop10;
+            int ID = BD.ObtenerIDUsuario(Session["nombre"].ToString());
+            ViewBag.Jugadas = BD.CantidadJugadas(ID);
+            ViewBag.Ganadas = BD.CantidadGanadas(ID);
             return View();
         }
     }

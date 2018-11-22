@@ -572,5 +572,77 @@ namespace Quien_es_Quien
             }
             return dicTop10;
         }
+
+        public static int CantidadJugadas(int Player)
+        {
+            int CantJugo = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand comando = conexion.CreateCommand();
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.CommandText = "sp_CantJugo";
+            comando.Parameters.AddWithValue("@IDUsuario", Player);
+            SqlDataReader lector = comando.ExecuteReader();
+            if (lector.Read())
+            {
+                try
+                {
+                    CantJugo = Convert.ToInt32(lector["CantJugo"]);
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    CantJugo = -1;
+                }
+            }
+            Desconectar(conexion);
+            return CantJugo;
+        }
+
+        public static int CantidadGanadas(int Player)
+        {
+            int CantGano = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand comando = conexion.CreateCommand();
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.CommandText = "sp_CantGano";
+            comando.Parameters.AddWithValue("@IDUsuario", Player);
+            SqlDataReader lector = comando.ExecuteReader();
+            if (lector.Read())
+            {
+                try
+                {
+                    CantGano = Convert.ToInt32(lector["CantGano"]);
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    CantGano = -1;
+                }
+            }
+            Desconectar(conexion);
+            return CantGano;
+        }
+
+        public static int ObtenerIDUsuario(string Player)
+        {
+            int ID = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand comando = conexion.CreateCommand();
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.CommandText = "sp_ObtenerID";
+            comando.Parameters.AddWithValue("@Usuario", Player);
+            SqlDataReader lector = comando.ExecuteReader();
+            if (lector.Read())
+            {
+                try
+                {
+                    ID = Convert.ToInt32(lector["IDUsuario"]);
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    ID = -1;
+                }
+            }
+            Desconectar(conexion);
+            return ID;
+        }
     }
 }

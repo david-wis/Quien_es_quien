@@ -3,5 +3,13 @@
     ViewBag.Title = "Perdiste";
 }
 
+<style>
+    .boton {
+        margin-bottom: 10px;
+    }
+</style>
+
 <h2>Perdiste :(</h2>
+@Html.ActionLink("Volver a jugar", "ElegirModoJuego", "Juego", new { @class = "btn btn-primary boton" })  <br />
+@Html.ActionLink("Volver al principio", "Index", "Juego", new { @class = "btn btn-primary" })
 

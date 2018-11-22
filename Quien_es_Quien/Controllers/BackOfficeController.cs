@@ -361,9 +361,9 @@ namespace Quien_es_Quien.Controllers
 
         [HttpPost]
 
-        public ActionResult AgregarCategoriaPersonaje(string CategoriaPersonaje)
+        public ActionResult AgregarCategoriaPersonaje(string nombre)
         {
-            string sRespuesta = BD.AgregarCategoriaPersonaje(CategoriaPersonaje);
+            string sRespuesta = BD.AgregarCategoriaPersonaje(nombre);
             if (sRespuesta == "1")
             {
                 Session["Mensaje"] = "La categoría de personaje se agrego correctamente";
@@ -372,7 +372,7 @@ namespace Quien_es_Quien.Controllers
             {
                 Session["Error"] = sRespuesta;
             }
-            return RedirectToAction("MenuCategoriasPersonaje", "BackOffice");
+            return RedirectToAction("ListarCategoriasPersonaje", "BackOffice");
         }
 
         public ActionResult AgregarCategoriaPregunta()
@@ -382,9 +382,9 @@ namespace Quien_es_Quien.Controllers
 
         [HttpPost]
 
-        public ActionResult AgregarCategoriaPregunta(string CategoriaPregunta)
+        public ActionResult AgregarCategoriaPregunta(string nombre)
         {
-            string sRespuesta = BD.AgregarCategoriaPregunta(CategoriaPregunta);
+            string sRespuesta = BD.AgregarCategoriaPregunta(nombre);
             if (sRespuesta == "1")
             {
                 Session["Mensaje"] = "La categoría de pregunta se agrego correctamente";
@@ -393,7 +393,7 @@ namespace Quien_es_Quien.Controllers
             {
                 Session["Error"] = sRespuesta;
             }
-            return RedirectToAction("MenuCategoriasPregunta", "BackOffice");
+            return RedirectToAction("ListarCategoriasPreguntas", "BackOffice");
         }
 
         public ActionResult AgregarPregunta()

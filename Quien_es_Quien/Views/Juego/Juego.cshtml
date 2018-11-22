@@ -12,11 +12,29 @@
         puntajeRestar = puntaje;
     }
 
+    function MandarPuntaje() {
+        jQuery.ajax({
+            type: "POST",
+            url: "@Url.Action("Ganaste", "Juego")",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({ score: puntaje }),
+            /*success: function (data) {
+                alert(data);
+                window.location.href = data;
+            },
+            failure: function () {
+                alert("Error");
+            }*/
+        });
+    }
+
     function Arriesgar(IDPers, CorrectIDPers) {
         alert(CorrectIDPers);
         if (IDPers == CorrectIDPers) {
             //Ir a victoria
-            var href = '@Url.Action("Ganaste", "Juego", new { puntaje = puntaje })';
+            MandarPuntaje();
+            var href = '@Url.Action("Ganaste", "Juego")';
             window.location.href = href;
         } else {
             if (puntaje > 100) {

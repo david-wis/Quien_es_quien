@@ -79,9 +79,16 @@ namespace Quien_es_Quien.Controllers
             return RedirectToAction("holis"); //aca hay que cambiarlo porque no tengo idea a donde carajo va
         }
 
-        public ActionResult Ganaste(int Puntaje)
+        public ActionResult Ganaste()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Ganaste(int score)
+        {
+            Session["puntaje"] = score;
+            return View("Ganaste");
         }
 
         public ActionResult Perdiste()

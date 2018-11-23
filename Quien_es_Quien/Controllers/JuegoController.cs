@@ -34,13 +34,6 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
-
-        [HttpPost]
-        public ActionResult Juego(bool Victoria)
-        {
-            return View();
-        }
-
         public ActionResult ElegirModoJuego()
         {
             List<string> listaTipos = new List<string>();
@@ -48,14 +41,36 @@ namespace Quien_es_Quien.Controllers
             ViewBag.ListaTipos = listaTipos;
             return View();
         }
+
+        public ActionResult ElegirModo(string nombre)
+        {
+            string Action = "";
+            BD.TipoPartida = nombre;
+            switch (BD.TipoPartida)
+            {
+                case "SinglePlayer":
+                    Action = "ElegirCategoria";
+                    break;
+                case "MultiPlayer":
+                    Action = "Lobby";
+                    break;
+                case "Aprendiz":
+                    break;
+                case "Profesional":
+                    break;
+                case "Supremo":
+                    break;
+            }
+            return RedirectToAction(Action, "Juego");
+        }
         
-        [HttpPost]
+        /*[HttpPost]
 
         public ActionResult ElegirModoJuego(string Tipo)
         {
             BD.TipoPartida = Tipo;
             return RedirectToAction("ElegirCategoria", "Juego");
-        }
+        }*/
 
         public ActionResult ElegirCategoria()
         {
@@ -64,11 +79,10 @@ namespace Quien_es_Quien.Controllers
         }
 
         [HttpPost]
-
         public ActionResult ElegirCategoria(string Categoria)
         {
             BD.CategoriaJuego = Categoria;
-            return RedirectToAction("Index", "Juego");
+            return RedirectToAction("Juego", "Juego");
         }
 
         [HttpPost]

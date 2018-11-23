@@ -87,9 +87,9 @@ namespace Quien_es_Quien.Controllers
 
         [HttpPost]
 
-        public ActionResult AgregarPartida(string Ganador, string Perdedor, int PuntosGanador, string TipoPartida)
+        public ActionResult AgregarPartida(string Ganador, string Perdedor, string TipoPartida, int PuntosGanador)
         {
-            BD.AgregarPartida(Ganador, Perdedor, PuntosGanador, TipoPartida);
+            BD.AgregarPartida(Ganador, Perdedor, TipoPartida, PuntosGanador);
             return RedirectToAction("holis"); //aca hay que cambiarlo porque no tengo idea a donde carajo va
         }
 
@@ -100,20 +100,16 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
-        public ActionResult Ganaste()
-        {
-            return View();
-        }
-
-        [HttpPost]
         public ActionResult Ganaste(int score)
         {
             Session["puntaje"] = score;
-            return View("Ganaste");
+            BD.AgregarPartida(Session["nombre"].ToString(), null, BD.TipoPartida, Convert.ToInt32(Session["puntaje"]));
+            return View();
         }
 
         public ActionResult Perdiste()
         {
+            BD.AgregarPartida(null, Session["nombre"].ToString(), BD.TipoPartida, 0);
             return View();
         }
 
@@ -125,6 +121,34 @@ namespace Quien_es_Quien.Controllers
             ViewBag.Jugadas = BD.CantidadJugadas(ID);
             ViewBag.Ganadas = BD.CantidadGanadas(ID);
             return View();
+        }
+        public ActionResult CrearPartida(string UsuarioCreador)
+        {
+            BD.AgregarPartida(UsuarioCreador, null, BD.TipoPartida, 0);
+            return RedirectToAction("ElegirPersOtro", "Juego");
+        }
+
+        public ActionResult ElegirPersOtro()
+        {
+            BD.listaPersonajes = BD.ListarPersonajes(null);
+            BD.ObtenerCategoriasPersonajes();
+            foreach (Personaje p in BD.listaPersonajes)
+            {
+                MemoryStream imgStream = new MemoryStream(p.Foto);
+                Image img = Image.FromStream(imgStream);
+                img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
+            List<Personaje> listaOrdenadaPers = BD.listaPersonajes.OrderBy(x => x.Nombre).ToList(); //Ordena alfabeticamente la lista y la guarda en una temporal
+            BD.listaPersonajes = listaOrdenadaPers; //Asigno a la lista de la BD la lista ordenada alfabeticamente
+            ViewBag.ListaCategorias = BD.dicCategorias;
+            ViewBag.ListaPersonajes = BD.listaPersonajes;
+            return View();
+        }
+
+        [HttpPost]
+        public void ElegirPO(int id)
+        {
+
         }
     }
 }

@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "ElegirPersonaje";
+}
+
+
+<style>
+    #containertodo {
+        height: 380px;
+        margin: auto auto;
+    }
+
+    #containerfotos {
+        height: 335px;
+        margin: auto auto;
+        overflow-y: scroll;
+    }
+
+    #containerpreguntas {
+        position: relative;
+        top: 10px;
+        float: right;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .personaje {
+        display: block;
+        width: 100px;
+        height: 130px;
+        float: left;
+        margin: 10px;
+    }
+
+    .txtFoto {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .puntaje {
+        display: none;
+    }
+</style>
+
+<div id="containertodo">
+    <div id="containerfotos">
+        @foreach (Personaje p in BD.listaPersonajes)
+        {
+            string nombreFile = p.IDPersonaje + ".jpg";
+            <a href="@Url.Action("ElegirPO", "Juego")">
+                <div id="@p.IDPersonaje" class="personaje">
+                    <img src="~/Content/Fotos/@nombreFile" alt=":'v" onclick="Elegir(@p.IDPersonaje)" />
+                    <span class="txtFoto">@p.Nombre</span>
+                </div>
+            </a>
+        }
+    </div>
+</div>

@@ -215,6 +215,7 @@
     <Content Include="Views\Juego\Perdiste.cshtml" />
     <Content Include="Views\Juego\Estadisticas.cshtml" />
     <Content Include="Views\Juego\MenuMultiplayer.cshtml" />
+    <Content Include="Views\Juego\ElegirPersOtro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

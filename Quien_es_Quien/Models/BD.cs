@@ -84,7 +84,7 @@ namespace Quien_es_Quien
             query.CommandType = System.Data.CommandType.StoredProcedure;
             query.CommandText = "sp_AgregarUsuario";
             query.Parameters.AddWithValue("@Nombre", Nombre);
-            query.Parameters.AddWithValue("@Contrasenia", Contra);            
+            query.Parameters.AddWithValue("@Contrasenia", Contra);
             query.Parameters.AddWithValue("@Pin", Pin);
             query.Parameters.AddWithValue("@DNI", Dni);
             SqlDataReader lector = query.ExecuteReader();
@@ -114,7 +114,8 @@ namespace Quien_es_Quien
             SqlCommand query = conexion.CreateCommand();
             query.CommandType = System.Data.CommandType.StoredProcedure;
             query.CommandText = "sp_ListarPersonajes";
-            if (Categoria != null) { 
+            if (Categoria != null)
+            {
                 query.Parameters.AddWithValue("@Categoria", Categoria);
             }
             SqlDataReader lector = query.ExecuteReader();
@@ -128,7 +129,7 @@ namespace Quien_es_Quien
                 {
                     int ID = Convert.ToInt32(lector["IDPersonaje"]);
                     string Nombre = lector["Nombre"].ToString();
-                    byte[] Foto = (byte[]) lector["Foto"];
+                    byte[] Foto = (byte[])lector["Foto"];
                     int IDCat = Convert.ToInt32(lector["Categoria"]);
                     string Cat = dicCategorias[IDCat];
                     listaPersonajes.Add(new Personaje(ID, Nombre, Foto, IDCat, Cat));
@@ -333,7 +334,7 @@ namespace Quien_es_Quien
             return sRespuesta;
         }
 
-        public static bool AsociarPregPers(int IDPers, int [] VecPregs)
+        public static bool AsociarPregPers(int IDPers, int[] VecPregs)
         {
             bool exito = true;
             int regs;
@@ -527,7 +528,7 @@ namespace Quien_es_Quien
             return listaTiposPartida;
         }
 
-        public static string AgregarPartida(string Ganador, string Perdedor, int PuntosGanador, string Tipo)
+        public static string AgregarPartida(string Ganador, string Perdedor, string Tipo, int PuntosGanador)
         {
             string sRespuesta = null;
             SqlConnection conexion = Conectar();
@@ -536,8 +537,8 @@ namespace Quien_es_Quien
             query.CommandText = "sp_AgregarPartida";
             query.Parameters.AddWithValue("@Ganador", Ganador);
             query.Parameters.AddWithValue("@Perdedor", Perdedor);
-            query.Parameters.AddWithValue("@PuntosGanador", PuntosGanador);
             query.Parameters.AddWithValue("@Tipo", Tipo);
+            query.Parameters.AddWithValue("@PuntosGanador", PuntosGanador);
             SqlDataReader lector = query.ExecuteReader();
             if (lector.Read())
             {

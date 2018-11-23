@@ -31,6 +31,7 @@
         margin-bottom: 10px;
     }
 </style>
+
 <form action="@Url.Action("ListarPersonajes", "BackOffice")" method="post" id="categorias">
     Ordenar por:
     <select name="Categoria">
@@ -58,9 +59,9 @@
             <td>@unPers.Nombre</td>
             <td><img src="~/Content/Fotos/@nombreFile" alt="SuperPic que no cargo" width="300"></td>
             <td>@unPers.Categoria</td>
-            <td>@Html.ActionLink("Modificar personaje", "ModificarPersonaje", "BackOffice", new { id = unPers.IDPersonaje, @class = "btn btn-info" }, null)</td> <!--Mandas como parametro el ID del personaje a modificar-->
-            <td>@Html.ActionLink("Borrar Personaje", "BorrarPersonaje", "BackOffice", new { id = unPers.IDPersonaje, @class = "btn btn-info" }, null)</td>
-            <td>@Html.ActionLink("Cambiar caracterisitcas del personaje", "CaracteristicasPersonaje", "BackOffice", new { id = unPers.IDPersonaje, @class = "btn btn-info" }, null)</td>
+            <td>@Html.ActionLink("Modificar personaje", "ModificarPersonaje", "BackOffice", new { id = unPers.IDPersonaje }, new { @class = "btn btn-info" })</td> <!--Mandas como parametro el ID del personaje a modificar-->
+            <td>@Html.ActionLink("Borrar Personaje", "BorrarPersonaje", "BackOffice", new { id = unPers.IDPersonaje }, new { @class = "btn btn-info" })</td>
+            <td>@Html.ActionLink("Cambiar caracterisitcas del personaje", "CaracteristicasPersonaje", "BackOffice", new { id = unPers.IDPersonaje }, new { @class = "btn btn-info" })</td>
         </tr>
     }
 </table>

@@ -644,5 +644,23 @@ namespace Quien_es_Quien
             Desconectar(conexion);
             return ID;
         }
+
+        public static Dictionary<int, string> GetCurrentGames() //Devuelve IDPartida - Usuario
+        {
+            Dictionary<int, string> dicCurrentGames = new Dictionary<int, string>();
+            SqlConnection conexion = Conectar();
+            SqlCommand comando = conexion.CreateCommand();
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.CommandText = "sp_GetCurrentGames";
+            SqlDataReader lector = comando.ExecuteReader();
+            while (lector.Read())
+            {
+                int IDPartida = Convert.ToInt32(lector["IDPartida"]);
+                string sUsuario = lector["Usuario"].ToString();
+                dicCurrentGames.Add(IDPartida, sUsuario);
+            }
+            Desconectar(conexion);
+            return dicCurrentGames;
+        }
     }
 }

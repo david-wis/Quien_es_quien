@@ -93,6 +93,13 @@ namespace Quien_es_Quien.Controllers
             return RedirectToAction("holis"); //aca hay que cambiarlo porque no tengo idea a donde carajo va
         }
 
+        public ActionResult MenuMultiplayer()
+        {
+            Dictionary<int, string> dicCurrentGames = BD.GetCurrentGames();
+            ViewBag.dicCurrentGames = dicCurrentGames;
+            return View();
+        }
+
         public ActionResult Ganaste()
         {
             return View();

@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "MenuMultiplayer";
+    Dictionary<int, string> dicCurrentGames = ViewBag.dicCurrentGames;
+}
+
+<h2>Clickea contra quien queres jugar</h2>
+
+<style>
+
+    #campoUnirse {
+        text-align: center;
+    }
+
+    #campoNombre {
+        font-size: 18px;
+    }
+
+    #colNombre {
+        width: 55%;
+        text-align: center;
+    }
+
+    #colUnirse {
+        /*width:38%;*/
+        text-align: center;
+    }
+
+    #tabla {
+        width: 400px;
+    }
+</style>
+
+<table id="tabla" class="table table-bordered">
+    <tr>
+        <th id="colNombre"><b>Nombre del usuario</b></th>
+        <th id="colUnirse"></th>
+    </tr>
+    @foreach (int IDPartida in dicCurrentGames.Keys)
+    {
+        <tr>
+            <td id="campoNombre">@dicCurrentGames[IDPartida]</td>
+            <td id="campoUnirse">@Html.ActionLink("Unirse a la partida", "????", "Juego", new { IDPartida = IDPartida }, new { @class = "btn btn-info" })</td>
+            <!--Manda el ID de la partida a la que se quiere unir-->
+        </tr>
+    }
+</table>

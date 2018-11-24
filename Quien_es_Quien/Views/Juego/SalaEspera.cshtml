@@ -2,6 +2,42 @@
     ViewBag.Title = "SalaEspera";
 }
 
+<script>
+    setInterval(VerificarJugador2, 3000);
+    function VerificarJugador2() {
+        jQuery.ajax({
+            type: "GET",
+            url: "@Url.Action("SalaEspera", "Juego")",
+            contentType: "charset=utf-8",
+        });
+        $("#test").load(window.location.href + " #test");
+        if ($("#test").text() == "1") {//Si se conecto otro usuario pasa a elegir el personaje
+            var href = '@Url.Action("ElegirPersOtro", "Juego")';
+            //window.location.href = href;
+            $(".loader").append("<a href=" + href + ">Continuar!</a>").removeClass("loader");
+        }
+    }
+</script>
+
+
+<style>
+.loader {
+    margin: auto auto; 
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+
 <h2>SalaEspera</h2>
 <h3>Por favor espere hasta que otro jugador se conecte :3</h3>
-
+<div class="loader"></div>
+<p id="test" style="visibility:hidden">@ViewBag.jugador2Listo</p>

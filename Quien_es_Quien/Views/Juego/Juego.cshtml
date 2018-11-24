@@ -26,7 +26,7 @@
     function MandarPuntaje() {
         jQuery.ajax({
             type: "POST",
-            url: "@Url.Action("Ganaste", "Juego")",
+            url: "@Url.Action("CargarPuntaje", "Juego")",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify({ score: puntaje }),

@@ -13,7 +13,7 @@ namespace Quien_es_Quien.Controllers
         public ActionResult Juego(string nombre = null)
         {
             BD.listaPersonajes = BD.ListarPersonajes(nombre);//Agregar para traer por categoria
-            if (BD.listaPersonajes.Count > 1) { 
+            if (BD.listaPersonajes.Count > 1) {
                 foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
                 {
                     MemoryStream imgStream = new MemoryStream(p.Foto);
@@ -68,7 +68,7 @@ namespace Quien_es_Quien.Controllers
             }
             return RedirectToAction(Action, "Juego");
         }
-        
+
         /*[HttpPost]
 
         public ActionResult ElegirModoJuego(string Tipo)
@@ -105,10 +105,15 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
-        public ActionResult Ganaste(int score)
+        [HttpPost]
+        public void CargarPuntaje(int score)
         {
             Session["puntaje"] = score;
-            BD.AgregarPartida(Session["nombre"].ToString(), null, BD.TipoPartida, score);
+        }
+
+        public ActionResult Ganaste()
+        {
+            BD.AgregarPartida(Session["nombre"].ToString(), null, BD.TipoPartida, Convert.ToInt32(Session["puntaje"]));
             return View();
         }
 
@@ -131,7 +136,7 @@ namespace Quien_es_Quien.Controllers
         {
             int idPartida = Convert.ToInt32(BD.AgregarPartida(UsuarioCreador, null, BD.TipoPartida, 0));
             Session["IDPartida"] = idPartida;
-            return RedirectToAction("ElegirPersOtro", "Juego");
+            return RedirectToAction("SalaEspera", "Juego");
         }
 
         public ActionResult ElegirPersOtro()
@@ -159,7 +164,15 @@ namespace Quien_es_Quien.Controllers
 
         public ActionResult SalaEspera()
         {
+            ViewBag.jugador2Listo = BD.VerificarConexionJugador2(Convert.ToInt32(Session["IDPartida"]));
             return View();
         }
+
+        public ActionResult SalaEsperaSeleccionPersonaje()
+        {
+            ViewBag.otroJugadorListo = BD.VerificarPersElegidos(Convert.ToInt32(Session["IDPartida"]));
+            return View();
+        }
+
     }
 }

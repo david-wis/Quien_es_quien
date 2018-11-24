@@ -8,6 +8,7 @@ using System.Net;
 using System.IO;
 using System.Drawing;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Timers;
 
 namespace Quien_es_Quien
 {
@@ -20,30 +21,7 @@ namespace Quien_es_Quien
         public static List<Personaje> listaPersonajes = new List<Personaje>();
         public static string TipoPartida;
         public static string CategoriaJuego;
-        //public static SqlDependency Dependency;
-
-        public static void ConectarDependencia()
-        {
-            SqlDependency.Start(connectionString);
-            SqlConnection conexion = Conectar();
-            SqlCommand query = conexion.CreateCommand();
-            query.CommandType = System.Data.CommandType.StoredProcedure;
-            query.CommandText = "sp_verificarTurno";
-            SqlDependency dependency = new SqlDependency(query);
-            dependency.OnChange += new OnChangeEventHandler(OnDependencyChange);
-
-        }
-
-        public static void Termination()
-        {
-            SqlDependency.Stop(connectionString);
-        }
-
-        public static void OnDependencyChange(object sender, SqlNotificationEventArgs e)
-        {
-              
-        }
-
+        
         public static SqlConnection Conectar()
         {
             SqlConnection conexion = new SqlConnection(connectionString);
@@ -585,6 +563,7 @@ namespace Quien_es_Quien
             Desconectar(conexion);
             return sRespuesta;
         }
+
         public static Dictionary<string, int> RankingTop10()
         {
             Dictionary<string, int> dicTop10 = new Dictionary<string, int>();
@@ -703,6 +682,40 @@ namespace Quien_es_Quien
             query.Parameters.AddWithValue("@Personaje", Personaje);
             query.ExecuteNonQuery();
             Desconectar(conexion);
+        }
+
+        public static int VerificarConexionJugador2(int IDPartida)
+        {
+            int response = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_VerificarConexion2";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            SqlDataReader lector = query.ExecuteReader();
+            if (lector.Read())
+            {
+                response = Convert.ToInt32(lector["Response"]);
+            }
+            Desconectar(conexion);
+            return response;
+        }
+
+        public static int VerificarPersElegidos(int IDPartida)
+        {
+            int Result = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_VerificarPersonajeElegido";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            SqlDataReader lector = query.ExecuteReader();
+            if (lector.Read())
+            {
+                Result = Convert.ToInt32(lector["Result"]);
+            }
+            Desconectar(conexion);
+            return Result;
         }
     }
 }

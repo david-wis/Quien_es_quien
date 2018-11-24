@@ -20,6 +20,29 @@ namespace Quien_es_Quien
         public static List<Personaje> listaPersonajes = new List<Personaje>();
         public static string TipoPartida;
         public static string CategoriaJuego;
+        //public static SqlDependency Dependency;
+
+        public static void ConectarDependencia()
+        {
+            SqlDependency.Start(connectionString);
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_verificarTurno";
+            SqlDependency dependency = new SqlDependency(query);
+            dependency.OnChange += new OnChangeEventHandler(OnDependencyChange);
+
+        }
+
+        public static void Termination()
+        {
+            SqlDependency.Stop(connectionString);
+        }
+
+        public static void OnDependencyChange(object sender, SqlNotificationEventArgs e)
+        {
+              
+        }
 
         public static SqlConnection Conectar()
         {
@@ -663,5 +686,7 @@ namespace Quien_es_Quien
             Desconectar(conexion);
             return dicCurrentGames;
         }
+
+        
     }
 }

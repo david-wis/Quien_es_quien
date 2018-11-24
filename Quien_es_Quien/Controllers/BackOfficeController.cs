@@ -372,7 +372,7 @@ namespace Quien_es_Quien.Controllers
             {
                 Session["Error"] = sRespuesta;
             }
-            return RedirectToAction("ListarCategoriasPersonaje", "BackOffice");
+            return RedirectToAction("ListarCategoriasPersonajes", "BackOffice");
         }
 
         public ActionResult AgregarCategoriaPregunta()

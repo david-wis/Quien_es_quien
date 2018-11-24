@@ -13,8 +13,8 @@ namespace Quien_es_Quien
 {
     static public class BD
     {
-        public static string connectionString = "Server=10.128.8.16;User=QEQA05;Password=QEQA05;Database=QEQA05";
-        //public static string connectionString = "Server=.;Database=QEQA05;Trusted_connection=True";
+        //public static string connectionString = "Server=10.128.8.16;User=QEQA05;Password=QEQA05;Database=QEQA05";
+        public static string connectionString = "Server=.;Database=QEQA05;Trusted_connection=True";
         public static Dictionary<int, string> dicCategorias = new Dictionary<int, string>();
         public static Dictionary<int, string> dicCategoriasPreguntas = new Dictionary<int, string>();
         public static List<Personaje> listaPersonajes = new List<Personaje>();
@@ -537,7 +537,7 @@ namespace Quien_es_Quien
             query.CommandText = "sp_AgregarPartida";
             query.Parameters.AddWithValue("@Ganador", Ganador);
             query.Parameters.AddWithValue("@Perdedor", Perdedor);
-            query.Parameters.AddWithValue("@Tipo", Tipo);
+            query.Parameters.AddWithValue("@TipoPartida", Tipo);
             query.Parameters.AddWithValue("@PuntosGanador", PuntosGanador);
             SqlDataReader lector = query.ExecuteReader();
             if (lector.Read())

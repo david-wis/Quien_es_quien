@@ -13,24 +13,29 @@ namespace Quien_es_Quien.Controllers
         public ActionResult Juego(string nombre = null)
         {
             BD.listaPersonajes = BD.ListarPersonajes(nombre);//Agregar para traer por categoria
-            foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
+            if (BD.listaPersonajes.Count > 1) { 
+                foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
+                {
+                    MemoryStream imgStream = new MemoryStream(p.Foto);
+                    Image img = Image.FromStream(imgStream);
+                    img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+                }
+
+                Random rnd = new Random();
+                int persElegido = BD.listaPersonajes[rnd.Next(BD.listaPersonajes.Count)].IDPersonaje;
+                ViewBag.persElegido = persElegido;
+
+                ViewBag.listaPreguntas = BD.ObtenerPreguntas(null);
+
+                foreach (Personaje p in BD.listaPersonajes)
+                {
+                    p.ListaPregs = BD.ObtenerPreguntasPersonaje(p.IDPersonaje);
+                }
+            } else
             {
-                MemoryStream imgStream = new MemoryStream(p.Foto);
-                Image img = Image.FromStream(imgStream);
-                img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+                //ViewBag.Error = "404";
+                return View("AgregarPersonaje", "BackOffice");//Por ahora hagamos que te mande a agregar personaje
             }
-
-            Random rnd = new Random();
-            int persElegido = BD.listaPersonajes[rnd.Next(BD.listaPersonajes.Count)].IDPersonaje;
-            ViewBag.persElegido = persElegido;
-
-            ViewBag.listaPreguntas = BD.ObtenerPreguntas(null);
-
-            foreach (Personaje p in BD.listaPersonajes)
-            {
-                p.ListaPregs = BD.ObtenerPreguntasPersonaje(p.IDPersonaje);
-            }
-
             return View();
         }
 
@@ -52,7 +57,7 @@ namespace Quien_es_Quien.Controllers
                     Action = "ElegirCategoria";
                     break;
                 case "MultiPlayer":
-                    Action = "Lobby";
+                    Action = "MenuMultiplayer";
                     break;
                 case "Aprendiz":
                     break;
@@ -103,7 +108,7 @@ namespace Quien_es_Quien.Controllers
         public ActionResult Ganaste(int score)
         {
             Session["puntaje"] = score;
-            BD.AgregarPartida(Session["nombre"].ToString(), null, BD.TipoPartida, Convert.ToInt32(Session["puntaje"]));
+            BD.AgregarPartida(Session["nombre"].ToString(), null, BD.TipoPartida, score);
             return View();
         }
 

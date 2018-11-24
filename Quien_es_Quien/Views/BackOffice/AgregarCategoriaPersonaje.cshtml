@@ -3,15 +3,68 @@
     ViewBag.Title = "AgregarCategoriaPersonaje";
 }
 
-<div class="jumbotron text-center">
-    <h1>Agregar una categoria de personaje</h1>
-</div>
+<style>
 
-<form action="@Url.Action("AgregarCategoriaPersonaje", "Backoffice")" method="post">
-    <div class="form-group">
-        <label class="control-label col-sm-2" for="nombre">Ingrese una categoria de personaje: </label>
-        <input required type="text" name="nombre" id="nombre" placeholder="Profesor" class="form-control" />
+    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
+
+    body {
+        padding-top: 5px;
+        background-color: darkorange;
+    }
+
+    .spacer {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .block { /* este es el largo de la pagina*/
+        height: 320px;
+        padding-top: 15px;
+        background-color: darkorange;
+    }
+
+    .block2 {
+        min-height: 160px;
+        padding-top: 35px;
+    }
+
+    .center {
+        position: absolute;
+        /*  top: 0;
+    bottom: 0; */
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+    }
+</style>
+
+<body>
+    <div class="jumbotron text-center" style="background-color:steelblue">
+        <h1 style="color:white;font-size:300%">Agregar una categoria de personaje</h1>
     </div>
-    <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 405px" />
-    <br /> <b>@ViewBag.Mensaje</b>
-</form>
+    <div class="container col-lg-12 block">
+        <div class="row col-xs-6 block2 bg-primary center">
+			<form action="@Url.Action("AgregarCategoriaPersonaje", "BackOffice")" method="post" class="form-horizontal" role="form" align="center">
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="nombre">Ingrese una categoria de personaje:<em>*</em> </label>
+					<div class="col-sm-8 col-xs-12">
+						<input required type="text" name="nombre" id="nombre" placeholder="Profesor" class="form-control" />
+                    </div>
+				</div>
+				<div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <input type="submit" name="Submit" value="Enviar" class="btn btn-info" />
+                    </div>
+                </div>
+				<br /> <b>@ViewBag.Mensaje</b>
+			</form>
+        </div>
+    </div>
+</body>

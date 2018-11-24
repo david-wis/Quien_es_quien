@@ -567,14 +567,19 @@ namespace Quien_es_Quien
             {
                 try
                 {
-                    sRespuesta = lector["Error"].ToString();
+                    sRespuesta = lector["idPartida"].ToString();
+                    
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
-                    if (lector["Success"] != null)
+                    try
                     {
-                        sRespuesta = "1";
+                        sRespuesta = lector["Error"].ToString();
                     }
+                    catch (IndexOutOfRangeException)
+                    {
+                        sRespuesta = "-1";
+                    } 
                 }
             }
             Desconectar(conexion);
@@ -687,6 +692,17 @@ namespace Quien_es_Quien
             return dicCurrentGames;
         }
 
-        
+        public static void SeleccionarPersonajeMP(int IDPartida, int NJugador, int Personaje)
+        {
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_SeleccionarPersonajePartidaMP";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            query.Parameters.AddWithValue("@Jugador", NJugador);
+            query.Parameters.AddWithValue("@Personaje", Personaje);
+            query.ExecuteNonQuery();
+            Desconectar(conexion);
+        }
     }
 }

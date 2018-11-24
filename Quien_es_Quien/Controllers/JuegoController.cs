@@ -129,7 +129,8 @@ namespace Quien_es_Quien.Controllers
         }
         public ActionResult CrearPartida(string UsuarioCreador)
         {
-            BD.AgregarPartida(UsuarioCreador, null, BD.TipoPartida, 0);
+            int idPartida = Convert.ToInt32(BD.AgregarPartida(UsuarioCreador, null, BD.TipoPartida, 0));
+            Session["IDPartida"] = idPartida;
             return RedirectToAction("ElegirPersOtro", "Juego");
         }
 
@@ -150,10 +151,15 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
-        [HttpPost]
-        public void ElegirPO(int id)
+        public ActionResult ElegirPO(int id)
         {
+            BD.SeleccionarPersonajeMP(Convert.ToInt32(Session["IDPartida"]), 1, id);
+            return RedirectToAction("SalaEspera", "Juego");
+        }
 
+        public ActionResult SalaEspera()
+        {
+            return View();
         }
     }
 }

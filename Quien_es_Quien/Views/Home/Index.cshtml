@@ -2,40 +2,125 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Quién es Quién</h1>
-    <img src="~/Content/Logo circular.png" alt="Logo del juego" width="400px" height="400px" />
-    <p class="lead">¡Bienvenido a Quién es Quién! </p>
-    <a href="@Url.Action("Registro", "BackOffice")" class="btn btn-primary btn-lg">Registrarse &raquo;</a>
-    <a href="@Url.Action("Login", "BackOffice")" class="btn btn-primary btn-lg">Log in &raquo;</a> <br /> <br />
-    <p>
-        <a href="@Url.Action("ElegirModoJuego", "Juego")" class="btn btn-primary btn-lg">Jugar como invitado &raquo;</a>
-    </p>
-</div>
+<style>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Instrucciones</h2>
-        <p>
-            Quien es Quien es un divertido juego en el que los jugadores tienen que adivinar un personaje entre muchos otros haciendo preguntas que describen a los mismos. Su objetivo es averiguar el personaje que se seleccionó haciendo la menor cantidad de preguntas posibles. Por cada pregunta que hagas o cada vez que intentes adivinar al personaje y falles, perderás puntos. Así que, ¡cuidalos!
-        </p>
+    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
+
+    body {
+        background-color: darkorange;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+    }
+
+    h2 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+        color: cornflowerblue;
+    }
+
+    h3 {
+        font-weight: 900;
+        font-family: Gill Sans, sans-serif
+    }
+
+    h5 {
+        color: black;
+        font-family: DejaVu Sans Mono, monospace;
+    }
+
+    p {
+        font-family: DejaVu Sans Mono, monospace;
+    }
+
+    a {
+        font-family: DejaVu Sans Mono, monospace;
+    }
+</style>
+
+<body>
+
+
+    <div class="jumbotron text-center" style="background-color:#CFD8DC">
+        <h1 style="color:cornflowerblue;font-size:650%">Quién es Quién</h1>
+
+        <img src="~/Content/logo circular 4k.png" alt="Logo del juego" width=500 height=500 />
+
+        <h5 class="lead">¡Bienvenido a Quién es Quién! </h5>
+
+
+        <a href="@Url.Action("Registro", "BackOffice")" class="btn btn-primary btn-lg">Registrarse &raquo;</a>
+        <a href="@Url.Action("Login", "BackOffice")" class="btn btn-primary btn-lg">Log in &raquo;</a> <br /> <br />
+
+        <!--  Este es el botón del modal. Alto quilombo pero se pudo xddd  -->
+        <button font style="font-family: DejaVu Sans Mono, monospace" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><< Jugar como invitado >></button>
+
+        <!-- Esto es el modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- el contenido del modal-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h2 class="modal-title">Advertencia</h2>
+                    </div>
+                    <div class="modal-body">
+                        <h3>¿Estas seguro?</h3>
+                        <h3>Si jugas como invitado no se guardara tu progreso.</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="@Url.Action("ElegirModoJuego", "Juego")" class="btn btn-success">Continuar &raquo;</a>
+
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
 
     </div>
-    <div class="col-md-4">
-        <h2>¿Querés leer el código del juego?</h2>
-        <p>
-            Nuestro proyecto es de código abierto, es decir que cualquier persona puede consultar el desarrollo
-            interno de este juego. Si estás interesado, hace click en el siguiente botón.
-        </p>
-        <p><a class="btn btn-info" target="_blank" href="https://k60.kn3.net/taringa/3/B/C/5/5/C/WilsonB4/FAC.jpg">Código del juego &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Créditos</h2>
-        <p>
-            Este juego fue desarrollado por Ezequiel Saidman, Tadeo Caputo, David Wischñevsky y Abril Vilamowski,
-            de la división 4IA en la Escuela Técnica ORT (sede Almagro). ¡Esperamos que lo disfruten!
-        </p>
-        <p><a class="btn btn-info" target="_blank" href="http://campus.ort.edu.ar/">Visitá el sitio web de nuestra escuela &raquo;</a></p>
-    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
 
-</div>
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <h2>Instrucciones</h2>
+                    <p>
+                        Quien es Quien es un divertido juego en el que los jugadores tienen que adivinar un personaje entre muchos otros haciendo preguntas que describen a los mismos.
+                        Su objetivo es averiguar el personaje que se seleccionó haciendo la menor cantidad de preguntas posibles.
+                        Por cada pregunta que hagas o cada vez que intentes adivinar al personaje y falles, perderás puntos. Así que, ¡cuidalos!
+                    </p>
+
+                </div>
+                <div class="col-md-4">
+                    <h2>¿Querés leer el código del juego?</h2>
+                    <p>
+                        Nuestro proyecto es de código abierto, es decir que cualquier persona puede consultar el desarrollo
+                        interno de este juego. Si estás interesado, hace click en el siguiente botón.
+                    </p>
+                    <p><a class="btn btn-danger btn-lg" target="_blank" href="https://k60.kn3.net/taringa/3/B/C/5/5/C/WilsonB4/FAC.jpg">Código del juego &raquo;</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Créditos</h2>
+                    <p>
+                        Este juego fue desarrollado por Ezequiel Saidman, Tadeo Caputo, David Wischñevsky y Abril Vilamowski,
+                        de la división 4IA en la Escuela Técnica ORT (sede Almagro). ¡Esperamos que lo disfruten!
+                    </p>
+                    <p><a class="btn btn-warning btn-lg" target="_blank" href="http://campus.ort.edu.ar/">Visitá nuestro sitio web &raquo;</a></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>

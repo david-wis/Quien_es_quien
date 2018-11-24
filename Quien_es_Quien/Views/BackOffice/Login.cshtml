@@ -1,23 +1,80 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Login";
 }
 
-<div class="jumbotron text-center">
-    <h1>Login</h1>
-</div>
+<style>
 
-<form name="input" action="@Url.Action("Login", "BackOffice")" method="post">
-    <div class="form-group">
-        <label class="control-label col-sm-2" for="nombre">Nombre de usuario: </label>
-        <input required type="text" name="nombre" id="nombre" placeholder="Cccebo" class="form-control" />
+    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
+
+    body {
+        padding-top: 5px;
+        background-color: darkorange;
+    }
+
+    .spacer {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .block { /* este es el largo de la pagina*/
+        height: 320px;
+        padding-top: 15px;
+        background-color: darkorange;
+    }
+
+    .block2 {
+        min-height: 160px;
+        padding-top: 35px;
+    }
+
+    .center {
+        position: absolute;
+        /*  top: 0;
+    bottom: 0; */
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+    }
+</style>
+
+<body>
+
+    <div class="jumbotron text-center" style="background-color:steelblue">
+        <h1 style="color:white;font-size:650%">Login</h1>
     </div>
-    <div class="form-group">
-        <label class="control-label col-sm-2" for="contrasenia">Contraseña: </label>
-        <input required type="password" name="contrasenia" id="contrasenia" placeholder="*********" class="form-control" />
+
+    <div class="container col-lg-12 block">
+
+        <div class="row col-xs-6 block2 bg-primary center">
+
+            <form name="input" action="@Url.Action("Login", "BackOffice")" method="post" class="form-horizontal" role="form" align="center">
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="nombre">Nombre de usuario<em>*</em></label>
+                    <div class="col-sm-8 col-xs-12">
+                        <input required type="text" name="nombre" id="username" placeholder="Cebo" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-3" for="contrasenia">Contraseña<em>*</em></label>
+                    <div class="col-sm-8 col-xs-12">
+                        <input required type="password" name="contrasenia" id="password" placeholder="*********" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-8">
+                        <input type="submit" name="Submit" value="Enviar" class="btn btn-info" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </div>
-    @Html.ActionLink("¿Olvidaste tu contraseña? Hacé click acá!", "CambiarContrasenia", "BackOffice") <br />
-    <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 405px" />
-    <br />
-    <b>@ViewBag.Mensaje</b>
-</form>
+
+</body>

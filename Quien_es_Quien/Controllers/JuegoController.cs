@@ -69,14 +69,6 @@ namespace Quien_es_Quien.Controllers
             return RedirectToAction(Action, "Juego");
         }
 
-        /*[HttpPost]
-
-        public ActionResult ElegirModoJuego(string Tipo)
-        {
-            BD.TipoPartida = Tipo;
-            return RedirectToAction("ElegirCategoria", "Juego");
-        }*/
-
         public ActionResult ElegirCategoria()
         {
             BD.ObtenerCategoriasPersonajes();
@@ -136,11 +128,14 @@ namespace Quien_es_Quien.Controllers
         {
             int idPartida = Convert.ToInt32(BD.AgregarPartida(UsuarioCreador, null, BD.TipoPartida, 0));
             Session["IDPartida"] = idPartida;
+            Response.Cookies["MiJugador"].Value = "1";
+            Response.Cookies["MiJugador"].Expires = DateTime.Now.AddHours(1);
             return RedirectToAction("SalaEspera", "Juego");
         }
 
         public ActionResult ElegirPersOtro()
         {
+            BD.ObtenerCategoriasPersonajes();//En un futuro elegir categoria desde esta view
             BD.listaPersonajes = BD.ListarPersonajes(null);
             BD.ObtenerCategoriasPersonajes();
             foreach (Personaje p in BD.listaPersonajes)
@@ -158,8 +153,10 @@ namespace Quien_es_Quien.Controllers
 
         public ActionResult ElegirPO(int id)
         {
-            BD.SeleccionarPersonajeMP(Convert.ToInt32(Session["IDPartida"]), 1, id);
-            return RedirectToAction("SalaEspera", "Juego");
+            int IDPartida = Convert.ToInt32(Session["IDPartida"]);
+            int ValorJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
+            BD.SeleccionarPersonajeMP(IDPartida, ValorJugador, id);
+            return RedirectToAction("SalaEsperaSeleccionPersonajes", "Juego");
         }
 
         public ActionResult SalaEspera()
@@ -168,9 +165,49 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
-        public ActionResult SalaEsperaSeleccionPersonaje()
+        public ActionResult SalaEsperaSeleccionPersonajes()
         {
             ViewBag.otroJugadorListo = BD.VerificarPersElegidos(Convert.ToInt32(Session["IDPartida"]));
+            return View();
+        }
+
+        public ActionResult ConectarseAPartida(int IDPartida)
+        {
+            BD.ConnectToGame(IDPartida, Session["Nombre"].ToString());
+            Session["IDPartida"] = IDPartida;
+            Response.Cookies["MiJugador"].Value = "0";//Queria probar las cookies comunes sin viewbag
+            Response.Cookies["MiJugador"].Expires = DateTime.Now.AddHours(1);
+            return RedirectToAction("ElegirPersOtro", "Juego");
+        }
+
+        public ActionResult MultiplayerJuego(string nombre = null)
+        {
+            BD.listaPersonajes = BD.ListarPersonajes(nombre);
+            if (BD.listaPersonajes.Count > 1)
+            {
+                foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
+                {
+                    MemoryStream imgStream = new MemoryStream(p.Foto);
+                    Image img = Image.FromStream(imgStream);
+                    img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+                }
+
+                //Random rnd = new Random();
+                int persElegido = BD.ObtenerPersonajeMP(Convert.ToInt32(Session["IDPartida"]), Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value)));
+                ViewBag.persElegido = persElegido;
+
+                ViewBag.listaPreguntas = BD.ObtenerPreguntas(null);
+
+                foreach (Personaje p in BD.listaPersonajes)
+                {
+                    p.ListaPregs = BD.ObtenerPreguntasPersonaje(p.IDPersonaje);
+                }
+            }
+            else
+            {
+                //ViewBag.Error = "404";
+                return View("AgregarPersonaje", "BackOffice");//Por ahora hagamos que te mande a agregar personaje
+            }
             return View();
         }
 

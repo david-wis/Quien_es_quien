@@ -717,5 +717,35 @@ namespace Quien_es_Quien
             Desconectar(conexion);
             return Result;
         }
+
+        public static void ConnectToGame(int IDPartida, string Usuario)
+        {
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_ConnectToGame";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            query.Parameters.AddWithValue("@Usuario", Usuario);
+            query.ExecuteNonQuery();
+            Desconectar(conexion);
+        }
+
+        public static int ObtenerPersonajeMP(int IDPartida, int NJugador)
+        {
+            int IDPers = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_ObtenerPersonajeMP";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            query.Parameters.AddWithValue("@NJug", NJugador);
+            SqlDataReader lector = query.ExecuteReader();
+            if (lector.Read())
+            {
+                IDPers = Convert.ToInt32(lector["Personaje"]);
+            }
+            Desconectar(conexion);
+            return IDPers;
+        }
     }
 }

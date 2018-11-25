@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "Multiplayer";
+}
+
+<script>
+
+    var puntaje = 1000000;
+    var puntajeRestar;
+    var IDPreg = null;
+    function CambiarID(ID, puntaje) {
+        IDPreg = ID;
+        puntajeRestar = puntaje;
+    }
+
+    var fin = false;
+    function VerificarVacio() {
+        if (!fin) {
+            if ($(".pregunta").length == 0) {
+                fin = true;
+                //$(".modal-body").append("Te has quedado sin preguntas...");
+                $("#VacioPreg").fadeIn();
+            }
+        }
+    }
+
+    function MandarPuntaje() {
+        jQuery.ajax({
+            type: "POST",
+            url: "@Url.Action("CargarPuntaje", "Juego")",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({ score: puntaje }),
+        });
+    }
+
+    function Arriesgar(IDPers, CorrectIDPers) {
+        //alert(CorrectIDPers);
+        if (IDPers == CorrectIDPers) {
+            //Ir a victoria
+            MandarPuntaje();
+            var href = '@Url.Action("GanasteMultiplayer", "Juego")';
+            window.location.href = href;
+        } else {
+            if (puntaje > 100) {
+                puntaje = Math.round(puntaje / 2);//Rendondeo
+                $('#' + IDPers).fadeOut(1000, function () {
+                    $(this).remove();
+                });
+            } else {
+                window.location.href = '@Url.Action("Perdiste", "Juego")';
+            }
+            $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+        }
+        AbrirPanelEspera();
+    }
+
+    function AbrirPanelEspera() {
+        $(".personaje img").removeAttr("onclick");
+        $("#btnTrigger").prop("disabled", true);
+    }
+
+    function Preguntar(PersElegido) {
+        if (IDPreg != null) {
+            $('#p' + IDPreg).remove();//Elimina la pregunta elegida de la lista
+            $('#myModal').modal('hide');//Oculta el modal (la ventanita esa que sale)
+
+            //Primero nos fijamos si la pregunta esta adentro de las de nuestro personaje
+            preguntaCorresponde = false;
+            $.each($('#' + PersElegido + ' .respuesta'), function () {
+                if ($(this).html() == IDPreg) {
+                    preguntaCorresponde = true;
+                }
+            });
+
+
+            if (preguntaCorresponde) {//Si la pregunta va a dejar al personaje como opcion sacamos el resto
+                CambiarModalMensaje('Correcto', '#00e64d');
+
+                $.each($('.personaje'), function () {
+                    $(this).addClass('purga');
+                });
+
+                $.each($('.personaje .respuesta'), function () {
+                    if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
+                        $(this).parent().removeClass('purga');
+                    }
+                });
+
+                $('.purga').fadeOut(1000, function () {//Desvanece el div entero en un segundo (1000 milisec), y luego lo borra
+                    $(this).remove();//purgamos a todos los inferiores
+                });
+                //$('.personaje').fadeIn(1000);
+            } else {//Si la pregunta no va a dejar al personaje, purgamos a los superiores :vvv (purga para todes)
+                CambiarModalMensaje('Incorrecto', '#ff0000');
+
+                $.each($('.personaje .respuesta'), function () {
+                    if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
+                        $(this).parent().fadeOut(1000, function () {
+                            $(this).remove();
+                        });
+                    }
+                });
+            }
+
+            VerificarVacio();//Se revisa cuantas preguntas quedaron
+            if (puntaje - puntajeRestar > 0) {
+                puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
+                $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+                IDPreg = null;//Asi no queda ninguna pregunta seleccionada
+            } else {
+                //Ir a la action de game over
+                window.location.href = '@Url.Action("Perdiste", "Juego")';
+            }
+        }
+    }
+
+    function CambiarModalMensaje(mensaje, color) {
+        $("#mensaje").html(mensaje);
+        //$("#mensaje").remove();
+        $("#contentmensaje").css("background", color);
+        $("#myModal2").modal();
+    }
+</script>
+
+<style>
+    #containertodo {
+        height: 380px;
+        margin: auto auto;
+    }
+
+    #containerfotos {
+        height: 335px;
+        margin: auto auto;
+        overflow-y: scroll;
+    }
+
+    #containerpreguntas {
+        position: relative;
+        top: 10px;
+        float: right;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .personaje {
+        display: block;
+        width: 100px;
+        height: 130px;
+        float: left;
+        margin: 10px;
+    }
+
+    .txtFoto {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .puntaje {
+        display: none;
+    }
+</style>
+
+<h2>Puntaje: <span id="puntajeGlobal">1000000</span></h2>
+<div id="containertodo">
+    <div id="containerfotos">
+        @foreach (Personaje p in BD.listaPersonajes)
+        {
+            string nombreFile = p.IDPersonaje + ".jpg";
+            <div id="@p.IDPersonaje" class="personaje">
+                <img src="~/Content/Fotos/@nombreFile" alt=":'v" onclick="Arriesgar(@p.IDPersonaje, @ViewBag.persElegido)" />
+                <span class="txtFoto">@p.Nombre</span>
+                @foreach (int preg in p.ListaPregs)
+                {
+                    <span class="respuesta" style="display:none">@preg</span>
+                }
+            </div>
+        }
+    </div>
+
+    <div id="containerpreguntas">
+        <!-- Trigger the modal with a button -->
+        <button id="btnTrigger" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Elegir pregunta</button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Preguntas</h4>
+                    </div>
+                    <div class="modal-body">
+                        @foreach (Pregunta p in ViewBag.listaPreguntas)
+                        {
+                            string txtID = "p" + p.IDPregunta;
+                            <span class="pregunta" id="@txtID">
+                                <label for="@p.IDPregunta">@p.TextoPregunta</label>
+                                <input type="radio" onclick="CambiarID(@p.IDPregunta, @p.Valor)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
+                                <br />
+                            </span>
+                            <span id="VacioPreg" style="display:none">Te has quedado sin preguntas :'v</span>
+                        }
+                    </div>
+                    <div class="modal-footer">
+                        <button id="botonPreguntar" type="button" onclick="Preguntar(@ViewBag.persElegido)" class="btn btn-default">Pregunta</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal2 -->
+        <div id="myModal2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content" id="contentmensaje">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Respuesta</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p id="mensaje">Lorem ipsum</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

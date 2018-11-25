@@ -218,6 +218,7 @@
     <Content Include="Views\Juego\ElegirPersOtro.cshtml" />
     <Content Include="Views\Juego\SalaEspera.cshtml" />
     <Content Include="Views\Juego\SalaEsperaSeleccionPersonajes.cshtml" />
+    <Content Include="Views\Juego\MultiplayerJuego.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

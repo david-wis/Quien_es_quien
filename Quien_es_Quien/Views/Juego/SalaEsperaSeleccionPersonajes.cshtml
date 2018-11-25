@@ -1,8 +1,9 @@
-﻿    ViewBag.Title = "SalaEspera";
+﻿@{  
+    ViewBag.Title = "SalaEsperaSeleccionPersonajes";
 }
 
 <script>
-    setInterval(VerificarJugador2, 3000);
+    var inter = setInterval(VerificarJugador2, 3000);
     function VerificarJugador2() {
         jQuery.ajax({
             type: "GET",
@@ -11,6 +12,7 @@
         });
         $("#test").load(window.location.href + " #test");
         if ($("#test").text() == "1") {
+            clearInterval(inter);//Aparentemente sino se ejecuta infinitamente y no logra salir
             var href = '@Url.Action("MultiplayerJuego", "Juego")';
             window.location.href = href;
         }

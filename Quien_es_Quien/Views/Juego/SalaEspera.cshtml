@@ -14,7 +14,7 @@
         if ($("#test").text() == "1") {//Si se conecto otro usuario pasa a elegir el personaje
             var href = '@Url.Action("ElegirPersOtro", "Juego")';
             //window.location.href = href;
-            $(".loader").append("<a href=" + href + ">Continuar!</a>").removeClass("loader");
+            $(".loader").append('<a href=' + href + ' class="btn btn-success">Continuar!</a>').removeClass("loader");
         }
     }
 </script>

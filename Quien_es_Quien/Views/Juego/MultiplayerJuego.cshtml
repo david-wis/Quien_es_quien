@@ -4,12 +4,22 @@
 
 <script>
 
-    var puntaje = 1000000;
-    var puntajeRestar;
+    //var puntaje = 1000000;
+    //var puntajeRestar;
+
+    var bugfixTurno;
+    var miJugador;
+    window.onload = function () {
+        ActivarEspera();
+        interVerTurno = setInterval(RevisarTurno, 3000);
+        //RevisarTurno();
+        miJugador = getCookieValue("MiJugador");
+    }
+
     var IDPreg = null;
     function CambiarID(ID, puntaje) {
         IDPreg = ID;
-        puntajeRestar = puntaje;
+        //puntajeRestar = puntaje;
     }
 
     var fin = false;
@@ -23,40 +33,102 @@
         }
     }
 
-    function MandarPuntaje() {
+    /*function MandarPuntaje() {
         jQuery.ajax({
             type: "POST",
-            url: "@Url.Action("CargarPuntaje", "Juego")",
+            url: "Url.Action("CargarPuntaje", "Juego")",
             dataType: "json",
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify({ score: puntaje }),
         });
-    }
+    }*/
 
+    var habilitado = true;
     function Arriesgar(IDPers, CorrectIDPers) {
-        //alert(CorrectIDPers);
-        if (IDPers == CorrectIDPers) {
-            //Ir a victoria
-            MandarPuntaje();
-            var href = '@Url.Action("GanasteMultiplayer", "Juego")';
-            window.location.href = href;
-        } else {
-            if (puntaje > 100) {
-                puntaje = Math.round(puntaje / 2);//Rendondeo
+        if (habilitado) {
+            //alert(CorrectIDPers);
+            if (IDPers == CorrectIDPers) {
+                //Ir a victoria
+                //MandarPuntaje();
+                CambiarTurno(true);
+                var href = '@Url.Action("GanasteMultiplayer", "Juego")';
+                window.location.href = href;
+            } else {
+                /*if (puntaje > 100) {
+                    puntaje = Math.round(puntaje / 2);//Rendondeo
+                    */
                 $('#' + IDPers).fadeOut(1000, function () {
                     $(this).remove();
                 });
-            } else {
-                window.location.href = '@Url.Action("Perdiste", "Juego")';
+                /*
+                } else {
+                    window.location.href = 'Url.Action("Perdiste", "Juego")';
+                }
+                $("#puntajeGlobal").text(puntaje);//Actualiza el texto*/
+                CambiarTurno(false);
             }
-            $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+            ActivarEspera();
         }
-        AbrirPanelEspera();
     }
 
-    function AbrirPanelEspera() {
-        $(".personaje img").removeAttr("onclick");
+    function CambiarTurno(victoria) {
+        jQuery.ajax({
+            type: "POST",
+            url: "@Url.Action("CambiarTurno", "Juego")",
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify({ Victoria: victoria }),
+        });
+    }
+
+    var interVerTurno = -1;
+    function ActivarEspera() {
+        habilitado = false;
         $("#btnTrigger").prop("disabled", true);
+    }
+
+    function DesactivarEspera() {
+        habilitado = true;
+        $("#btnTrigger").prop("disabled", false);
+        //clearInterval(interVerTurno);
+    }
+
+    function RevisarTurno() {
+        jQuery.ajax({
+            type: "GET",
+            url: "@Url.Action("VerificarTurno", "Juego")",
+            contentType: "charset=utf-8",
+        });
+        var turno = getCookieValue('Turno');
+        if (turno != '') {
+            if (turno == miJugador) {
+                DesactivarEspera();
+            } else {
+                ActivarEspera();
+            }
+        }
+    }
+
+    //Si me tengo que copiar un codigo que sea el mejor :v
+    /*function getCookieValue(a) {
+        var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
+        return b ? b.pop() : '';
+    }*/
+
+    function getCookieValue(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
 
     function Preguntar(PersElegido) {
@@ -102,15 +174,17 @@
                 });
             }
 
+            CambiarTurno(false);
+            ActivarEspera();
             VerificarVacio();//Se revisa cuantas preguntas quedaron
-            if (puntaje - puntajeRestar > 0) {
+            /*if (puntaje - puntajeRestar > 0) {
                 puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
                 $("#puntajeGlobal").text(puntaje);//Actualiza el texto
                 IDPreg = null;//Asi no queda ninguna pregunta seleccionada
             } else {
                 //Ir a la action de game over
-                window.location.href = '@Url.Action("Perdiste", "Juego")';
-            }
+                window.location.href = 'Url.Action("Perdiste", "Juego")';
+            }*/
         }
     }
 
@@ -159,12 +233,12 @@
         font-weight: bold;
     }
 
-    .puntaje {
+    /*.puntaje {
         display: none;
-    }
+    }*/
 </style>
 
-<h2>Puntaje: <span id="puntajeGlobal">1000000</span></h2>
+<!--<h2>Puntaje: <span id="puntajeGlobal">1000000</span></h2>-->
 <div id="containertodo">
     <div id="containerfotos">
         @foreach (Personaje p in BD.listaPersonajes)

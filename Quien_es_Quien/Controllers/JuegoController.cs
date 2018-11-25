@@ -211,5 +211,26 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
+        public void VerificarTurno()
+        {
+            int turno = BD.VerificarTurno(Convert.ToInt32(Session["IDPartida"]));
+            Response.Cookies["Turno"].Value = turno.ToString();
+            Response.Cookies["Turno"].Expires = DateTime.Now.AddHours(1);
+        }
+
+        [HttpPost]
+        public void CambiarTurno(bool Victoria)
+        {
+            BD.CambiarTurno(Convert.ToInt32(Session["IDPartida"]), Victoria);
+            int MiJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
+            if (MiJugador == 0)
+            {
+                Response.Cookies["Turno"].Value = "1";
+            } else
+            {
+                Response.Cookies["Turno"].Value = "0";
+            }
+            
+        }
     }
 }

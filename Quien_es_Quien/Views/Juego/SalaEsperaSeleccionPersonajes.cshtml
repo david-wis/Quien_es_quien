@@ -10,7 +10,7 @@
             url: "@Url.Action("SalaEsperaSeleccionPersonajes", "Juego")",
             contentType: "charset=utf-8",
         });
-        $("#test").load(window.location.href + " #test");
+        $("#test").load(window.location.href + " #test");//Cambiar por cookie en una version futura (si la hay)
         if ($("#test").text() == "1") {
             clearInterval(inter);//Aparentemente sino se ejecuta infinitamente y no logra salir
             var href = '@Url.Action("MultiplayerJuego", "Juego")';

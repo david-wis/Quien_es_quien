@@ -132,7 +132,13 @@ namespace Quien_es_Quien
                     string Nombre = lector["Nombre"].ToString();
                     byte[] Foto = (byte[])lector["Foto"];
                     int IDCat = Convert.ToInt32(lector["Categoria"]);
-                    string Cat = dicCategorias[IDCat];
+                    string Cat;
+                    if (Categoria == null) { 
+                        Cat = dicCategorias[IDCat];
+                    } else
+                    {
+                        Cat = Categoria;
+                    }
                     listaPersonajes.Add(new Personaje(ID, Nombre, Foto, IDCat, Cat));
                 }
             }
@@ -746,6 +752,35 @@ namespace Quien_es_Quien
             }
             Desconectar(conexion);
             return IDPers;
+        }
+
+        public static void CambiarTurno(int IDPartida, bool Victoria)
+        {
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_CambiarTurno";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            query.Parameters.AddWithValue("@Victory", Victoria);
+            query.ExecuteNonQuery();
+            Desconectar(conexion);
+        }
+
+        public static int VerificarTurno(int IDPartida)
+        {
+            int turno = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_VerificarTurno";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            SqlDataReader lector = query.ExecuteReader();
+            if (lector.Read())
+            {
+                turno = Convert.ToInt32(lector["Turno"]);
+            }
+            Desconectar(conexion);
+            return turno;
         }
     }
 }

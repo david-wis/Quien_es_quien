@@ -219,6 +219,8 @@
     <Content Include="Views\Juego\SalaEspera.cshtml" />
     <Content Include="Views\Juego\SalaEsperaSeleccionPersonajes.cshtml" />
     <Content Include="Views\Juego\MultiplayerJuego.cshtml" />
+    <Content Include="Views\Juego\GanasteMultiplayer.cshtml" />
+    <Content Include="Views\Juego\PerdisteMultiplayer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

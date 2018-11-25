@@ -13,7 +13,8 @@ namespace Quien_es_Quien.Controllers
         public ActionResult Juego(string nombre = null)
         {
             BD.listaPersonajes = BD.ListarPersonajes(nombre);//Agregar para traer por categoria
-            if (BD.listaPersonajes.Count > 1) {
+            if (BD.listaPersonajes.Count > 1)
+            {
                 foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
                 {
                     MemoryStream imgStream = new MemoryStream(p.Foto);
@@ -31,7 +32,8 @@ namespace Quien_es_Quien.Controllers
                 {
                     p.ListaPregs = BD.ObtenerPreguntasPersonaje(p.IDPersonaje);
                 }
-            } else
+            }
+            else
             {
                 //ViewBag.Error = "404";
                 return View("AgregarPersonaje", "BackOffice");//Por ahora hagamos que te mande a agregar personaje
@@ -175,6 +177,7 @@ namespace Quien_es_Quien.Controllers
         {
             BD.ConnectToGame(IDPartida, Session["Nombre"].ToString());
             Session["IDPartida"] = IDPartida;
+            Response.Cookies["Turno"].Expires = DateTime.Now.AddDays(-1d);
             Response.Cookies["MiJugador"].Value = "0";//Queria probar las cookies comunes sin viewbag
             Response.Cookies["MiJugador"].Expires = DateTime.Now.AddHours(1);
             return RedirectToAction("ElegirPersOtro", "Juego");
@@ -226,11 +229,25 @@ namespace Quien_es_Quien.Controllers
             if (MiJugador == 0)
             {
                 Response.Cookies["Turno"].Value = "1";
-            } else
+            }
+            else
             {
                 Response.Cookies["Turno"].Value = "0";
             }
-            
+
+        }
+
+        public ActionResult GanasteMultiplayer()
+        {
+            int IDPartida = Convert.ToInt32(Session["IDPartida"]);
+            int MiJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
+            BD.CargarPartidaMultiplayer(IDPartida, MiJugador, -1);
+            return View();
+        }
+
+        public ActionResult PerdisteMultiplayer()
+        {
+            return View();
         }
     }
 }

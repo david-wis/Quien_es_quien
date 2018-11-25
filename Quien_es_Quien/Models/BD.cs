@@ -782,5 +782,21 @@ namespace Quien_es_Quien
             Desconectar(conexion);
             return turno;
         }
+
+        public static void CargarPartidaMultiplayer(int IDPartida, int NJugador, int Puntos)
+        {
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_LoadPartidaMP";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            query.Parameters.AddWithValue("@NJug", NJugador);
+            if (Puntos != -1)//-1 = no hay puntos
+            { 
+                query.Parameters.AddWithValue("@PuntosGanador", Puntos);
+            }
+            query.ExecuteNonQuery();
+            Desconectar(conexion);
+        }
     }
 }

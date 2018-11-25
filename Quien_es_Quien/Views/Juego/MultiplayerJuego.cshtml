@@ -101,19 +101,16 @@
         });
         var turno = getCookieValue('Turno');
         if (turno != '') {
-            if (turno == miJugador) {
+            if (turno == 2) {//Gano el otro :'v
+                var href = '@Url.Action("PerdisteMultiplayer", "Juego")';
+                window.location.href = href;
+            } else if (turno == miJugador) {
                 DesactivarEspera();
             } else {
                 ActivarEspera();
             }
         }
     }
-
-    //Si me tengo que copiar un codigo que sea el mejor :v
-    /*function getCookieValue(a) {
-        var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
-        return b ? b.pop() : '';
-    }*/
 
     function getCookieValue(cname) {
         var name = cname + "=";

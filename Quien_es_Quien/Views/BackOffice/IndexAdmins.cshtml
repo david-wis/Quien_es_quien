@@ -2,18 +2,54 @@
     ViewBag.Title = "Index";
 }
 
-<h1>Index</h1>
+<style>
 
-<div class="jumbotron">
-    <h1>¡Bienvenido, @Session["nombre"]!</h1>
+    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
+
+    body {
+        background-color: darkorange;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+        /*text-decoration: underline overline;*/ /* si no quieren el subrayado ese doble saquen esto*/
+    }
+
+    h2.cosaloka {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+    }
+
+    span.cosaloka2 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        color: darkorange;
+        text-decoration: underline;
+    }
+
+    div.jumbotron.loko {
+    }
+</style>
+
+<div class="jumbotron text-center" style="background-color:grey">
+    <h1 style="color:white;font-size:550%">Menú administrador</h1>
+</div>
+
+<div class="jumbotron text-center" style="background-color:steelblue">
+    <h2 class="cosaloka" style="font-size:350%">¡Bienvenido <span class="cosaloka2">@Session["nombre"]</span>!</h2>
     <p>
         <a href="@Url.Action("ElegirModoJuego", "Juego")" class="btn btn-primary btn-lg">Comenzar a jugar &raquo;</a>
     </p>
+
     <p>
-        <a href="@Url.Action("ListarPersonajes", "BackOffice")" class="btn btn-primary btn-danger">Ver la lista de personajes &raquo;</a>
+        <a href="@Url.Action("ListarPersonajes", "BackOffice")" class="btn btn-primary btn-danger">Ver la lista de los personajes &raquo;</a>
     </p>
     <p>
         <a href="@Url.Action("ListarPreguntas", "BackOffice")" class="btn btn-primary btn-danger">Ver la lista de preguntas &raquo;</a>
     </p>
-
 </div>

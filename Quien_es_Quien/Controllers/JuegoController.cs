@@ -250,12 +250,12 @@ namespace Quien_es_Quien.Controllers
             int IDPartida = Convert.ToInt32(Session["IDPartida"]);
             int MiJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
             BD.CargarPartidaMultiplayer(IDPartida, MiJugador, -1);
-            return View();
+            return View("Ganaste", "Juego");
         }
 
         public ActionResult PerdisteMultiplayer()
         {
-            return View();
+            return View("Perdiste", "Juego");
         }
     }
 }

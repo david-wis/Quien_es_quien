@@ -3,7 +3,6 @@
 }
 
 <script>
-
     var puntaje = 1000000;
     var puntajeRestar;
     var IDPreg = null;
@@ -117,6 +116,41 @@
 </script>
 
 <style>
+    body {
+        background-color: darkorange;
+    }
+    .spacer {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .block { /* este es el largo de la pagina*/
+        height: 320px;
+        padding-top: 15px;
+        background-color: darkorange;
+    }
+
+    .block2 {
+        min-height: 160px;
+        padding-top: 35px;
+    }
+
+    .center {
+        position: absolute;
+        /*  top: 0;
+    bottom: 0; */
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    h2 {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px white;
+    }
+
     #containertodo {
         height: 380px;
         margin: auto auto;
@@ -145,12 +179,14 @@
         height: 130px;
         float: left;
         margin: 10px;
+        stroke:burlywood;
     }
 
     .txtFoto {
         display: block;
         text-align: center;
         font-weight: bold;
+        font-family:'Minion Pro';
     }
 
     .puntaje {

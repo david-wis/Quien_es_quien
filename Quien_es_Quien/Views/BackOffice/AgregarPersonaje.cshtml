@@ -4,30 +4,87 @@
     ViewBag.Title = "AgregarPersonaje";
 }
 
-<div class="jumbotron text-center">
-    <h1>Agregar un personaje</h1>
-</div>
 
+<style>
 
-@using (Html.BeginForm("AgregarPersonaje", "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    <div class="form-group">
-        @Html.Label("Nombre: ", new { @for = "nombre", @class = "control-label col-sm-3" })
-        @Html.TextBoxFor(x => x.Nombre, new { @class = "form-control col-sm-8 col-xs-12", @id = "nombre" })
-        @Html.ValidationMessageFor(x => x.Nombre, "", new { @style = "color:red" })
-    </div>
+    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
 
-    <div class="form-group">
-        @Html.Label("Foto: ", new { @for = "foto" })
-        @Html.TextBoxFor(x => x.Img, new { type = "file", @id = "foto" })
-        @Html.ValidationMessageFor(x => x.Img, "", new { @style = "color:red" })
-    </div>
+    body {
+        padding-bottom: 10px;
+        background-color: darkorange;
+    }
 
-    <div class="form-group">
-        @Html.Label("Categoria: ", new { @for = "Categoria" })
-        @Html.DropDownListFor(x => x.Categoria, new SelectList(BD.dicCategorias, "Value", "Value"), new { @class = "form-control", @id = "Categoria" })
-        @Html.ValidationMessageFor(x => x.Categoria, "", new { @style = "color:red" }) <br />
-    </div>
+    .center {
+        position: absolute;
+        /*  top: 0;
+    bottom: 0; */
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 
-    <input type="submit" name="Enviar" class="btn btn-info" />
-}
+    .form-control {
+        margin: auto;
+    }
+
+    p {
+        margin-top: 26.8%;
+    }
+
+    input {
+        margin: auto;
+    }
+
+        input.btn.btn-info {
+            margin-top: -5%;
+        }
+
+    div1 {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+    }
+</style>
+
+<body>
+
+    <div1 class="jumbotron text-center" style="background-color:steelblue">
+        <h1 style="color:white;font-size:400%">Agregar Personaje</h1>
+    </div1>
+
+    <div1 class="container col-lg-12 block">
+
+        <div1 class="row col-xs-6 block2 bg-primary center">
+
+            @using (Html.BeginForm("AgregarPersonaje", "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="form-group">
+                    @Html.Label("Nombre: ", new { @for = "nombre" })
+                    @Html.TextBoxFor(x => x.Nombre, new { @class = "form-control", @id = "nombre" })
+                    @Html.ValidationMessageFor(x => x.Nombre, "", new { @style = "color:red" })
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Foto: ", new { @for = "foto" })
+                    @Html.TextBoxFor(x => x.Img, new { type = "file", @id = "foto" })
+                    @Html.ValidationMessageFor(x => x.Img, "", new { @style = "color:red" })
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Categoria: ", new { @for = "Categoria" })
+                    @Html.DropDownListFor(x => x.Categoria, new SelectList(BD.dicCategorias, "Value", "Value"), new { @class = "form-control", @id = "Categoria" })
+                    @Html.ValidationMessageFor(x => x.Categoria, "", new { @style = "color:red" }) <br />
+                </div>
+
+                <input type="submit" name="Enviar" class="btn btn-info" />
+            }
+        </div1>
+    </div1>
+</body>

@@ -22,7 +22,7 @@
 
     .center {
         position: absolute;
-        /*  top: 0;
+        /*top: 0;
     bottom: 0; */
         left: 0;
         right: 0;
@@ -45,6 +45,10 @@
     ul.dropdown-menu {
         margin-left: 35.5%;
     }
+
+    .col-xs-6 {
+        width:50%;
+    }
 </style>
 
 
@@ -57,15 +61,11 @@
 
 
     <div1 class="container col-lg-12 block">
-
         <div1 class="row col-xs-6 block2 bg-primary center">
-
-            @Html.ActionLink(listaTipos[0], "ElegirModo", "Juego", new { nombre = listaTipos[0] }, new { @class = "btn btn-primary boton" }) <br />
-
-            @Html.ActionLink(listaTipos[1], "ElegirModo", "Juego", new { nombre = listaTipos[1] }, new { @class = "btn btn-primary boton" }) <br />
-
+            @Html.ActionLink(listaTipos[0], "ElegirModo", "Juego", new { nombre = listaTipos[0] }, new { @class = "btn btn-success boton" }) <br />
+            @Html.ActionLink(listaTipos[1], "ElegirModo", "Juego", new { nombre = listaTipos[1] }, new { @class = "btn btn-success boton" }) <br />
             <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
                     Jugar contra la IA
                     <span class="caret"></span>
                 </button>

@@ -5,24 +5,35 @@
 }
 
 <style>
+    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
     .boton {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     body {
-        padding-bottom: 10px;
+        padding-top: 5px;
         background-color: darkorange;
     }
 
+    .spacer {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
     .block { /* este es el largo de la pagina*/
-        height: 210px;
-        padding-bottom: 10px;
+        height: 320px;
+        padding-top: 15px;
         background-color: darkorange;
+    }
+
+    .block2 {
+        min-height: 160px;
+        padding-top: 20px;
     }
 
     .center {
         position: absolute;
-        /*top: 0;
+        /*  top: 0;
     bottom: 0; */
         left: 0;
         right: 0;
@@ -35,46 +46,31 @@
         -webkit-text-stroke: 2px black;
         text-shadow: 3px 5px red;
     }
-
-    div1 {
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-    }
-
-    ul.dropdown-menu {
-        margin-left: 35.5%;
-    }
-
-    .col-xs-6 {
-        width:50%;
-    }
 </style>
 
 
 
 <body>
-
-    <div1 class="jumbotron text-center" style="background-color:steelblue">
-        <h1 style="color:white;font-size:650%">Elige el tipo de partida</h1>
-    </div1>
-
-
+    <div class="jumbotron text-center" style="background-color:steelblue">
+        <h1 style="color:white;font-size:400%">Elige un modo de juego</h1>
+    </div>
     <div1 class="container col-lg-12 block">
         <div1 class="row col-xs-6 block2 bg-primary center">
-            @Html.ActionLink(listaTipos[0], "ElegirModo", "Juego", new { nombre = listaTipos[0] }, new { @class = "btn btn-success boton" }) <br />
-            @Html.ActionLink(listaTipos[1], "ElegirModo", "Juego", new { nombre = listaTipos[1] }, new { @class = "btn btn-success boton" }) <br />
-            <div class="dropdown">
-                <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
-                    Jugar contra la IA
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li>@Html.ActionLink(listaTipos[2], "ElegirModo", "Juego", new { nombre = listaTipos[2] })</li>
-                    <li>@Html.ActionLink(listaTipos[3], "ElegirModo", "Juego", new { nombre = listaTipos[3] })</li>
-                    <li>@Html.ActionLink(listaTipos[4], "ElegirModo", "Juego", new { nombre = listaTipos[4] })</li>
-                </ul>
-            </div>
+            <form align="center">
+                @Html.ActionLink(listaTipos[0], "ElegirModo", "Juego", new { nombre = listaTipos[0] }, new { @class = "btn btn-success boton" }) <br />
+                @Html.ActionLink(listaTipos[1], "ElegirModo", "Juego", new { nombre = listaTipos[1] }, new { @class = "btn btn-success boton" }) <br />
+                <div class="dropdown">
+                    <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">
+                        Jugar contra la IA
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>@Html.ActionLink(listaTipos[2], "ElegirModo", "Juego", new { nombre = listaTipos[2] })</li>
+                        <li>@Html.ActionLink(listaTipos[3], "ElegirModo", "Juego", new { nombre = listaTipos[3] })</li>
+                        <li>@Html.ActionLink(listaTipos[4], "ElegirModo", "Juego", new { nombre = listaTipos[4] })</li>
+                    </ul>
+                </div>
+            </form>
         </div1>
     </div1>
 </body>

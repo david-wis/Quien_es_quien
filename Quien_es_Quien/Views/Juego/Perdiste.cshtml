@@ -2,16 +2,15 @@
 @{
     ViewBag.Title = "Perdiste";
 }
-
 <style>
-    .boton {
-        margin-bottom: 10px;
-    }
-
-    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
     body {
         padding-top: 5px;
         background-color: darkorange;
+    }
+
+    img {
+        vertical-align: middle;
+        margin-left: 29%;
     }
 
     .spacer {
@@ -42,13 +41,35 @@
     h1 {
         font-family: Arial, sans-serif;
         font-weight: 900;
+        -webkit-text-stroke: 2px darkred;
+        text-shadow: 3px 5px black;
+    }
+
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
         -webkit-text-stroke: 2px black;
-        text-shadow: 3px 5px red;
+        margin-left: 25%;
+    }
+
+    a.btn.btn-primary.boton {
+        margin-left: 45%;
+        margin-top: 1%;
+    }
+
+    p {
+        margin-top: -1%;
+    }
+
+    hr {
     }
 </style>
 
 <div class="jumbotron text-center" style="background-color:steelblue">
-    <h1 style="color:white;font-size:650%">Login</h1>
+    <h1 style="color:red;font-size:500%">Perdiste:(</h1>
 </div>
 
-@Html.ActionLink("Siguiente", "Estadisticas", "Juego", new { @class = "btn btn-primary boton" })  <br />
+<h2>So sad, @Session["nombre"], perdiste @Session["puntos"]</h2>
+<img src="~/Content/perdiste.gif" alt="gif perdiste"> <br />
+@Html.ActionLink("Siguiente", "Estadisticas", "Juego", new { @class = "btn btn-primary boton" })
+

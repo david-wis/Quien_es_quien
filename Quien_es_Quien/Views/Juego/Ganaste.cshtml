@@ -2,13 +2,75 @@
 @{
     ViewBag.Title = "Ganaste";
 }
+<style>
+    body {
+        padding-top: 5px;
+        background-color: darkorange;
+    }
+
+    img {
+        vertical-align: middle;
+        margin-left: 29%;
+    }
+
+    .spacer {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .block { /* este es el largo de la pagina*/
+        height: 320px;
+        padding-top: 15px;
+        background-color: darkorange;
+    }
+
+    .block2 {
+        min-height: 160px;
+        padding-top: 35px;
+    }
+
+    .center {
+        position: absolute;
+        /*  top: 0;
+    bottom: 0; */
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px green;
+        text-shadow: 3px 5px black;
+    }
+
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 400;
+        -webkit-text-stroke: 2px black;
+        margin-left: 25%;
+    }
+
+    a.btn.btn-primary.boton {
+        margin-left: 45%;
+        margin-top: 1%;
+    }
+
+    p {
+        margin-top: -1%;
+    }
+
+    hr{
+    }
+
+</style>
 
 <div class="jumbotron text-center" style="background-color:steelblue">
-    <h1 style="color:white;font-size:500%">¡Ganaste!</h1>
+    <h1 style="color:lawngreen;font-size:500%">¡Ganaste!</h1>
 </div>
 
-<div class="form-group">
-    <h2>¡Felicitaciones, @Session["nombre"]! Ganaste @Session["puntaje"] puntos</h2>
-</div>
+<h2>¡Felicitaciones, @Session["nombre"]! Ganaste @Session["puntaje"] puntos</h2>
+<img src="~/Content/ganaste.gif" alt="gif ganaste"> <br />
+@Html.ActionLink("Siguiente", "Estadisticas", "Juego", new { @class = "btn btn-primary boton" })
 
-@Html.ActionLink("Siguiente", "Estadisticas", "Juego", new { @class = "btn btn-primary boton" })  <br />

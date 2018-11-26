@@ -56,7 +56,6 @@
         <form align="center">
             @foreach (int idCatPers in BD.dicCategorias.Keys)
             {
-
                 string CatPers = BD.dicCategorias[idCatPers];
                 @Html.ActionLink(CatPers, "Juego", "Juego", new { nombre = CatPers }, new { @class = "btn btn-success boton" }) <br />
             }

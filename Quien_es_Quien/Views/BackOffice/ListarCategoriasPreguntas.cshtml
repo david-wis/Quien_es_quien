@@ -2,17 +2,64 @@
     ViewBag.Title = "ListarCategoriasPreguntas";
 }
 
-<h2>Listado de categorias de preguntas</h2>
-
-<td>@Html.ActionLink("Agregar categoria de preguntas", "AgregarCategoriaPregunta", "BackOffice", new { @class = "btn btn-info" })</td>
-<h3>@Session["Mensaje"]</h3>
 <style>
     table, th, td {
         border: 1px solid black;
     }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px black;
+        text-shadow: 3px 5px red;
+    }
+
+    #AgregarCat {
+        margin: auto;
+        display: block;
+        width: 300px;
+    }
+
+    #tabla {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    body {
+        padding-top: 2px;
+        background-color: darkorange;
+    }
+
+    p {
+        margin-top: -1%;
+    }
+
+    hr {
+        margin-top: 47px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    th {
+        background-color: cadetblue;
+        font-size: 18px;
+    }
+
+    td {
+        background-color: hotpink;
+        font-size: 16px;
+    }
 </style>
 
-<table class="table table-bordered">
+<div class="jumbotron text-center" style="background-color:steelblue">
+    <h1 style="color:white;font-size:400%">Listar categorias de personajes</h1>
+</div>
+
+<a id="AgregarCat" class="btn btn-info" href="/BackOffice/AgregarCategoriaPersonajes">Agregar categoria de personajes</a> <!--Misma forma pero con <a>, asi le puedo poner un id y despues un style-->
+<h3>@Session["Mensaje"]</h3>
+
+<table id="tabla" class="table table-bordered">
     <tr>
         <th>Categoria</th>
         <th></th>

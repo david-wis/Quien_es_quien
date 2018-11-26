@@ -12,8 +12,8 @@
 @using (Html.BeginForm("AgregarPersonaje", "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div class="form-group">
-        @Html.Label("Nombre: ", new { @for = "nombre" })
-        @Html.TextBoxFor(x => x.Nombre, new { @class = "form-control", @id = "nombre" })
+        @Html.Label("Nombre: ", new { @for = "nombre", @class = "control-label col-sm-3" })
+        @Html.TextBoxFor(x => x.Nombre, new { @class = "form-control col-sm-8 col-xs-12", @id = "nombre" })
         @Html.ValidationMessageFor(x => x.Nombre, "", new { @style = "color:red" })
     </div>
 

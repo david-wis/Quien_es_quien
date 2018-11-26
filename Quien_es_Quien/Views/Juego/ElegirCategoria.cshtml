@@ -13,5 +13,8 @@
 @foreach (int idCatPers in BD.dicCategorias.Keys)
 {
     string CatPers = BD.dicCategorias[idCatPers];
-    @Html.ActionLink(CatPers, "Juego", "Juego", new { nombre = CatPers}, new { @class = "btn btn-info boton" }) <br />
+    @Html.ActionLink(CatPers, "Juego", "Juego", new { nombre = CatPers }, new { @class = "btn btn-info boton" }) <br />
 }
+
+@Html.ActionLink("Todos", "Juego", "Juego", new { @class = "btn btn-info boton" }) <br />
+

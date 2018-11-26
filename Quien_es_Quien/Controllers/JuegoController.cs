@@ -157,7 +157,8 @@ namespace Quien_es_Quien.Controllers
         {
             int IDPartida = Convert.ToInt32(Session["IDPartida"]);
             int ValorJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
-            BD.SeleccionarPersonajeMP(IDPartida, ValorJugador, id);
+            int idCat = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["CategoriaPersonaje"].Value));
+            BD.SeleccionarPersonajeMP(IDPartida, ValorJugador, id, idCat);
             return RedirectToAction("SalaEsperaSeleccionPersonajes", "Juego");
         }
 
@@ -183,9 +184,16 @@ namespace Quien_es_Quien.Controllers
             return RedirectToAction("ElegirPersOtro", "Juego");
         }
 
-        public ActionResult MultiplayerJuego(string nombre = null)
+        public ActionResult MultiplayerJuego()
         {
-            BD.listaPersonajes = BD.ListarPersonajes(nombre);
+            int IDPartida = Convert.ToInt32(Session["IDPartida"]);
+            int MiJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
+            string catMP = BD.ObtenerCategoriaMP(IDPartida, MiJugador);
+            if (catMP == "")
+            {
+                catMP = null;
+            }
+            BD.listaPersonajes = BD.ListarPersonajes(catMP);
             if (BD.listaPersonajes.Count > 1)
             {
                 foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita

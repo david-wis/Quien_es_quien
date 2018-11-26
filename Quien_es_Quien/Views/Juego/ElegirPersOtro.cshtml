@@ -2,6 +2,35 @@
     ViewBag.Title = "ElegirPersonaje";
 }
 
+<script>
+    window.onload = function () {
+        idCat = -1;
+        setCookie('CategoriaPersonaje', idCat);
+    }
+
+    function FiltrarPers() {
+        var idCat = $("select[name=selectorCat] option:selected").val();
+        if (idCat != -1) {
+            $.each($('.personaje'), function () {
+                if (!$(this).hasClass(idCat)) {
+                    $(this).css("display", "none");
+                } else {
+                    $(this).css("display", "initial");
+                }
+            });
+        } else {
+            $('.personaje').css("display", "initial");
+        }
+        setCookie('CategoriaPersonaje', idCat);
+    }
+
+    function setCookie(cname, cvalue) {
+        var d = new Date();
+        d.setTime(d.getTime() + (60 * 60 * 1000));//Expira en una hora
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+</script>
 
 <style>
     #containertodo {
@@ -37,13 +66,20 @@
 </style>
 
 <h2>Elija el personaje de su oponente</h2>
+<select name="selectorCat" onchange="FiltrarPers()">
+    <option value="-1">Todos</option>
+    @foreach (int idCat in BD.dicCategorias.Keys)
+    {
+        <option value="@idCat">@BD.dicCategorias[idCat]</option>
+    }
+</select>
 <div id="containertodo">
     <div id="containerfotos">
         @foreach (Personaje p in BD.listaPersonajes)
         {
             string nombreFile = p.IDPersonaje + ".jpg";
             <a href="@Url.Action("ElegirPO", "Juego", new { id = p.IDPersonaje})">
-                <div id="@p.IDPersonaje" class="personaje">
+                <div id="@p.IDPersonaje" class="personaje @p.IDCategoria">
                     <img src="~/Content/Fotos/@nombreFile" alt=":'v"/>
                     <span class="txtFoto">@p.Nombre</span>
                 </div>

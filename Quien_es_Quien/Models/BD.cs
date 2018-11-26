@@ -677,7 +677,7 @@ namespace Quien_es_Quien
             return dicCurrentGames;
         }
 
-        public static void SeleccionarPersonajeMP(int IDPartida, int NJugador, int Personaje)
+        public static void SeleccionarPersonajeMP(int IDPartida, int NJugador, int Personaje, int Categoria)
         {
             SqlConnection conexion = Conectar();
             SqlCommand query = conexion.CreateCommand();
@@ -686,6 +686,7 @@ namespace Quien_es_Quien
             query.Parameters.AddWithValue("@IDPartida", IDPartida);
             query.Parameters.AddWithValue("@Jugador", NJugador);
             query.Parameters.AddWithValue("@Personaje", Personaje);
+            query.Parameters.AddWithValue("@Categoria", Categoria);
             query.ExecuteNonQuery();
             Desconectar(conexion);
         }
@@ -797,6 +798,24 @@ namespace Quien_es_Quien
             }
             query.ExecuteNonQuery();
             Desconectar(conexion);
+        }
+
+        public static string ObtenerCategoriaMP(int IDPartida, int NJugador) 
+        {
+            string Categoria = null;
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_ObtenerCategoriaMP";
+            query.Parameters.AddWithValue("@IDPartida", IDPartida);
+            query.Parameters.AddWithValue("@NJug", NJugador);
+            SqlDataReader lector = query.ExecuteReader();
+            if (lector.Read())
+            {
+                Categoria = lector["Categoria"].ToString();
+            }
+            Desconectar(conexion);
+            return Categoria;
         }
     }
 }

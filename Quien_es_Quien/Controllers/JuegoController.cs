@@ -84,14 +84,6 @@ namespace Quien_es_Quien.Controllers
             return RedirectToAction("Juego", "Juego");
         }
 
-        [HttpPost]
-
-        public ActionResult AgregarPartida(string Ganador, string Perdedor, string TipoPartida, int PuntosGanador)
-        {
-            BD.AgregarPartida(Ganador, Perdedor, TipoPartida, PuntosGanador);
-            return RedirectToAction("holis"); //aca hay que cambiarlo porque no tengo idea a donde carajo va
-        }
-
         public ActionResult MenuMultiplayer()
         {
             Dictionary<int, string> dicCurrentGames = BD.GetCurrentGames();
@@ -107,7 +99,15 @@ namespace Quien_es_Quien.Controllers
 
         public ActionResult Ganaste()
         {
-            BD.AgregarPartida(Session["nombre"].ToString(), null, BD.TipoPartida, Convert.ToInt32(Session["puntaje"]));
+            string Nombre;
+            int puntaje = Convert.ToInt32(Session["puntaje"]);
+            try {
+                Nombre = Session["nombre"].ToString();
+            } catch (NullReferenceException) {
+                Nombre = "Anonimo";
+                puntaje = 0;
+            }
+            BD.AgregarPartida(Nombre, null, BD.TipoPartida, puntaje);
             return View();
         }
 

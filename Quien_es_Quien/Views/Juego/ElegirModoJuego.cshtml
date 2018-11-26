@@ -56,7 +56,7 @@
     </div>
     <div1 class="container col-lg-12 block">
         <div1 class="row col-xs-6 block2 bg-primary center">
-            <form align="center">
+            <div style="margin: auto auto; text-align: center">
                 @Html.ActionLink(listaTipos[0], "ElegirModo", "Juego", new { nombre = listaTipos[0] }, new { @class = "btn btn-success boton" }) <br />
                 @Html.ActionLink(listaTipos[1], "ElegirModo", "Juego", new { nombre = listaTipos[1] }, new { @class = "btn btn-success boton" }) <br />
                 <div class="dropdown">
@@ -70,7 +70,7 @@
                         <li>@Html.ActionLink(listaTipos[4], "ElegirModo", "Juego", new { nombre = listaTipos[4] })</li>
                     </ul>
                 </div>
-            </form>
+            </div>
         </div1>
     </div1>
 </body>

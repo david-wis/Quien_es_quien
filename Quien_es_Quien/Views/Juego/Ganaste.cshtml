@@ -49,7 +49,7 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: 400;
         -webkit-text-stroke: 2px black;
-        margin-left: 25%;
+        text-align: center;
     }
 
     a.btn.btn-primary.boton {
@@ -76,6 +76,10 @@
     catch (NullReferenceException) { nom = "Jugador Anonimo (MESIANO)"; }
     try { mensPunt = "Ganaste " + Convert.ToInt32(Session["puntaje"]) + " puntos"; }
     catch (NullReferenceException) { mensPunt = "Ganaste!"; }
+    if (ViewBag.puntaje == -1)
+    {
+        mensPunt = "Ganaste!";
+    }
 }
 <h2>¡Felicitaciones, @nom! @mensPunt</h2>
 <img src="~/Content/ganaste.gif" alt="gif ganaste"> <br />

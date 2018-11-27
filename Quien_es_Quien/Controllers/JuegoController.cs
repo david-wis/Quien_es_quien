@@ -99,12 +99,22 @@ namespace Quien_es_Quien.Controllers
         public ActionResult Ganaste()
         {
             string Nombre;
-            int puntaje = Convert.ToInt32(Session["puntaje"]);
+            string sPuntaje;
+            int puntaje = 0;
+            try
+            {
+                sPuntaje = Session["puntaje"].ToString();
+                puntaje = Convert.ToInt32(sPuntaje);
+            } 
+            catch (NullReferenceException)
+            {
+                ViewBag.puntaje = -1;
+            }
+
             try {
                 Nombre = Session["nombre"].ToString();
             } catch (NullReferenceException) {
                 Nombre = "Anonimo";
-                puntaje = 0;
             }
             BD.AgregarPartida(Nombre, null, BD.TipoPartida, puntaje);
             return View();
@@ -247,12 +257,12 @@ namespace Quien_es_Quien.Controllers
             int IDPartida = Convert.ToInt32(Session["IDPartida"]);
             int MiJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
             BD.CargarPartidaMultiplayer(IDPartida, MiJugador, -1);
-            return View("Ganaste", "Juego");
+            return RedirectToAction("Ganaste", "Juego");
         }
 
         public ActionResult PerdisteMultiplayer()
         {
-            return View("Perdiste", "Juego");
+            return RedirectToAction("Perdiste", "Juego");
         }
     }
 }

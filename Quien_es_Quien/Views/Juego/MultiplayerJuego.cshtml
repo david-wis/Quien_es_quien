@@ -241,7 +241,7 @@
         {
             string nombreFile = p.IDPersonaje + ".jpg";
             <div id="@p.IDPersonaje" class="personaje">
-                <img src="@p.Foto" alt=":'v" onclick="Arriesgar(@p.IDPersonaje, @ViewBag.persElegido)" />
+                <img src="@p.RutaFoto" alt=":'v" onclick="Arriesgar(@p.IDPersonaje, @ViewBag.persElegido)" />
                 <span class="txtFoto">@p.Nombre</span>
                 @foreach (int preg in p.ListaPregs)
                 {

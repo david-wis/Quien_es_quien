@@ -2,15 +2,53 @@
     ViewBag.Title = "MostrarLista";
 }
 
-<h2>Listado de personajes</h2>
-<td>@Html.ActionLink("Agregar personaje", "AgregarPersonaje", "BackOffice", new { @class = "btn btn-info" })</td>
-<td>@Html.ActionLink("Agregar categoria de personaje", "AgregarCategoriaPersonaje", "BackOffice", new { @class = "btn btn-info" })</td>
-<h3>@Session["Mensaje"]</h3>
 <style>
     table, th, td {
         border: 1px solid black;
     }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px #003326;
+        text-shadow: 3px 5px rosybrown;
+    }
+
+    #AgregarCat {
+        width: 300px;
+        margin-left: 15%;
+    }
+
+
+    th {
+        background-color: lavender;
+        font-size: 18px;
+    }
+
+    td {
+        background-color: gainsboro;
+        font-size: 16px;
+    }
+
+    #categorias {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+
+    body {
+        padding-bottom: 10px;
+        background-color: lightsteelblue;
+    }
 </style>
+
+<div class="jumbotron text-center" style="background-color:indigo">
+    <h1 style="color:white;font-size:400%">Listado de personajes</h1>
+</div>
+
+<a id="AgregarCat" class="btn btn-info" href="/BackOffice/AgregarPersonaje">Agregar Personaje</a>
+<a id="AgregarCat" class="btn btn-info" href="/BackOffice/AgregarCategoriaPersonaje">Agregar Categoria de Personaje</a>
+
+<h3>@Session["Mensaje"]</h3>
 
 @{ try
     {
@@ -25,12 +63,6 @@
     }
 
 }
-<style>
-    #categorias {
-        margin-top: -10px;
-        margin-bottom: 10px;
-    }
-</style>
 
 <form action="@Url.Action("ListarPersonajes", "BackOffice")" method="post" id="categorias">
     Ordenar por:

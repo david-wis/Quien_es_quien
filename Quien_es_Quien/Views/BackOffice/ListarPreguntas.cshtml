@@ -2,40 +2,85 @@
     ViewBag.Title = "ListarPreguntas";
 }
 
-<style>
-    #categorias {
-        margin-top: -10px;
-        margin-bottom: 10px;
-    }
 
-    .agrpreg {
-        margin-top: -10px;
-    }
-</style>
-
-<div class="jumbotron text-center">
-    <h1>Listado de preguntas</h1>
-</div>
-
-<td>@Html.ActionLink("Agregar pregunta", "AgregarPregunta", "BackOffice", new { @class = "btn btn-info agrpreg" })</td>
-<td>@Html.ActionLink("Agregar categoria de pregunta", "AgregarCategoriaPregunta", "BackOffice", new { @class = "btn btn-info agrpreg" })</td>
-
-<h3>@Session["Mensaje"]</h3>
 <style>
     table, th, td {
         border: 1px solid black;
     }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px #003326;
+        text-shadow: 3px 5px rosybrown;
+    }
+
+    #AgregarPreg {
+        margin: auto;
+        display: block;
+        width: 300px;
+    }
+
+    #tabla {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    #Filtrado {
+        width: 150px;
+    }
+
+    body {
+        padding-top: 2px;
+        background-color: lightsteelblue;
+    }
+
+    p {
+        margin-top: -1%;
+    }
+
+    hr {
+        margin-top: 47px;
+        margin-bottom: 20px;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    th {
+        background-color: lavender;
+        font-size: 18px;
+    }
+
+    td {
+        background-color: gainsboro;
+        font-size: 16px;
+    }
+
+    input.btn.btn-info {
+        margin-left: 14.5%;
+        margin-top: -5%;
+    }
 </style>
 
-<form action="@Url.Action("ListarPreguntas", "BackOffice")" method="post" id="categorias">
-    Ordenar por:
-    <select name="Categoria">
+<div class="jumbotron text-center" style="background-color:lightsteelblue">
+    <h1 style="color:white;font-size:400%">Listado de preguntas</h1>
+</div>
+
+
+<a id="AgregarPreg" class="btn btn-info" href="/BackOffice/AgregarPregunta">Agregar pregunta</a> <!--Misma forma pero con <a>, asi le puedo poner un id y despues un style-->
+<h3>@Session["Mensaje"]</h3>
+
+
+<form action="@Url.Action("ListarPreguntas", "BackOffice")" method="post">
+
+    <select id="Filtrado" class="form-control" name="Categoria">
         @foreach (string sCat in BD.dicCategoriasPreguntas.Values)
         {
             <option value="@sCat"> @sCat </option>
         }
     </select>
-    <input type="submit" name="Submit" value="Enviar" class="btn btn-success" />
+
+    <input type="submit" name="Enviar" class="btn btn-info" />
 </form>
 
 <table class="table table-bordered">
@@ -52,7 +97,7 @@
             <td>@unaPreg.Valor</td>
             <td>@BD.dicCategoriasPreguntas[unaPreg.IDCategoria]</td>
 
-            <td>@Html.ActionLink("Borrar Pregunta", "BorrarPregunta", "BackOffice", new { id = unaPreg.IDPregunta, @class = "btn btn-info" }, null)</td>
+            <td>@Html.ActionLink("Borrar Pregunta", "BorrarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
         </tr>
     }
 </table>

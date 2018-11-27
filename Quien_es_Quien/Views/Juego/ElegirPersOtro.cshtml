@@ -80,7 +80,7 @@
             string nombreFile = p.IDPersonaje + ".jpg";
             <a href="@Url.Action("ElegirPO", "Juego", new { id = p.IDPersonaje})">
                 <div id="@p.IDPersonaje" class="personaje @p.IDCategoria">
-                    <img src="~/Content/Fotos/@nombreFile" alt=":'v"/>
+                    <img src="@p.Foto" alt=":'v"/>
                     <span class="txtFoto">@p.Nombre</span>
                 </div>
             </a>

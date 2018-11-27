@@ -166,6 +166,8 @@
         position: relative;
         top: 10px;
         float: right;
+        background-color:mediumturquoise;
+        text-align: center;
     }
 
     img {
@@ -236,8 +238,8 @@
                         {
                             string txtID = "p" + p.IDPregunta;
                             <span class="pregunta" id="@txtID">
-                                <label for="@p.IDPregunta">@p.TextoPregunta</label>
                                 <input type="radio" onclick="CambiarID(@p.IDPregunta, @p.Valor)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
+                                <label for="@p.IDPregunta">@p.TextoPregunta</label>
                                 <br />
                             </span>
                             <span id="VacioPreg" style="display:none">Te has quedado sin preguntas :'v</span>

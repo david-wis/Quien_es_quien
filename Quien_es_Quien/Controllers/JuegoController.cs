@@ -17,9 +17,8 @@ namespace Quien_es_Quien.Controllers
             {
                 foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
                 {
-                    MemoryStream imgStream = new MemoryStream(p.Foto);
-                    Image img = Image.FromStream(imgStream);
-                    img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+                    string imgSrc = "data:Image/png;base64," + Convert.ToBase64String(p.Foto);
+                    p.RutaFoto = imgSrc;
                 }
 
                 Random rnd = new Random();
@@ -142,9 +141,8 @@ namespace Quien_es_Quien.Controllers
             BD.ObtenerCategoriasPersonajes();
             foreach (Personaje p in BD.listaPersonajes)
             {
-                MemoryStream imgStream = new MemoryStream(p.Foto);
-                Image img = Image.FromStream(imgStream);
-                img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+                string imgSrc = "data:Image/png;base64," + Convert.ToBase64String(p.Foto);
+                p.RutaFoto = imgSrc;
             }
             List<Personaje> listaOrdenadaPers = BD.listaPersonajes.OrderBy(x => x.Nombre).ToList(); //Ordena alfabeticamente la lista y la guarda en una temporal
             BD.listaPersonajes = listaOrdenadaPers; //Asigno a la lista de la BD la lista ordenada alfabeticamente
@@ -198,9 +196,8 @@ namespace Quien_es_Quien.Controllers
             {
                 foreach (Personaje p in BD.listaPersonajes) //Cargar fotos en la carpetita
                 {
-                    MemoryStream imgStream = new MemoryStream(p.Foto);
-                    Image img = Image.FromStream(imgStream);
-                    img.Save(Server.MapPath("~/Content/Fotos/" + p.IDPersonaje + ".jpg"), System.Drawing.Imaging.ImageFormat.Jpeg);
+                    string imgSrc = "data:Image/png;base64," + Convert.ToBase64String(p.Foto);
+                    p.RutaFoto = imgSrc;
                 }
 
                 //Random rnd = new Random();

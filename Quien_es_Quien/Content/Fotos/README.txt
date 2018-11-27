@@ -3,3 +3,5 @@ No logramos borrarlas sin que tire error, asi que es normal que se acumulen (per
 A veces hay un bug que hace que se dupliquen las fotos. En un futuro haré un bugfix, pero bastante que logramos usar el blob
 Saludos
 Niñita
+
+UPDATE: bugfix hecho agradezco a Sr.Anush por mostrarme como usar las fotos sin guardarlas 

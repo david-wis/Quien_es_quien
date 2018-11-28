@@ -151,6 +151,13 @@
         text-shadow: 3px 5px rosybrown;
     }
 
+    h4 {
+        font-family: Arial, sans-serif;
+        font-weight: 100;
+        -webkit-text-stroke: 2px #003326;
+        text-shadow: 3px 5px rosybrown;
+    }
+
     #containertodo {
         height: 450px;
         margin: auto auto;
@@ -233,7 +240,7 @@
                 <div class="modal-content" id="modalpregs">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Preguntas</h4>
+                        <h4 class="modal-title" style="color:white">Preguntas</h4>
                     </div>
                     <div class="modal-body">
                         @foreach (Pregunta p in ViewBag.listaPreguntas)

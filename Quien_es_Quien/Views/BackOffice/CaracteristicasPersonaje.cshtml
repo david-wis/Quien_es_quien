@@ -84,9 +84,19 @@
         </div>
     }
     <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 700px" />
+    @foreach (int IdPreg in ViewBag.listaPregsPers)
+    {
+        <span class="pregspers" style="display:none">@IdPreg</span>
+    }
 </form>
 
 <script>
+    window.onload = function () {//Checkea todas las preguntas ya marcadas
+        $.each($('.pregspers'), function () {
+            $('#' + $(this).text() + ' input').trigger("click");
+        });
+    }
+
     function DesactivarResto(idPreg, idCat) {//Recibe el id de la pregunta que fue seleccionada y la categoria de las preguntas que se deben desactivar
         var estado;
         //A continuacion, se fija si el input esta checkeado

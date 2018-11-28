@@ -101,7 +101,7 @@
         string nombreFile = unPers.IDPersonaje + ".jpg";
         <tr>
             <td>@unPers.Nombre</td>
-            <td id="tdFoto"><img src="~/Content/Fotos/@nombreFile" alt="SuperPic que no cargo" width="300"></td>
+            <td id="tdFoto"><img src="@unPers.RutaFoto" alt="SuperPic que no cargo" width="300"></td>
             <td>@unPers.Categoria</td>
             <td>@Html.ActionLink("Modificar personaje", "ModificarPersonaje", "BackOffice", new { id = unPers.IDPersonaje }, new { @class = "btn btn-info" })</td> <!--Mandas como parametro el ID del personaje a modificar-->
             <td>@Html.ActionLink("Borrar Personaje", "BorrarPersonaje", "BackOffice", new { id = unPers.IDPersonaje }, new { @class = "btn btn-info" })</td>

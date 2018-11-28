@@ -215,6 +215,47 @@ namespace Quien_es_Quien.Controllers
             return RedirectToAction("ListarPersonajes", "BackOffice");
         }
 
+        public ActionResult ModificarPregunta(int id)
+        {
+            BD.ObtenerCategoriaPreguntas();
+            List<Pregunta> listaPreguntas = BD.ObtenerPreguntas(null);
+            int iCantLista = listaPreguntas.Count;
+            int iPosi = 0;
+            bool encontrado = false;
+            Pregunta preguntaModificar = new Pregunta();
+            while (!encontrado && iPosi < iCantLista)
+            {
+                if (listaPreguntas[iPosi].IDPregunta == id)
+                {
+                    encontrado = true;
+                    preguntaModificar = listaPreguntas[iPosi];
+                }
+                else
+                {
+                    iPosi++;
+                }
+            }
+            ViewBag.textoPreguntaModificar = preguntaModificar.TextoPregunta;
+            Session["IDPregunta"] = id;
+            return View("ModificarPregunta", preguntaModificar);
+        }
+
+        [HttpPost]
+        public ActionResult ModificarPregunta(Pregunta pregModificada)
+        {
+            pregModificada.IDPregunta = Convert.ToInt32(Session["IDPregunta"]);
+            string sRespuesta = BD.ModificarPregunta(pregModificada);
+            if (sRespuesta == "1")
+            {
+                Session["Mensaje"] = "La pregunta se modifico correctamente";
+            }
+            else
+            {
+                Session["Mensaje"] = sRespuesta;
+            }
+            return RedirectToAction("ListarPreguntas", "BackOffice");
+        }
+
         public ActionResult ListarPersonajes()
         {
             BD.listaPersonajes = BD.ListarPersonajes(null);

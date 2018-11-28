@@ -5,9 +5,16 @@
 }
 
 
-<style>
+<script>
+    function Validar(e) {
+        if ($("#Texto").val() == "") {
+            alert("Si no tenes ninguna pregunta, para que viniste?");
+            e.preventDefault();
+        }
+    }
+</script>
 
-    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
+<style>
 
     body {
         padding-bottom: 10px;
@@ -72,22 +79,22 @@
             <div class="form-group">
                 @Html.Label("Texto: ", new { @for = "Texto" })
                 @Html.TextAreaFor(x => x.TextoPregunta, new { @class = "form-control", @id = "Texto" })
-                @Html.ValidationMessageFor(x => x.TextoPregunta, "", new { @style = "color:red" })
+                @Html.ValidationMessageFor(x => x.TextoPregunta, null, new { @style = "color:red" })
             </div>
 
             <div class="form-group">
                 @Html.Label("Valor: ", new { @for = "Valor" })
                 @Html.TextBoxFor(x => x.Valor, new { type = "number", @class = "form-control", @id = "Valor" })
-                @Html.ValidationMessageFor(x => x.Valor, "", new { @style = "color:red" })
+                @Html.ValidationMessageFor(x => x.Valor, null, new { @style = "color:red" })
             </div>
 
             <div class="form-group">
                 @Html.Label("Categoria: ", new { @for = "Categoria" })
                 @Html.DropDownListFor(x => x.IDCategoria, new SelectList(BD.dicCategoriasPreguntas, "Key", "Value"), new { @class = "form-control", @id = "Categoria" })
-                @Html.ValidationMessageFor(x => x.IDCategoria, "", new { @style = "color:red" })
+                @Html.ValidationMessageFor(x => x.IDCategoria, null, new { @style = "color:red" })
             </div>
 
-                <input type="submit" name="Enviar" class="btn btn-info" />
+                <input type="submit" name="Enviar" class="btn btn-info" onclick="Validar(event)"/>
             }
         </div1>
     </div1>

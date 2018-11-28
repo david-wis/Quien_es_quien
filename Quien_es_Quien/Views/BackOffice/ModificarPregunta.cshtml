@@ -1,0 +1,83 @@
+﻿@model Quien_es_Quien.Pregunta
+@{
+    ViewBag.Title = "ModificarPregunta";
+}
+
+<style>
+
+    body {
+        padding-bottom: 10px;
+        background-color: lightsteelblue;
+    }
+
+    h1 {
+        font-family: Arial, sans-serif;
+        font-weight: 900;
+        -webkit-text-stroke: 2px #003326;
+        text-shadow: 3px 5px rosybrown;
+    }
+
+    .center {
+        position: absolute;
+        /*  top: 0;
+    bottom: 0; */
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .form-control {
+        margin: auto;
+    }
+
+    p {
+        margin-top: 29.8%;
+    }
+
+    input {
+        margin: auto;
+    }
+    
+    input.btn.btn-info {
+            margin-top: -5%;
+        }
+
+    div1 {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="jumbotron text-center" style="background-color:indigo">
+    <h1 style="color:white;font-size:400%">Modificar pregunta: @ViewBag.textoPreguntaModificar</h1>
+</div>
+
+<div1 class="container col-lg-12 block">
+
+    <div1 class="row col-xs-6 block2 bg-primary center">
+
+        @using (Html.BeginForm("ModificarPregunta", "BackOffice", FormMethod.Post))
+        {
+            <div class="form-group">
+                @Html.Label("Texto de la pregunta: ", new { @for = "textoPreg" /*@class = "control-label col-sm-2", */})
+                @Html.TextBoxFor(x => x.TextoPregunta, new { @class = "form-control", @id = "textoPreg" })
+                @Html.ValidationMessageFor(x => x.TextoPregunta, "", new { @style = "color:red" })
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Valor: ", new { @for = "Valor" })
+                @Html.TextBoxFor(x => x.Valor, new { type = "number", @id = "Valor", @style = "color: black" })
+                @Html.ValidationMessageFor(x => x.Valor, "", new { @style = "color:red" })
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Categoria: ", new { @for = "Categoria" })
+                @Html.DropDownListFor(x => x.IDCategoria, new SelectList(BD.dicCategoriasPreguntas, "Key", "Value"), new { @class = "form-control", @id = "Categoria" })
+                @Html.ValidationMessageFor(x => x.IDCategoria, "", new { @style = "color:red" }) <br />
+            </div>
+
+            <input type="submit" name="Modificar" class="btn btn-info" />
+        }
+    </div1>
+</div1>

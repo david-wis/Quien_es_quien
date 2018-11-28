@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Quien_es_Quien
@@ -7,8 +8,11 @@ namespace Quien_es_Quien
     public class Pregunta
     {
         private int _IDPregunta;
+        [Required]
         private string _TextoPregunta;
+        [Required]
         private int _Valor;
+        [Required]
         private int _IDCategoria;
 
         public int IDPregunta

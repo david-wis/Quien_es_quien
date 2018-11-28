@@ -5,9 +5,16 @@
 }
 
 
-<style>
+<script>
+    function Validar(e) {
+        if ($("#nombre").val() == "") {
+            alert("No ingreso ningun nombre :'(");
+            e.preventDefault();
+        }
+    }
+</script>
 
-    /* Si quieren cambiar los colores, cambien los color de los h1, h2, p, etc del layout (algunos tienen el color en el mismo tag)*/
+<style>
 
     body {
         padding-bottom: 10px;
@@ -83,7 +90,7 @@
                     @Html.ValidationMessageFor(x => x.Categoria, "", new { @style = "color:red" }) <br />
                 </div>
 
-                <input type="submit" name="Enviar" class="btn btn-info" />
+                <input type="submit" name="Enviar" class="btn btn-info" onclick="Validar(event)"/>
             }
         </div1>
     </div1>

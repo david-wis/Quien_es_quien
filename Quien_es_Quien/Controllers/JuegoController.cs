@@ -40,8 +40,13 @@ namespace Quien_es_Quien.Controllers
             return View();
         }
 
-        public ActionResult ElegirModoJuego()
+        public ActionResult ElegirModoJuego(bool? invitado = null)
         {
+            if (invitado == true)
+            {
+                Session["nombre"] = "Anonimo";
+                Session["administrador"] = false;
+            }
             List<string> listaTipos = new List<string>();
             listaTipos = BD.ObtenerTiposPartida();
             ViewBag.ListaTipos = listaTipos;

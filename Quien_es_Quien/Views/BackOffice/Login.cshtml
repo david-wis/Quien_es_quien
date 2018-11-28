@@ -1,6 +1,37 @@
 ﻿@{
     ViewBag.Title = "Login";
+    if (ViewBag.Mensaje != null)
+    {
+        Response.Cookies["Mensaje"].Value = ViewBag.Mensaje;
+        Response.Cookies["Mensaje"].Expires = DateTime.Now.AddHours(1);
+    }
 }
+
+<script>
+    window.onload = function () {
+        var msg = getCookieValue("Mensaje");
+        if (msg != "") {
+            alert(msg);
+            document.cookie = "Mensaje=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+    }
+
+    function getCookieValue(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+</script>
 
 <style>
     body {
@@ -69,7 +100,6 @@
                 </div>
             </form>
         </div>
-
     </div>
 
 </body>

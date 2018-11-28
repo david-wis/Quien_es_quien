@@ -7,7 +7,9 @@
     <h1 style="color:white;font-size:650%">Estadisticas</h1>
 </div>
 
-<h2>Jugaste @ViewBag.Jugadas partidas en total, de las cuales ganaste @ViewBag.Ganadas</h2>
+@if (Session["nombre"].ToString() != "Anonimo") { 
+    <h2>Jugaste @ViewBag.Jugadas partidas en total, de las cuales ganaste @ViewBag.Ganadas</h2>
+}
 
 <h2 style="color:silver"> Nuestros mejores jugadores</h2>
 

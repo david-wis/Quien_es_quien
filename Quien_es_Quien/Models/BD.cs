@@ -14,8 +14,8 @@ namespace Quien_es_Quien
 {
     static public class BD
     {
-        public static string connectionString = "Server=10.128.8.16;User=QEQA05;Password=QEQA05;Database=QEQA05";
-        //public static string connectionString = "Server=.;Database=QEQA05;Trusted_connection=True";
+        //public static string connectionString = "Server=10.128.8.16;User=QEQA05;Password=QEQA05;Database=QEQA05";
+        public static string connectionString = "Server=.;Database=QEQA05;Trusted_connection=True";
         public static Dictionary<int, string> dicCategorias = new Dictionary<int, string>();
         public static Dictionary<int, string> dicCategoriasPreguntas = new Dictionary<int, string>();
         public static List<Personaje> listaPersonajes = new List<Personaje>();
@@ -311,6 +311,36 @@ namespace Quien_es_Quien
                 }
             }
             Desconectar(conexion);
+            return sRespuesta;
+        }
+
+        public static string ModificarPregunta(Pregunta pregModificar)
+        {
+            string sRespuesta = null;
+            SqlConnection connection = Conectar();
+            SqlCommand command = connection.CreateCommand();
+            command.CommandType = System.Data.CommandType.StoredProcedure;
+            command.CommandText = "sp_ModificarPregunta";
+            command.Parameters.AddWithValue("@idPregunta", pregModificar.IDPregunta);
+            command.Parameters.AddWithValue("@textoPregunta", pregModificar.TextoPregunta);
+            command.Parameters.AddWithValue("@valorPregunta", pregModificar.Valor);
+            command.Parameters.AddWithValue("@categoriaPregunta", pregModificar.IDCategoria);
+            SqlDataReader lector = command.ExecuteReader();
+            if (lector.Read())
+            {
+                try
+                {
+                    sRespuesta = lector["Error"].ToString();
+                }
+                catch (IndexOutOfRangeException e)
+                {
+                    if (lector["Success"] != null)
+                    {
+                        sRespuesta = "1";
+                    }
+                }
+            }
+            Desconectar(connection);
             return sRespuesta;
         }
 

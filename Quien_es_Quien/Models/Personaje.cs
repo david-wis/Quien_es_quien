@@ -10,6 +10,7 @@ namespace Quien_es_Quien
     public class Personaje
     {
         private int _IDPersonaje;
+        [Required]
         private string _Nombre;
         private string _RutaFoto;//Ver si quedo en algun lado
         private byte[] _foto;//Segun los foros de asp.net asi se guarda un varbinary

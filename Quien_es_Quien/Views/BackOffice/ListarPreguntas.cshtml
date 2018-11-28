@@ -96,15 +96,16 @@
         <th>Valor</th>
         <th>Categoria</th>
         <th></th>
+        <th></th>
     </tr>
     @foreach (Pregunta unaPreg in ViewBag.listaPreguntas)
     {
-        <tr>
-            <td>@unaPreg.TextoPregunta</td>
-            <td>@unaPreg.Valor</td>
-            <td>@BD.dicCategoriasPreguntas[unaPreg.IDCategoria]</td>
-
-            <td>@Html.ActionLink("Borrar Pregunta", "BorrarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
-        </tr>
+    <tr>
+        <td>@unaPreg.TextoPregunta</td>
+        <td>@unaPreg.Valor</td>
+        <td>@BD.dicCategoriasPreguntas[unaPreg.IDCategoria]</td>
+        <td>@Html.ActionLink("Modificar Pregunta", "ModificarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
+        <td>@Html.ActionLink("Borrar Pregunta", "BorrarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
+    </tr>
     }
 </table>

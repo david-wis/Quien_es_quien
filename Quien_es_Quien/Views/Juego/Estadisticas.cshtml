@@ -12,6 +12,15 @@
 <h2 style="color:silver"> Nuestros mejores jugadores</h2>
 
 <style>
+    .botoncito {
+        background-color: lightsteelblue;
+        border: hidden !important;
+    }
+
+    .filabotoncitos {
+        border: hidden;
+    }
+
     #colNombre {
         width: 62%;
         text-align: center;
@@ -27,7 +36,12 @@
     }
 
     .boton {
+        margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    #botoncito {
+        margin: auto auto;
     }
 
     table, th, td {
@@ -92,11 +106,16 @@
             <td>@iPuntos</td>
         </tr>
     }
+        <tr class="filabotoncitos">
+            <td class="botoncito">
+                @if (Convert.ToBoolean(Session["administrador"]))
+                {
+                    @Html.ActionLink("Volver al BackOffice", "IndexAdmins", "BackOffice", null, new { @class = "btn btn-primary boton" })
+                }
+            </td>
+            <td class="botoncito">
+                @Html.ActionLink("Volver a jugar", "ElegirModoJuego", "Juego", new { @class = "btn btn-primary boton" })
+            </td>
+         </tr>
 </table>
-@if (Convert.ToBoolean(Session["administrador"]))
-{
-    @Html.ActionLink("Volver al BackOffice", "IndexAdmins", "BackOffice", null, new { @class = "btn btn-primary boton" })
-}
-
-@Html.ActionLink("Volver a jugar", "ElegirModoJuego", "Juego", new { @class = "btn btn-primary boton" })  <br />
 

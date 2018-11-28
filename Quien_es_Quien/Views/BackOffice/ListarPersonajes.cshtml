@@ -3,8 +3,24 @@
 }
 
 <style>
-    table, th, td {
-        border: 1px solid black;
+    table {
+        /*border: 5px solid black;*/
+    }
+
+    th {
+        background-color: lavender;
+        border: 2px solid black;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    td {
+        background-color: gainsboro;
+        border: 2px solid black;
+        font-size: 16px;
+        text-align: center;
+        padding-right: 10px;
+        padding-left: 10px;
     }
 
     h1 {
@@ -14,20 +30,14 @@
         text-shadow: 3px 5px rosybrown;
     }
 
+    body {
+        padding-bottom: 10px;
+        background-color: lightsteelblue;
+    }
+
     #AgregarCat {
         width: 300px;
         margin-left: 15%;
-    }
-
-
-    th {
-        background-color: lavender;
-        font-size: 18px;
-    }
-
-    td {
-        background-color: gainsboro;
-        font-size: 16px;
     }
 
     #categorias {
@@ -35,14 +45,15 @@
         margin-bottom: 10px;
     }
 
-    body {
-        padding-bottom: 10px;
-        background-color: lightsteelblue;
+    #tdFoto {
+        padding-left: 0px;
+        padding-right: 0px;
+        /*Para que las fotos no dejen espacio en las filas*/
     }
 </style>
 
 <div class="jumbotron text-center" style="background-color:indigo">
-    <h1 style="color:white;font-size:400%">Listado de personajes</h1>
+    <h1 style="color:white; font-size:400%">Listado de personajes</h1>
 </div>
 
 <a id="AgregarCat" class="btn btn-info" href="/BackOffice/AgregarPersonaje">Agregar Personaje</a>
@@ -63,33 +74,34 @@
     }
 
 }
-
 <form action="@Url.Action("ListarPersonajes", "BackOffice")" method="post" id="categorias">
-    Ordenar por:
-    <select name="Categoria">
+    <label for="elegirCat">Ver solamente: </label>
+    <select name="Categoria" class="form-control" id="elegirCat">
         @foreach (string sCat in BD.dicCategorias.Values)
         {
             <option value="@sCat"> @sCat </option>
         }
     </select>
-    <input type="submit" name="Submit" value="Enviar" class="btn btn-success" />
+    <input type="submit" name="Submit" value="Enviar" class="btn btn-success" style="margin-top: 10px;" />
 </form>
 
-<table class="table table-bordered">
+<table>
+    <!--class="table table-bordered"-->
+    <!--Si eso entra en el tag "table", no se pueden customizar los bordes de las tablas-->
     <tr>
         <th><b>Nombre</b></th>
         <th><b>Foto</b></th>
-        <th><b>Categoria</b></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th id="colCategoria"><b>Categoria</b></th>
+        <th id="colModificar"></th>
+        <th id="colBorrar"></th>
+        <th id="colCambiarCaract"></th>
     </tr>
     @foreach (Personaje unPers in ViewBag.ListaPersonajes)
     {
         string nombreFile = unPers.IDPersonaje + ".jpg";
         <tr>
             <td>@unPers.Nombre</td>
-            <td><img src="~/Content/Fotos/@nombreFile" alt="SuperPic que no cargo" width="300"></td>
+            <td id="tdFoto"><img src="~/Content/Fotos/@nombreFile" alt="SuperPic que no cargo" width="300"></td>
             <td>@unPers.Categoria</td>
             <td>@Html.ActionLink("Modificar personaje", "ModificarPersonaje", "BackOffice", new { id = unPers.IDPersonaje }, new { @class = "btn btn-info" })</td> <!--Mandas como parametro el ID del personaje a modificar-->
             <td>@Html.ActionLink("Borrar Personaje", "BorrarPersonaje", "BackOffice", new { id = unPers.IDPersonaje }, new { @class = "btn btn-info" })</td>

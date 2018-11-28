@@ -2,6 +2,8 @@
     ViewBag.Title = "Multiplayer";
 }
 
+
+
 <script>
 
     //var puntaje = 1000000;
@@ -193,13 +195,57 @@
 </script>
 
 <style>
+
+    body {
+        background-color: lightsteelblue;
+    }
+
+    .spacer {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .block { /* este es el largo de la pagina*/
+        height: 320px;
+        padding-top: 15px;
+        background-color: lightsteelblue;
+    }
+
+    .block2 {
+        min-height: 160px;
+        padding-top: 35px;
+    }
+
+    .center {
+        position: absolute;
+        /*  top: 0;
+    bottom: 0; */
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 100;
+        -webkit-text-stroke: 2px #003326;
+        text-shadow: 3px 5px rosybrown;
+    }
+
+    h4 {
+        font-family: Arial, sans-serif;
+        font-weight: 100;
+        -webkit-text-stroke: 2px #003326;
+        text-shadow: 3px 5px rosybrown;
+    }
+
     #containertodo {
-        height: 380px;
+        height: 450px;
         margin: auto auto;
     }
 
     #containerfotos {
-        height: 335px;
+        height: 405px;
         margin: auto auto;
         overflow-y: scroll;
     }
@@ -210,9 +256,16 @@
         float: right;
     }
 
+    #modalpregs {
+        background-color: lightblue;
+    }
+
     img {
         width: 100px;
         height: 100px;
+        border-style: dashed;
+        border-width: 3px;
+        border-color: coral;
     }
 
     .personaje {
@@ -223,15 +276,16 @@
         margin: 10px;
     }
 
+        .personaje:hover {
+            opacity: 0.5;
+        }
+
     .txtFoto {
         display: block;
         text-align: center;
         font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-
-    /*.puntaje {
-        display: none;
-    }*/
 </style>
 
 <!--<h2>Puntaje: <span id="puntajeGlobal">1000000</span></h2>-->

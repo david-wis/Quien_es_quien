@@ -1,11 +1,14 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "MenuMultiplayer";
     Dictionary<int, string> dicCurrentGames = ViewBag.dicCurrentGames;
 }
 
 
 <style>
+
+    body {
+        background-color: lightsteelblue;
+    }
 
     #campoUnirse {
         text-align: center;
@@ -27,6 +30,7 @@
 
     #tabla {
         width: 400px;
+        margin-left: 32%;
     }
 
     p {
@@ -56,6 +60,17 @@
         -webkit-text-stroke: 2px #003326;
         text-shadow: 3px 5px rosybrown;
     }
+
+    h4 {
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        margin-left: 41%;
+    }
+
+    a.btn.btn-primary {
+        margin-left: 52%;
+        margin-top: -5.5%;
+    }
 </style>
 
 
@@ -77,4 +92,5 @@
         </tr>
     }
 </table>
-@Html.ActionLink("+", "CrearPartida", "Juego", new { UsuarioCreador = Session["nombre"]}, new { @class = "btn btn-info"})
+
+<h4>Crear Partida:</h4> <a1>@Html.ActionLink("+", "CrearPartida", "Juego", new { UsuarioCreador = Session["nombre"] }, new { @class = "btn btn-primary" })</a1>

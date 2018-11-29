@@ -112,14 +112,15 @@
 <div class="jumbotron text-center" style="background-color:indigo">
     <h1 style="color:white;font-size:400%">Elija el personaje de su oponente</h1>
 </div>
-
-<select name="selectorCat" onchange="FiltrarPers()">
-    <option value="-1">Todos</option>
-    @foreach (int idCat in BD.dicCategorias.Keys)
-    {
-        <option value="@idCat">@BD.dicCategorias[idCat]</option>
-    }
-</select>
+<div class="form-group">
+    <select class="form-control" name="selectorCat" onchange="FiltrarPers()">
+        <option value="-1">Todos</option>
+        @foreach (int idCat in BD.dicCategorias.Keys)
+        {
+            <option value="@idCat">@BD.dicCategorias[idCat]</option>
+        }
+    </select>
+</div>
 <div id="containertodo">
     <div id="containerfotos">
         @foreach (Personaje p in BD.listaPersonajes)

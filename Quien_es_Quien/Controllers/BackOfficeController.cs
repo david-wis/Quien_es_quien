@@ -410,7 +410,6 @@ namespace Quien_es_Quien.Controllers
         }
 
         [HttpPost]
-
         public ActionResult AgregarCategoriaPersonaje(string nombre)
         {
             string sRespuesta = BD.AgregarCategoriaPersonaje(nombre);

@@ -27,16 +27,18 @@
                 }
                 else
                 {
-                    @Html.ActionLink("Quién es Quién", "Index", "Juego", new { area = "" }, new { @class = "navbar-brand" })
+                    @Html.ActionLink("Quién es Quién", "ElegirModoJuego", "Juego", new { area = "" }, new { @class = "navbar-brand" })
                 }
             </div>
             @if (Session["nombre"] != null)
             {
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Cerrar sesión", "LogOut", "BackOffice")</li>
-                    </ul>
-                </div>
+                if (Session["nombre"].ToString() != "Anonimo") { 
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Cerrar sesión", "LogOut", "BackOffice")</li>
+                        </ul>
+                    </div>
+                }
             }
 
         </div>

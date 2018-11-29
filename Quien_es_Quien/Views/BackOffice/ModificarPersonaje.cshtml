@@ -50,6 +50,15 @@
     }
 </style>
 
+<script>
+    function Validar(e) {
+        if ($("#nombre").val() == "") {
+            alert("No ingreso ningun nombre");
+            e.preventDefault();
+        }
+    }
+</script>
+
 
 <div class="jumbotron text-center" style="background-color:indigo">
     <h1 style="color:white;font-size:400%">Modificar a @ViewBag.NomPersModificar</h1>
@@ -80,7 +89,7 @@
                 @Html.ValidationMessageFor(x => x.IDCategoria, "", new { @style = "color:red" }) <br />
             </div>
 
-            <input type="submit" name="Modificar" class="btn btn-info" />
+            <input type="submit" name="Modificar" class="btn btn-info" onclick="Validar(event)"/>
         }
     </div1>
 </div1>

@@ -6,9 +6,8 @@
     <h1 style="color:white;font-size:400%">Listado de categorias de personajes</h1>
 </div>
 
-<!--@Html.ActionLink("Agregar categoria de personajes", "AgregarCategoriaPersonajes", "BackOffice", new { @class = "btn btn-info" }) Forma con ActionLink-->
-<a id="AgregarCat" class="btn btn-info" href="/BackOffice/AgregarCategoriaPersonajes">Agregar categoria de personajes</a> <!--Misma forma pero con <a>, asi le puedo poner un id y despues un style-->
-<h3>@Session["Mensaje"]</h3>
+<!--@Html.ActionLink("Agregar categoria de personajes", "AgregarCategoriaPersonaje", "BackOffice", new { @class = "btn btn-info" }) Forma con ActionLink-->
+<a id="AgregarCat" class="btn btn-info" href="@Url.Action("AgregarCategoriaPersonaje", "BackOffice")">Agregar categoria de personajes</a> <!--Misma forma pero con <a>, asi le puedo poner un id y despues un style-->
 <style>
     table, th, td {
         border: 1px solid black;
@@ -70,7 +69,7 @@
         string CatPers = BD.dicCategorias[idCatPers];
         <tr>
             <td>@CatPers</td>
-            <td>@Html.ActionLink("Borrar categoria", "BorrarCategoriaPersonajes", "BackOffice", new { nombre = CatPers }, new { @class = "btn btn-info" })</td>
+            <td>@Html.ActionLink("Borrar categoria", "BorrarCategoriaPersonajes", "BackOffice", new { sCatPersonaje = CatPers }, new { @class = "btn btn-info" })</td>
         </tr>
     }
 </table>

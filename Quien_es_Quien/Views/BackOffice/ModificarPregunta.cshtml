@@ -49,6 +49,15 @@
     }
 </style>
 
+<script>
+    function Validar(e) {
+        if ($("#textoPreg").val() == "") {
+            alert("No ingreso ningun texto de pregunta");
+            e.preventDefault();
+        }
+    }
+</script>
+
 <div class="jumbotron text-center" style="background-color:indigo">
     <h1 style="color:white;font-size:400%">Modificar pregunta: @ViewBag.textoPreguntaModificar</h1>
 </div>
@@ -77,7 +86,7 @@
                 @Html.ValidationMessageFor(x => x.IDCategoria, "", new { @style = "color:red" }) <br />
             </div>
 
-            <input type="submit" name="Modificar" class="btn btn-info" />
+            <input type="submit" name="Modificar" class="btn btn-info" onclick="Validar(event)"/>
         }
     </div1>
 </div1>

@@ -40,7 +40,7 @@
             var href = '@Url.Action("Ganaste", "Juego")';
             window.location.href = href;
         } else {
-            if (puntaje > 100) {
+            if ($('.personajes').length > 5) {
                 puntaje = Math.round(puntaje / 2);//Rendondeo
                 $('#' + IDPers).fadeOut(1000, function () {
                     $(this).remove();

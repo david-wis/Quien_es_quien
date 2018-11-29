@@ -73,7 +73,7 @@
 <a id="AgregarPreg" class="btn btn-info" href="/BackOffice/AgregarPregunta">Agregar pregunta</a> <br /> <!--Misma forma pero con <a>, asi le puedo poner un id y despues un style-->
 <a id="AgregarPreg" class="btn btn-info" href="/BackOffice/AgregarCategoriaPregunta">Agregar una categoria de pregunta</a> <!--Misma forma pero con <a>, asi le puedo poner un id y despues un style-->
 
-<h3>@Session["Mensaje"]</h3>
+<!--<h3>Session["Mensaje"]</h3>-->
 
 
 <form action="@Url.Action("ListarPreguntas", "BackOffice")" method="post">
@@ -100,12 +100,12 @@
     </tr>
     @foreach (Pregunta unaPreg in ViewBag.listaPreguntas)
     {
-    <tr>
-        <td>@unaPreg.TextoPregunta</td>
-        <td>@unaPreg.Valor</td>
-        <td>@BD.dicCategoriasPreguntas[unaPreg.IDCategoria]</td>
-        <td>@Html.ActionLink("Modificar Pregunta", "ModificarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
-        <td>@Html.ActionLink("Borrar Pregunta", "BorrarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
-    </tr>
+        <tr>
+            <td>@unaPreg.TextoPregunta</td>
+            <td>@unaPreg.Valor</td>
+            <td>@BD.dicCategoriasPreguntas[unaPreg.IDCategoria]</td>
+            <td>@Html.ActionLink("Modificar Pregunta", "ModificarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
+            <td>@Html.ActionLink("Borrar Pregunta", "BorrarPregunta", "BackOffice", new { id = unaPreg.IDPregunta }, new { @class = "btn btn-info" })</td>
+        </tr>
     }
 </table>

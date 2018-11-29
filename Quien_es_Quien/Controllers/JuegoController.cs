@@ -269,5 +269,10 @@ namespace Quien_es_Quien.Controllers
         {
             return RedirectToAction("Perdiste", "Juego");
         }
+
+        public void LimpiarBasura()
+        {
+            BD.LimpiarPartidas();
+        }
     }
 }

@@ -383,6 +383,10 @@ namespace Quien_es_Quien
                 query = conexion.CreateCommand();
                 query.CommandType = System.Data.CommandType.StoredProcedure;
                 query.CommandText = "sp_AsociarRespPers";
+                if (i == 0)
+                {
+                    query.Parameters.AddWithValue("@Renovar", 1);
+                }
                 query.Parameters.AddWithValue("@IDPersonaje", IDPers);
                 query.Parameters.AddWithValue("@IDPregunta", VecPregs[i]);
                 regs = query.ExecuteNonQuery();
@@ -846,6 +850,16 @@ namespace Quien_es_Quien
             }
             Desconectar(conexion);
             return Categoria;
+        }
+
+        public static void LimpiarPartidas()
+        {
+            SqlConnection conexion = Conectar();
+            SqlCommand query = conexion.CreateCommand();
+            query.CommandType = System.Data.CommandType.StoredProcedure;
+            query.CommandText = "sp_DestruirBasura";
+            query.ExecuteNonQuery();
+            Desconectar(conexion);
         }
     }
 }

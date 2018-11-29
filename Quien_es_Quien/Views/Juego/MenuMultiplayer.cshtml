@@ -73,6 +73,35 @@
     }
 </style>
 
+<script>
+    var i = 0;
+    var txt = '';
+    document.addEventListener('keypress', function() {
+        var keyName = event.key;
+        txt += keyName;
+        i++;
+        console.log(txt);
+        if (keyName == 'r' || keyName == 'R') {
+            location.reload();
+        }
+        if (i == 5) {
+            if (txt == 'HAKAI') {
+                LimpiarBasura();
+                location.reload();
+            } else {
+                txt = '';
+                i = 0;
+            }
+        }
+    });
+
+    function LimpiarBasura(victoria) {
+        jQuery.ajax({
+            type: "GET",
+            url: "@Url.Action("LimpiarBasura", "Juego")",
+        });
+    }
+</script>
 
 <div class="jumbotron text-center" style="background-color:indigo">
     <h1 style="color:white;font-size:400%">Clickea contra quien quieras jugar</h1>

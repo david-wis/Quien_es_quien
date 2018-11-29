@@ -3,197 +3,213 @@
 }
 
 
-
-<script>
-
+@section Scripts{
+    <script>
+    /*Queridisimo binker/(abril|saidman|tadiu)/lector: me acabo de enterar que para que funcione bien el jquery
+     es menester contar con esta hermosa section scripts. Me da mucha pena haber hecho tamaño descubrimiento en el día de la fecha,
+     y es con gran pesar que les informo que de de ninguna manera voy a aplicar esta nueva habilidad adquirida en todas las views 
+     previamente realizadas.
+     Con amor :vvv
+     David 
+     */
     //var puntaje = 1000000;
     //var puntajeRestar;
 
-    var bugfixTurno;
-    var miJugador;
-    window.onload = function () {
-        ActivarEspera();
-        interVerTurno = setInterval(RevisarTurno, 3000);
-        //RevisarTurno();
-        miJugador = getCookieValue("MiJugador");
-    }
-
-    var IDPreg = null;
-    function CambiarID(ID, puntaje) {
-        IDPreg = ID;
-        //puntajeRestar = puntaje;
-    }
-
-    var fin = false;
-    function VerificarVacio() {
-        if (!fin) {
-            if ($(".pregunta").length == 0) {
-                fin = true;
-                //$(".modal-body").append("Te has quedado sin preguntas...");
-                $("#VacioPreg").fadeIn();
+        $(".personaje").mouseenter(function () {
+            if (habilitado) {
+                $(this).css("opacity", "0.5");
             }
-        }
-    }
-
-    /*function MandarPuntaje() {
-        jQuery.ajax({
-            type: "POST",
-            url: "Url.Action("CargarPuntaje", "Juego")",
-            dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({ score: puntaje }),
+        }).mouseleave(function () {
+            $(this).css("opacity", "1");
         });
-    }*/
 
-    var habilitado = true;
-    function Arriesgar(IDPers, CorrectIDPers) {
-        if (habilitado) {
-            //alert(CorrectIDPers);
-            if (IDPers == CorrectIDPers) {
-                //Ir a victoria
-                //MandarPuntaje();
-                CambiarTurno(true);
-                var href = '@Url.Action("GanasteMultiplayer", "Juego")';
-                window.location.href = href;
-            } else {
-                /*if (puntaje > 100) {
-                    puntaje = Math.round(puntaje / 2);//Rendondeo
-                    */
-                $('#' + IDPers).fadeOut(1000, function () {
-                    $(this).remove();
-                });
-                /*
-                } else {
-                    window.location.href = 'Url.Action("Perdiste", "Juego")';
-                }
-                $("#puntajeGlobal").text(puntaje);//Actualiza el texto*/
-                CambiarTurno(false);
-            }
+        var bugfixTurno;
+        var miJugador;
+        window.onload = function () {
             ActivarEspera();
+            interVerTurno = setInterval(RevisarTurno, 2000);
+            //RevisarTurno();
+            miJugador = getCookieValue("MiJugador");
         }
-    }
 
-    function CambiarTurno(victoria) {
-        jQuery.ajax({
-            type: "POST",
-            url: "@Url.Action("CambiarTurno", "Juego")",
-            dataType: "json",
-            contentType: "application/json; charset=utf-8",
-            data: JSON.stringify({ Victoria: victoria }),
-        });
-    }
+        var IDPreg = null;
+        function CambiarID(ID, puntaje) {
+            IDPreg = ID;
+            //puntajeRestar = puntaje;
+        }
 
-    var interVerTurno = -1;
-    function ActivarEspera() {
-        habilitado = false;
-        $("#btnTrigger").prop("disabled", true);
-    }
+        var fin = false;
+        function VerificarVacio() {
+            if (!fin) {
+                if ($(".pregunta").length == 0) {
+                    fin = true;
+                    //$(".modal-body").append("Te has quedado sin preguntas...");
+                    $("#VacioPreg").fadeIn();
+                }
+            }
+        }
 
-    function DesactivarEspera() {
-        habilitado = true;
-        $("#btnTrigger").prop("disabled", false);
-    }
+        /*function MandarPuntaje() {
+            jQuery.ajax({
+                type: "POST",
+                url: "Url.Action("CargarPuntaje", "Juego")",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ score: puntaje }),
+            });
+        }*/
 
-    function RevisarTurno() {
-        jQuery.ajax({
-            type: "GET",
-            url: "@Url.Action("VerificarTurno", "Juego")",
-            contentType: "charset=utf-8",
-        });
-        var turno = getCookieValue('Turno');
-        if (turno != '') {
-            if (turno == 2) {//Gano el otro :'v
-                var href = '@Url.Action("PerdisteMultiplayer", "Juego")';
-                window.location.href = href;
-            } else if (turno == miJugador) {
-                DesactivarEspera();
-            } else {
+        var habilitado = true;
+        function Arriesgar(IDPers, CorrectIDPers) {
+            if (habilitado) {
+                //alert(CorrectIDPers);
+                if (IDPers == CorrectIDPers) {
+                    //Ir a victoria
+                    //MandarPuntaje();
+                    CambiarTurno(true);
+                    var href = '@Url.Action("GanasteMultiplayer", "Juego")';
+                    window.location.href = href;
+                } else {
+                    /*if (puntaje > 100) {
+                        puntaje = Math.round(puntaje / 2);//Rendondeo
+                        */
+                    $('#' + IDPers).fadeOut(1000, function () {
+                        $(this).remove();
+                    });
+                    /*
+                    } else {
+                        window.location.href = 'Url.Action("Perdiste", "Juego")';
+                    }
+                    $("#puntajeGlobal").text(puntaje);//Actualiza el texto*/
+                    CambiarTurno(false);
+                }
                 ActivarEspera();
             }
         }
-    }
 
-    function getCookieValue(cname) {
-        var name = cname + "=";
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-        return "";
-    }
-
-    function Preguntar(PersElegido) {
-        if (IDPreg != null) {
-            $('#p' + IDPreg).remove();//Elimina la pregunta elegida de la lista
-            $('#myModal').modal('hide');//Oculta el modal (la ventanita esa que sale)
-
-            //Primero nos fijamos si la pregunta esta adentro de las de nuestro personaje
-            preguntaCorresponde = false;
-            $.each($('#' + PersElegido + ' .respuesta'), function () {
-                if ($(this).html() == IDPreg) {
-                    preguntaCorresponde = true;
-                }
+        function CambiarTurno(victoria) {
+            jQuery.ajax({
+                type: "POST",
+                url: "@Url.Action("CambiarTurno", "Juego")",
+                dataType: "json",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({ Victoria: victoria }),
             });
-
-
-            if (preguntaCorresponde) {//Si la pregunta va a dejar al personaje como opcion sacamos el resto
-                CambiarModalMensaje('Correcto', '#00e64d');
-
-                $.each($('.personaje'), function () {
-                    $(this).addClass('purga');
-                });
-
-                $.each($('.personaje .respuesta'), function () {
-                    if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
-                        $(this).parent().removeClass('purga');
-                    }
-                });
-
-                $('.purga').fadeOut(1000, function () {//Desvanece el div entero en un segundo (1000 milisec), y luego lo borra
-                    $(this).remove();//purgamos a todos los inferiores
-                });
-                //$('.personaje').fadeIn(1000);
-            } else {//Si la pregunta no va a dejar al personaje, purgamos a los superiores :vvv (purga para todes)
-                CambiarModalMensaje('Incorrecto', '#ff0000');
-
-                $.each($('.personaje .respuesta'), function () {
-                    if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
-                        $(this).parent().fadeOut(1000, function () {
-                            $(this).remove();
-                        });
-                    }
-                });
-            }
-
-            CambiarTurno(false);
-            ActivarEspera();
-            VerificarVacio();//Se revisa cuantas preguntas quedaron
-            /*if (puntaje - puntajeRestar > 0) {
-                puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
-                $("#puntajeGlobal").text(puntaje);//Actualiza el texto
-                IDPreg = null;//Asi no queda ninguna pregunta seleccionada
-            } else {
-                //Ir a la action de game over
-                window.location.href = 'Url.Action("Perdiste", "Juego")';
-            }*/
         }
-    }
 
-    function CambiarModalMensaje(mensaje, color) {
-        $("#mensaje").html(mensaje);
-        //$("#mensaje").remove();
-        $("#contentmensaje").css("background", color);
-        $("#myModal2").modal();
-    }
-</script>
+        var interVerTurno = -1;
+        function ActivarEspera() {
+            habilitado = false;
+            $("#btnTrigger").prop("disabled", true);
+            $("#jumbohead").text("Turno del oponente");
+        }
 
+        function DesactivarEspera() {
+            habilitado = true;
+            $("#btnTrigger").prop("disabled", false);
+            $("#jumbohead").text("Tu turno");
+        }
+
+        function RevisarTurno() {
+            jQuery.ajax({
+                type: "GET",
+                url: "@Url.Action("VerificarTurno", "Juego")",
+                contentType: "charset=utf-8",
+            });
+            var turno = getCookieValue('Turno');
+            if (turno != '') {
+                if (turno == 2) {//Gano el otro :'v
+                    var href = '@Url.Action("PerdisteMultiplayer", "Juego")';
+                    window.location.href = href;
+                } else if (turno == miJugador) {
+                    DesactivarEspera();
+                } else {
+                    ActivarEspera();
+                }
+            }
+        }
+
+        function getCookieValue(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function Preguntar(PersElegido) {
+            if (IDPreg != null) {
+                $('#p' + IDPreg).remove();//Elimina la pregunta elegida de la lista
+                $('#myModal').modal('hide');//Oculta el modal (la ventanita esa que sale)
+
+                //Primero nos fijamos si la pregunta esta adentro de las de nuestro personaje
+                preguntaCorresponde = false;
+                $.each($('#' + PersElegido + ' .respuesta'), function () {
+                    if ($(this).html() == IDPreg) {
+                        preguntaCorresponde = true;
+                    }
+                });
+
+
+                if (preguntaCorresponde) {//Si la pregunta va a dejar al personaje como opcion sacamos el resto
+                    CambiarModalMensaje('Correcto', '#00e64d');
+
+                    $.each($('.personaje'), function () {
+                        $(this).addClass('purga');
+                    });
+
+                    $.each($('.personaje .respuesta'), function () {
+                        if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
+                            $(this).parent().removeClass('purga');
+                        }
+                    });
+
+                    $('.purga').fadeOut(1000, function () {//Desvanece el div entero en un segundo (1000 milisec), y luego lo borra
+                        $(this).remove();//purgamos a todos los inferiores
+                    });
+                    //$('.personaje').fadeIn(1000);
+                } else {//Si la pregunta no va a dejar al personaje, purgamos a los superiores :vvv (purga para todes)
+                    CambiarModalMensaje('Incorrecto', '#ff0000');
+
+                    $.each($('.personaje .respuesta'), function () {
+                        if ($(this).html() == IDPreg) {//Si el contenido del span escondido es la pregunta
+                            $(this).parent().fadeOut(1000, function () {
+                                $(this).remove();
+                            });
+                        }
+                    });
+                }
+
+                CambiarTurno(false);
+                ActivarEspera();
+                VerificarVacio();//Se revisa cuantas preguntas quedaron
+                /*if (puntaje - puntajeRestar > 0) {
+                    puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
+                    $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+                    IDPreg = null;//Asi no queda ninguna pregunta seleccionada
+                } else {
+                    //Ir a la action de game over
+                    window.location.href = 'Url.Action("Perdiste", "Juego")';
+                }*/
+            }
+        }
+
+        function CambiarModalMensaje(mensaje, color) {
+            $("#mensaje").html(mensaje);
+            //$("#mensaje").remove();
+            $("#contentmensaje").css("background", color);
+            $("#myModal2").modal();
+        }
+    </script>
+}
 <style>
 
     body {
@@ -276,9 +292,9 @@
         margin: 10px;
     }
 
-        .personaje:hover {
-            opacity: 0.5;
-        }
+    /*.personaje:hover {
+        opacity: 0.5;
+    }*/
 
     .txtFoto {
         display: block;
@@ -286,8 +302,15 @@
         font-weight: bold;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
+
+    #modalpregs {
+        background-color: lightblue;
+    }
 </style>
 
+<div class="jumbotron text-center" style="background-color:indigo">
+    <h1 id="jumbohead" style="color:white;font-size:400%">Cargando...</h1>
+</div>
 <!--<h2>Puntaje: <span id="puntajeGlobal">1000000</span></h2>-->
 <div id="containertodo">
     <div id="containerfotos">
@@ -314,7 +337,7 @@
             <div class="modal-dialog">
 
                 <!-- Modal content-->
-                <div class="modal-content">
+                <div class="modal-content" id="modalpregs">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Preguntas</h4>
@@ -324,8 +347,8 @@
                         {
                             string txtID = "p" + p.IDPregunta;
                             <span class="pregunta" id="@txtID">
-                                <label for="@p.IDPregunta">@p.TextoPregunta</label>
                                 <input type="radio" onclick="CambiarID(@p.IDPregunta, @p.Valor)" value="@p.IDPregunta" name="pregunta" id="@p.IDPregunta" />
+                                <label for="@p.IDPregunta">@p.TextoPregunta</label>
                                 <br />
                             </span>
                             <span id="VacioPreg" style="display:none">Te has quedado sin preguntas :'v</span>

@@ -14,8 +14,8 @@ namespace Quien_es_Quien
 {
     static public class BD
     {
-        //public static string connectionString = "Server=10.128.8.16;User=QEQA05;Password=QEQA05;Database=QEQA05";
-        public static string connectionString = "Server=.;Database=QEQA05;Trusted_connection=True";
+        public static string connectionString = "Server=10.128.8.16;User=QEQA05;Password=QEQA05;Database=QEQA05";
+        //public static string connectionString = "Server=.;Database=QEQA05;Trusted_connection=True";
         public static Dictionary<int, string> dicCategorias = new Dictionary<int, string>();
         public static Dictionary<int, string> dicCategoriasPreguntas = new Dictionary<int, string>();
         public static List<Personaje> listaPersonajes = new List<Personaje>();
@@ -68,7 +68,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     sRespuesta = lector["AdminLvl"].ToString();
                 }
@@ -95,7 +95,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -126,7 +126,7 @@ namespace Quien_es_Quien
                 {
                     lector["Error"].ToString();//En realidad no hace nada pero se fija si existe 
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     int ID = Convert.ToInt32(lector["IDPersonaje"]);
                     string Nombre = lector["Nombre"].ToString();
@@ -161,7 +161,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -190,7 +190,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -220,7 +220,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -247,7 +247,7 @@ namespace Quien_es_Quien
                 {
                     string a = lector["Error"].ToString();//Idem
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     int ID = Convert.ToInt32(lector["IDPregunta"]);
                     string Texto = lector["TextoPregunta"].ToString();
@@ -275,7 +275,7 @@ namespace Quien_es_Quien
                 {
                     string a = lector["Error"].ToString();//Idem
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     int ID = Convert.ToInt32(lector["IDPregunta"]);
                     listaPreguntas.Add(ID);
@@ -302,7 +302,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -332,7 +332,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -359,7 +359,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -414,7 +414,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -441,7 +441,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -468,7 +468,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -495,7 +495,7 @@ namespace Quien_es_Quien
                 {
                     sRespuesta = lector["Error"].ToString();
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     if (lector["Success"] != null)
                     {
@@ -636,7 +636,7 @@ namespace Quien_es_Quien
                 {
                     CantJugo = Convert.ToInt32(lector["CantJugo"]);
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     CantJugo = -1;
                 }
@@ -660,7 +660,7 @@ namespace Quien_es_Quien
                 {
                     CantGano = Convert.ToInt32(lector["CantGano"]);
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     CantGano = -1;
                 }
@@ -684,7 +684,7 @@ namespace Quien_es_Quien
                 {
                     ID = Convert.ToInt32(lector["IDUsuario"]);
                 }
-                catch (IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException)
                 {
                     ID = -1;
                 }

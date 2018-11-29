@@ -229,7 +229,7 @@ namespace Quien_es_Quien.Controllers
             else
             {
                 //ViewBag.Error = "404";
-                return View("AgregarPersonaje", "BackOffice");//Por ahora hagamos que te mande a agregar personaje
+                return RedirectToAction("AgregarPersonaje", "BackOffice", new { area = "" });//Por ahora hagamos que te mande a agregar personaje
             }
             return View();
         }

@@ -236,6 +236,8 @@ namespace Quien_es_Quien.Controllers
                 //ViewBag.Error = "404";
                 return RedirectToAction("AgregarPersonaje", "BackOffice", new { area = "" });//Por ahora hagamos que te mande a agregar personaje
             }
+            Response.Cookies["Turno"].Value = "1";
+            Response.Cookies["Turno"].Expires = DateTime.Now.AddHours(1);
             return View();
         }
 

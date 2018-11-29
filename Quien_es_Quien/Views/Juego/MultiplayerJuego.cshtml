@@ -14,7 +14,7 @@
      */
     //var puntaje = 1000000;
     //var puntajeRestar;
-
+        var ganaste = false;
         $(".personaje").mouseenter(function () {
             if (habilitado) {
                 $(this).css("opacity", "0.5");
@@ -68,6 +68,7 @@
                     //MandarPuntaje();
                     CambiarTurno(true);
                     var href = '@Url.Action("GanasteMultiplayer", "Juego")';
+                    ganaste = true;
                     window.location.href = href;
                 } else {
                     /*if (puntaje > 100) {
@@ -118,7 +119,7 @@
             });
             var turno = getCookieValue('Turno');
             if (turno != '') {
-                if (turno == 2) {//Gano el otro :'v
+                if (turno == 2 && !ganaste) {//Gano el otro :'v
                     var href = '@Url.Action("PerdisteMultiplayer", "Juego")';
                     window.location.href = href;
                 } else if (turno == miJugador) {

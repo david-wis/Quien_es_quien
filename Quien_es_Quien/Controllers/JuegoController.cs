@@ -267,12 +267,12 @@ namespace Quien_es_Quien.Controllers
             int IDPartida = Convert.ToInt32(Session["IDPartida"]);
             int MiJugador = Convert.ToInt32(Server.HtmlEncode(Request.Cookies["MiJugador"].Value));
             BD.CargarPartidaMultiplayer(IDPartida, MiJugador, -1);
-            return RedirectToAction("Ganaste", "Juego");
+            return RedirectToAction("Ganaste", "Juego", new { Multiplayer = true });
         }
 
         public ActionResult PerdisteMultiplayer()
         {
-            return RedirectToAction("Perdiste", "Juego");
+            return RedirectToAction("Perdiste", "Juego", new { Multiplayer = true});
         }
 
         public void LimpiarBasura()

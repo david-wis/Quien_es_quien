@@ -101,7 +101,7 @@ namespace Quien_es_Quien.Controllers
             Session["puntaje"] = score;
         }
 
-        public ActionResult Ganaste()
+        public ActionResult Ganaste(bool? Multiplayer = null)
         {
             string Nombre;
             string sPuntaje;
@@ -121,13 +121,18 @@ namespace Quien_es_Quien.Controllers
             } catch (NullReferenceException) {
                 Nombre = "Anonimo";
             }
-            BD.AgregarPartida(Nombre, null, BD.TipoPartida, puntaje);
+            if (Multiplayer == null)
+            {
+                BD.AgregarPartida(Nombre, null, BD.TipoPartida, puntaje);
+            }
             return View();
         }
 
-        public ActionResult Perdiste()
+        public ActionResult Perdiste(bool? Multiplayer = null)
         {
-            BD.AgregarPartida(null, Session["nombre"].ToString(), BD.TipoPartida, 0);
+            if (Multiplayer == null) { 
+                BD.AgregarPartida(null, Session["nombre"].ToString(), BD.TipoPartida, 0);
+            }
             return View();
         }
 

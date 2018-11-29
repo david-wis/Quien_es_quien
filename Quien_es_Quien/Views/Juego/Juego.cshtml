@@ -45,8 +45,8 @@
                 $('#' + IDPers).fadeOut(1000, function () {
                     $(this).remove();
                 });
-                if ($('.personaje').length == 5) {
-                    $('#botonpreguntar').prop("disabled", true);
+                if ($('.personaje').length <= 5) {
+                    $('#btnTrigger').prop("disabled", true);
                 }
             } else {
                 window.location.href = '@Url.Action("Perdiste", "Juego")';
@@ -106,6 +106,10 @@
             } else {
                 //Ir a la action de game over
                 window.location.href = '@Url.Action("Perdiste", "Juego")'; 
+            }
+
+            if ($('.personaje').length <= 5) {
+                $('#btnTrigger').prop("disabled", true);
             }
         }
     }

@@ -40,11 +40,14 @@
             var href = '@Url.Action("Ganaste", "Juego")';
             window.location.href = href;
         } else {
-            if ($('.personajes').length > 5) {
+            if ($('.personaje').length > 5) {
                 puntaje = Math.round(puntaje / 2);//Rendondeo
                 $('#' + IDPers).fadeOut(1000, function () {
                     $(this).remove();
                 });
+                if ($('.personaje').length == 5) {
+                    $('#botonpreguntar').prop("disabled", true);
+                }
             } else {
                 window.location.href = '@Url.Action("Perdiste", "Juego")';
             }

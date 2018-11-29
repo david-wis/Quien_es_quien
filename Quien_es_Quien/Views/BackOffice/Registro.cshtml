@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Registro";
 }
 
@@ -50,31 +49,75 @@
         -webkit-text-stroke: 2px #003326;
         text-shadow: 3px 5px rosybrown;
     }
+
+    label {
+        margin-top: 1.5%;
+    }
+
+    .col-sm-2 {
+        width: 16.66666667%;
+        margin-left: 15%;
+    }
+
+    .col-xs-6 {
+        width: 50%;
+        height: 90%;
+    }
+
+    #nombre, #contrasenia, #PIN, #dni {
+        margin-left: 35%;
+    }
+
+    input[type="checkbox"] {
+        margin: 4px 0 0;
+        margin-top: 1px \9;
+        line-height: normal;
+        MARGIN-LEFT: 5.5%;
+        margin-top: 2.4%;
+    }
+
+    input#PIN.form-control {
+        display: none;
+        margin-left: 9%;
+        margin-top: -5%;
+        position: absolute
+    }
+
+    input.btn.btn-info {
+        margin-left: 405px;
+        margin-top: 2%;
+    }
 </style>
 
 <div class="jumbotron text-center" style="background-color:indigo">
     <h1 style="color:white;font-size:650%">Registro</h1>
 </div>
 
-<form action="@Url.Action("Registro", "Backoffice")" method="post">
-    <div class="form-group">
-        <label class="control-label col-sm-2" for="nombre">Nombre: </label>
-        <input required type="text" name="nombre" id="nombre" placeholder="Cccebo" class="form-control" />
+
+<div class="container col-lg-12 block">
+    <div class="row col-xs-6 block2 bg-primary center">
+
+        <form action="@Url.Action("Registro", "Backoffice")" method="post">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="nombre">Nombre:<em>*</em></label>
+
+                <input required type="text" name="nombre" id="nombre" placeholder="Cccebo" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="contrasenia">Contraseña:<em>*</em> </label>
+                <input required type="password" name="contrasenia" id="contrasenia" placeholder="*********" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="dni">DNI:<em>*</em> </label>
+                <input type="text" name="dni" id="dni" placeholder="48613259" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="checkbox" value="true" name="admin" onclick="togglear()" />
+                <label class="control-label col-sm-2"> Administrador </label> <br />
+                <input type="text" name="pin" placeholder="PIN de administradores" class="form-control" id="PIN"/>
+            </div>
+            <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 405px" />
+            <br /> <b>@ViewBag.Mensaje</b>
+        </form>
     </div>
-    <div class="form-group">
-        <label class="control-label col-sm-2" for="contrasenia">Contraseña: </label>
-        <input required type="password" name="contrasenia" id="contrasenia" placeholder="*********" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label class="control-label col-sm-2" for="dni">DNI: </label>
-        <input type="text" name="dni" placeholder="48613259" class="form-control" />
-    </div>
-    <div class="form-group">
-        <input type="checkbox" value="true" name="admin" onclick="togglear()" />
-        <label class="control-label col-sm-2"> Administrador </label> <br />
-        <input type="text" name="pin" placeholder="PIN de administradores" class="form-control" id="PIN" />
-        <!--Modificar para que el textbox aparezca solo cuando selecciono el checkbox de admin-->
-    </div>
-    <input type="submit" name="Submit" value="Enviar" class="btn btn-info" style="margin-left: 405px" />
-    <br /> <b>@ViewBag.Mensaje</b>
-</form>
+</div>

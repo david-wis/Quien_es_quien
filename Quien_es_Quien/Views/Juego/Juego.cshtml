@@ -7,6 +7,8 @@
         var puntaje = 1000000;
         var puntajeRestar;
         var IDPreg = null;
+        var inmortal = false;
+
         function CambiarID(ID, puntaje) {
             IDPreg = ID;
             puntajeRestar = puntaje;
@@ -17,18 +19,32 @@
             var keyCode = event.keyCode;
             //alert(keyCode);
             trucotxt += keyCode + '-';
-            if (trucotxt.includes('38-38-40-40-37-39-37-39-66-65')) {
+            if (trucotxt.includes('38-38-40-40-37-39-37-39-66-65')) {//arriba x2 abajo x2 (izquierda derecha) x2 B A
                 alert('Truco activado');
                 puntaje += 1000000;
                 $("#puntajeGlobal").text(puntaje);
                 trucotxt = '';
-            } else if (trucotxt.includes('67-67-67-69-66-79')) {
+            } else if (trucotxt.includes('67-67-67-69-66-79')) {//cccebo
                 alert('Truco activado');
                 window.location.href = 'http://www.tarjetacontrol.com/';
                 trucotxt = '';
-            } else if (trucotxt.includes('87-73-78')) {
+            } else if (trucotxt.includes('87-73-78')) {//win
                 alert('Truco activado');
-                window.location.href = '@Url.Action("Perdiste", "Juego")';
+                if (!inmortal) {
+                    window.location.href = '@Url.Action("Perdiste", "Juego")';
+                } else {
+                    alert('Buen intento, pero estas condenado a sobrevivir a todos los que amas');
+                }
+                trucotxt = '';
+            } else if (trucotxt.includes('66-65-71-85-86-73-88')) {//baguvix
+                alert('Truco activado');
+                alert('Ahora eres Mirtha Legrand');
+                inmortal = true;
+                trucotxt = '';
+            } else if (trucotxt.includes('65-67-67-73-79-71-65-78-65-82')) {//accioganar
+                alert('Truco activado');
+                $("#" + @ViewBag.persElegido + " .img-wrap").css("background-color", "green");
+                $("#" + @ViewBag.persElegido + " img").css("opacity", 0.5);
                 trucotxt = '';
             }
         });
@@ -65,15 +81,20 @@
                 window.location.href = href;
             } else {
                 if ($('.personaje').length > 5) {
-                    puntaje = Math.round(puntaje / 2);//Rendondeo
+                    if (!inmortal) {//Si sos inmortal no perdes puntos
+                        puntaje = Math.round(puntaje / 2);//Rendondeo
+                        if ($('.personaje').length <= 5) {
+                            $('#btnTrigger').prop("disabled", true);
+                        }
+                    }
                     $('#' + IDPers).fadeOut(1000, function () {
                         $(this).remove();
                     });
-                    if ($('.personaje').length <= 5) {
-                        $('#btnTrigger').prop("disabled", true);
-                    }
+                    
                 } else {
-                    window.location.href = '@Url.Action("Perdiste", "Juego")';
+                    if (!inmortal) {//Si sos inmortal no podes morir xdxdxd
+                        window.location.href = '@Url.Action("Perdiste", "Juego")';
+                    }
                 }
                 $("#puntajeGlobal").text(puntaje);//Actualiza el texto
             }
@@ -123,17 +144,19 @@
                 }
 
                 VerificarVacio();//Se revisa cuantas preguntas quedaron
-                if (puntaje - puntajeRestar > 0) {
-                    puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
-                    $("#puntajeGlobal").text(puntaje);//Actualiza el texto
-                    IDPreg = null;//Asi no queda ninguna pregunta seleccionada
-                } else {
-                    //Ir a la action de game over
-                    window.location.href = '@Url.Action("Perdiste", "Juego")';
-                }
+                if (!inmortal) { //Si sos inmortal no perdes puntos
+                    if (puntaje - puntajeRestar > 0) {
+                        puntaje -= puntajeRestar;//Resta el puntaje de la pregunta al total
+                        $("#puntajeGlobal").text(puntaje);//Actualiza el texto
+                        IDPreg = null;//Asi no queda ninguna pregunta seleccionada
+                    } else {
+                        //Ir a la action de game over
+                        window.location.href = '@Url.Action("Perdiste", "Juego")';
+                    }
 
-                if ($('.personaje').length <= 5) {
-                    $('#btnTrigger').prop("disabled", true);
+                    if ($('.personaje').length <= 5) {
+                        $('#btnTrigger').prop("disabled", true);
+                    }
                 }
             }
         }
@@ -219,6 +242,12 @@
                 border-color: coral;
             }
 
+            .img-wrap {
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+            }
+
             .personaje {
                 display: block;
                 width: 100px;
@@ -250,7 +279,9 @@
             {
                 string nombreFile = p.IDPersonaje + ".jpg";
                 <div id="@p.IDPersonaje" class="personaje">
-                    <img src="@p.RutaFoto" alt=":'v" onclick="Arriesgar(@p.IDPersonaje, @ViewBag.persElegido)" />
+                    <div class="img-wrap">
+                        <img src="@p.RutaFoto" alt=":'v" onclick="Arriesgar(@p.IDPersonaje, @ViewBag.persElegido)" />
+                    </div>
                     <span class="txtFoto">@p.Nombre</span>
                     @foreach (int preg in p.ListaPregs)
                     {
